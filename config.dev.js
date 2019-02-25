@@ -55,8 +55,10 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
         new webpack.DefinePlugin({
-            NODE_ENV: "development",
-            API_SERVER: process.env.API_SERVER
+            "process.env": {
+                NODE_ENV: JSON.stringify("development"),
+                API_SERVER: JSON.stringify(process.env.API_SERVER),
+            }
         }),
     ],
     output: {

@@ -1,6 +1,6 @@
 export default async (data) => {
     console.log(process.env.API_SERVER);
-    return fetch(`http://localhost:5000/predict`, {
+    return fetch(`${process.env.API_SERVER}/predict`, {
         headers: {
             'Content-Type': 'application/json'
         },
