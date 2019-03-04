@@ -121,26 +121,24 @@ class ByAddress extends React.Component {
         return (
             <React.Fragment>
                 <section>
-                    <div className="container">
-                    <h2>Compare By Areas</h2>                
-                    <Filter showSort={true} sort={this.sort} updateOption={this.updateOption} />
-
-                    <div className="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">              
-                        <div className="input-container col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        {prices.length > 1 && <ul className="areas-list" type="none">
-                            {areas.map((a, i) => {
-                            return (
-                                <li key={i}>
-                                {a.name}
-                                <div className="price">
-                                    <span>₦{parseFloat(prices[i]).toLocaleString('en')}</span>
-                                </div>
-                                </li>
-                            )
-                            })}
-                        </ul>}
+                    <div className="container">     
+                        <Filter showSort={true} sort={this.sort} updateOption={this.updateOption} />
+                        <div className="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">              
+                            <div className="input-container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                {prices.length > 1 && <ul className="areas-list" type="none">
+                                    {areas.map((a, i) => {
+                                        return (
+                                            <li key={i}>
+                                                {a.name}
+                                                <div className="price">
+                                                    <span>₦{parseFloat(prices[i]).toLocaleString('en')}</span>
+                                                </div>
+                                            </li>
+                                        )
+                                    })}
+                                </ul>}
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </section>
                 <Footer />

@@ -123,7 +123,6 @@ class ByAreas extends React.Component {
             <React.Fragment>
                 <section>
                     <div className="container">
-                        <h2>Discover By Address</h2>
                         <div className="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
                             <div className="col-lg-9 col-md-9 col-sm-8 col-xs-12">
                             <Map onCenterChange={this.centerChange} />
