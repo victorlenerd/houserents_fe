@@ -58,6 +58,7 @@ module.exports = {
             "process.env": {
                 NODE_ENV: JSON.stringify("development"),
                 API_SERVER: JSON.stringify(process.env.API_SERVER),
+                MAP_API_KEY: JSON.stringify(process.env.MAP_API_KEY),
             }
         }),
     ],
