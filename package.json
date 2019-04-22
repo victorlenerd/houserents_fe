@@ -11,6 +11,7 @@
     "react-dom": "^16.4.1",
     "react-google-maps": "^9.4.5",
     "react-hot-loader": "^4.7.1",
+    "react-lottie": "^1.2.3",
     "react-router-dom": "^4.3.1",
     "react-toggle": "^4.0.2",
     "recompose": "^0.27.1",
@@ -25,6 +26,7 @@
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-regenerator": "^6.26.0",
@@ -35,6 +37,7 @@
     "eslint": "4.10.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-loader": "1.9.0",
+    "eslint-plugin-flowtype": "^3.4.2",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.4.0",
@@ -46,10 +49,6 @@
   },
   "scripts": {
     "watch": "webpack --watch --progress --colors --config config.dev.js",
-    "start": "",
     "dev": "node server.js"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   }
 }

@@ -57,6 +57,7 @@ module.exports = {
         new webpack.DefinePlugin({
             "process.env": {
                 NODE_ENV: JSON.stringify("development"),
+                PORT: JSON.stringify(process.env.API_SERVER),
                 API_SERVER: JSON.stringify(process.env.API_SERVER),
                 MAP_API_KEY: JSON.stringify(process.env.MAP_API_KEY),
             }

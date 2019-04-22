@@ -7,6 +7,7 @@ const app = express();
 const config = require('./config.dev.js');
 const compiler = webpack(config);
 
+const PORT = process.env.PORT;
 
 app.use('/public',express.static(path.join(__dirname, 'public')))
 
@@ -23,6 +24,4 @@ app.get("/*", (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.listen(3000, function () {
-    console.log('App listening on port 3000!\n');
-});
+app.listen(PORT, () => console.log(`App listening on port ${PORT}`));

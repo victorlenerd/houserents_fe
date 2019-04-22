@@ -12,8 +12,6 @@ body {
   background-color: #fff;
   position: relative;
   z-index: 100;
-  box-shadow: 0 5px 30px 0 rgba(0,0,0,0.50);
-  border-top: 2px solid #2BE6A8;
 }
 
 ul {
@@ -60,12 +58,12 @@ ul {
   position: relative;
 }
 
-.header h1 {
-  font-family: 'Karla', sans-serif;
+.header h2 {
+  font-family: 'Archivo', sans-serif;
   color: #fff;
   letter-spacing: 3.8px;
   line-height: 50px;
-  font-size: 42px;
+  font-size: 38px;
   text-align: center;
   text-shadow: 5px 2px 12px rgba(0,0,0,0.30);
 }
@@ -110,53 +108,40 @@ nav > ul > li > a:visited {
 #getstarted-button {
   width: 200px;
   height: 40px;
-  color: #000;
+  color: #fff;
   background: #2BE6A8;
   box-shadow: 0 1px 30px 12px rgba(43,230,168,0.30);
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 80px;
   text-align: center;
   line-height: 40px;
   display: block;
+  margin: 50px auto;
+  border: 0px;
+  text-transform: uppercase;
   font-family: 'Archivo', sans-serif;
+}
+
+.hometxt {
+  margin: 0px auto;
+  font-family: 'Archivo', sans-serif;
+  text-align: center;
+
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #333333;
 }
 
 /*ECF0F1*/
 
 .footer {
-  background-color: #ECF0F1;
+  background-color: #FFF;
   padding: 20px 0px;
-}
-
-.footer-left {
-  font-family: 'Archivo', sans-serif;
-}
-
-.footer-right {
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: 'Playfair Display', serif;
-}
-
-.footer-right p {
-  margin: 0px;
-}
-
-.share-icons img {
-  width: 22px;
-  height: 22px;
-  margin-right: 50px;
-}
-
-.footer-right img {
-  width: 16px;
-  height: 16px;
-  animation-name: spin;
-  animation-duration: 0.03ms;
-  animation-iteration-count: infinite;
 }
 
 .highlight {
@@ -165,57 +150,8 @@ nav > ul > li > a:visited {
 }
 
 .signature {
-  font-size: 12px;
-}
-
-.source-pane {
-  width: 100%;
-  padding: 50px 0px;
-  background-color: #2BE6A8;
-  height: auto;
-  display: table;
-}
-
-.inner-pane {
-  font-family: 'Archivo', sans-serif;
   font-size: 16px;
-  padding: 20px;
-  display: table;
-  background: #FFFFFF;
-  border: 5px solid #ECF0F1;
-  box-shadow: 0 5px 15px 1px rgba(0,0,0,0.14);
-}
-
-.inner-pane h5 {
-  text-align: center;
-}
-
-.sources img {
-  width: 22px;
-  height: 22px;
-  margin-right: 10px;
-  margin-top: -3px;
-}
-
-.sources span {
   font-family: 'Archivo', sans-serif;
-  font-weight: 800;
-  font-size: 12px;
-}
-
-.sources {
-  margin-top: 20px;
-  display: table;
-  margin-left: -30px;
-}
-
-.sources a {
-  color: #000;
-}
-
-.source {
-  text-align: center;
-  margin-top: 20px;
 }
 
 section {
@@ -297,9 +233,91 @@ h2 {
   height: 300px;
 }
 
+.lists {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.lists li {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.lists li:last-child {
+  border-bottom: 0px; 
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-price-tags {
+  font-family: 'Archivo', sans-serif;;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: 0.05em;
+  color: #2BE6A8; 
+}
+
+.list-source-tags {
+  background: #34495E;
+  border-radius: 20px;
+  padding: 2.2px 12px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+.list-pin-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.list-body-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.list-body-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.list-body-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list-body-info {
+  flex-grow: 1;
+  border-right: 1px dashed rgba(0,0,0,0.2);  
+}
+
+.list-body-info:last-child {
+  border-right: 0px; 
+}
+
 @media only screen and (max-width: 999px) { 
-  .header h1 {
-    font-size: 26px; 
+  .header {
+    padding:s 0px 0px;
+  }
+
+  .header h2 {
+    font-size: 26px;
+    letter-spacing: 2px;
   }
 }
 
@@ -322,12 +340,6 @@ h2 {
   .inner-pane h5, .source { 
     text-align: left
   }
-
-
-  /* .input-container input {
-    margin-top: 0px;
-    margin-bottom: 15px;
-  } */
 }
 
 @media only screen and (max-width: 380px) {
@@ -347,10 +359,4 @@ h2 {
   .inner-pane h5, .source { 
     text-align: left
   }
-}
-
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

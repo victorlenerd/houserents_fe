@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 
 const render = Component => {
-	ReactDOM.render(<App />, document.getElementById("root"));
+	ReactDOM.render(<Component />, document.getElementById("root"));
 };
 
-window.onload = render;
+window.onload = render(App);
 
 if (module.hot) {
 	module.hot.accept("./App", () => {
+		console.log('upd...')
 		const NewApp = render(require("./App")).default;
 		ReactDOM.render(<NewApp />, document.getElementById("root"));
 	});

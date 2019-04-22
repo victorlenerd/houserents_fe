@@ -4,12 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import './toggle.css';
 
-import Header from './components/header';
-import Map from './components/map';
-
-import ByAddress from './containers/byaddress';
-import ByAreas from './containers/byareas';
-import Area from './containers/area';
+import Home from './containers/home';
+import Footer from './components/Footer'
 
 class App extends Component {
   
@@ -17,14 +13,12 @@ class App extends Component {
     return (
       <Router>
           <div className="App">
-            <Header />
             <div id="main">
               <Switch>
-                <Route exact path="/" component={ByAddress} />
-                <Route path="/areas" component={ByAreas} />
-                <Route path="/area/:areaId" component={Area} />
+                <Route exact path="/" component={Home} />
               </Switch>
             </div>
+            <Footer />
           </div>
       </Router>
     );
