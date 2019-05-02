@@ -47,6 +47,9 @@ const Map = compose(
     <GoogleMap
         ref={props.onMapMounted}
         defaultZoom={15}
+        defaultOptions={{
+          disableDefaultUI: true,
+        }}
         defaultCenter={props.center}>
         <SearchBox
             ref={props.onSearchBoxMounted}
