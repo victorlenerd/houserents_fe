@@ -71,3 +71,15 @@ nav {
     color: #000;
     text-decoration-line: underline;
   }
+
+@media only screen and (max-width: 799px) {
+    nav > ul > li {
+        margin: 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    nav > ul > li {
+        margin: 0px 10px;
+    }
+}

@@ -1,82 +1,171 @@
 .lists {
-list-style-type: none;
-padding: 0px;
-margin: 0px;
-width: 100%;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
 }
 
 .lists li {
-margin-top: 20px;
-padding-bottom: 20px;
-border-bottom: 1px solid rgba(0,0,0,0.2);
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .lists li:last-child {
-padding-bottom: 0px;
-border-bottom: 0px; 
+  padding-bottom: 0px;
+  border-bottom: 0px;
 }
 
 .list-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .list-price-tags {
-font-family: 'Archivo', sans-serif;;
-font-style: normal;
-font-weight: bold;
-font-size: 22px;
-line-height: normal;
-letter-spacing: 0.05em;
-color: #2BE6A8; 
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: 0.05em;
+  color: #2be6a8;
 }
 
 .list-source-tags {
-background: #34495E;
-border-radius: 20px;
-padding: 2.2px 12px;
-text-align: center;
-color: #fff;
-font-size: 12px;
+  background: #34495e;
+  border-radius: 20px;
+  padding: 2.2px 12px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
 }
 
 .list-pin-icon {
-width: 22px;
-height: 22px;
+  width: 22px;
+  height: 22px;
 }
 
 .list-body-title {
-display: flex;
-justify-content: flex-start;
-align-items: flex-start;
-margin: 10px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px 0px;
+    font-family: 'karla', sans-serif;
+    color: '#000';
+    font-size: 20px;
+    color: #0652DD;
 }
 
 .list-body-content {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
 .list-body-info {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .list-body-info {
-flex-grow: 1;
-border-right: 1px dashed rgba(0,0,0,0.2);
-padding-left: 20px;   
+  flex-grow: 1;
+  border-right: 1px dashed rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .list-body-info:first-child {
-padding-left: 0px; 
+  padding-left: 0px;
 }
 
 .list-body-info:last-child {
-border-right: 0px; 
+  border-right: 0px;
+}
+
+.info {
+    height: 50px;
+    margin-top: 8px;
+}
+
+.info > p {
+    font-family: "Archivo", sans-serif;
+}
+
+.connect-roomie-button {
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #27ae60;
+    text-transform: capitalize;
+    border: 0px;
+    border-radius: 2px;
+    margin-left: 20px;
+    font-family: "Archivo", sans-serif;
+}
+
+.view-property-button {
+    background-color: #34495e;
+    border: 0px;
+    border-radius: 2px;
+    padding: 8px 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    font-family: "Archivo", sans-serif;
+}
+
+.view-property-button:hover, 
+.view-property-button:visited,
+.view-property-button:active {
+    color: #fff;
+}
+
+.list-actions {
+    padding: 15px 0px;
+    margin: 10px 0px;
+}
+
+.list-body-description {
+    font-size: 18px;
+    margin: 10px 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px; 
+    color: #000;
+    font-family: "Archivo", sans-serif;
+}
+
+.info-icon {
+    width: 22px;
+    height: 22px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.pin-icon {
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 799px) {
+    .info-icon {
+        display: none;
+    }
+
+    .list-actions {
+        display: flex;
+        flex-direction: column;
+    }
+    .connect-roomie-button {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
 }

@@ -115,6 +115,7 @@ h2 {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
+  border: 1px solid #000;
 }
 
 .input-container input {
@@ -174,12 +175,6 @@ h2 {
 @media only screen and (max-width: 799px) {
   .areas-list li {
     font-size: 14px;
-  }
-
-  .input-container > div {
-    border-left: none;
-    border-bottom: 2px solid #ECF0F1;
-    margin-bottom: 10px;
   }
   
   .footer-right {

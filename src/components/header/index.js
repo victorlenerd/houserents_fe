@@ -19,7 +19,7 @@ class header extends React.Component {
                             <Link to="/">Average Costs</Link>
                         </li>
                         <li>
-                            <Link to="/">Join Roomie Network</Link>
+                            <Link to="/">Roomie Network</Link>
                         </li>
                     </ul>
                 </nav>

@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "a2e9e6b90e6bc781a286";
+/******/ 	var hotCurrentHash = "722bf5006a5768462909";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -3815,7 +3815,7 @@ var createChangeEmitter = exports.createChangeEmitter = function createChangeEmi
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "* {\n  /* transition: all 2s; */\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #2BE6A8;\n}\n\n#main {\n  width: 100%;\n  background-color: #fff;\n  position: relative;\n  z-index: 100;\n}\n\nul {\n  padding: 0px;\n  margin: 0px;\n}\n\n.hint {\n  font-size: 16px;\n  text-align: 'center';\n  width: 260px;\n  margin: 0px auto;\n}\n\n.toggle-label {\n  display: block;\n  margin-top: 5px;\n}\n\n\n#getstarted-button {\n  width: 200px;\n  height: 40px;\n  color: #fff;\n  background: #2BE6A8;\n  box-shadow: 0 1px 30px 12px rgba(43,230,168,0.30);\n  border-radius: 10px;\n  margin-top: 80px;\n  text-align: center;\n  line-height: 40px;\n  display: block;\n  margin: 50px auto;\n  border: 0px;\n  text-transform: uppercase;\n  font-family: 'Archivo', sans-serif;\n}\n\n.hometxt {\n  margin: 0px auto;\n  font-family: 'Archivo', sans-serif;\n  text-align: center;\n\n  font-style: italic;\n  font-weight: 500;\n  font-size: 18px;\n  line-height: normal;\n  text-align: center;\n  letter-spacing: 0.05em;\n\n  color: #333333;\n}\n\n/*ECF0F1*/\n\n.footer {\n  background-color: #FFF;\n  padding: 20px 0px;\n}\n\n.highlight {\n  color: #D0021B;\n  font-weight: bold;\n}\n\n.signature {\n  font-size: 16px;\n  font-family: 'Archivo', sans-serif;\n}\n\nsection {\n  padding: 20px 0px;\n}\n\nhr {\n  width: 80%;\n}\n\nh2 {\n  text-align: center;\n  font-family: 'Karla', sans-serif;\n}\n\n.input-container {\n  display: table;\n  margin-top: 50px;\n  padding-top: 10px;\n  padding-bottom: 10px;\n  border: 5px solid #ECF0F1;\n  box-shadow: 0 5px 15px 1px rgba(0,0,0,0.14);\n}\n\n.input-container > div:nth-child(1) {\n  border-left: none; \n}\n\n.input-container > div {\n  border-left: 2px solid #ECF0F1;\n}\n\n.input-container select {\n  width: 100%;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n\n.input-container input {\n  width: 100%;\n\n  margin-bottom: 10px;\n  border: 0px;\n  border-bottom: 1px solid #333;\n}\n\n.input-label {\n  color: rgba(0,0,0,0.5);\n  font-family:  'Archivo', sans-serif;\n  font-size: 12px;\n}\n\n.areas-list li {\n  padding: 20px;\n  border-bottom: 2px solid #ECF0F1;\n  font-family:  'Archivo', sans-serif;\n  font-size: 18px;\n}\n\n.areas-list li:last-child {\n  border-bottom: none;\n}\n\n.price, .price-top {\n  font-weight: 800;\n  float: right;\n  color: #2BE6A8;\n  font-family:  'Archivo', sans-serif;\n}\n\n.price-top {\n  float: none;\n  text-align: center;\n  border: 0px !important;\n}\n\n.map {\n  width: 100%;\n  height: 300px;\n}\n\n@media only screen and (max-width: 999px) { \n  .header {\n    padding: 0px 0px;\n  }\n\n  .header h2 {\n    font-size: 26px;\n    letter-spacing: 2px;\n  }\n}\n\n@media only screen and (max-width: 799px) {\n  .areas-list li {\n    font-size: 14px;\n  }\n\n  .input-container > div {\n    border-left: none;\n    border-bottom: 2px solid #ECF0F1;\n    margin-bottom: 10px;\n  }\n  \n  .footer-right {\n    justify-content: flex-start;\n    margin-top: 20px;\n  }\n\n  .inner-pane h5, .source { \n    text-align: left\n  }\n}\n\n@media only screen and (max-width: 380px) {\n  .price {\n    float: none;\n  }\n\n  .areas-list li {\n    font-size: 14px;\n  }\n\n  .footer-right {\n    justify-content: flex-start;\n    margin-top: 20px;\n  }\n\n  .inner-pane h5, .source { \n    text-align: left\n  }\n}", ""]);
+exports.push([module.i, "* {\n  /* transition: all 2s; */\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #2BE6A8;\n}\n\n#main {\n  width: 100%;\n  background-color: #fff;\n  position: relative;\n  z-index: 100;\n}\n\nul {\n  padding: 0px;\n  margin: 0px;\n}\n\n.hint {\n  font-size: 16px;\n  text-align: 'center';\n  width: 260px;\n  margin: 0px auto;\n}\n\n.toggle-label {\n  display: block;\n  margin-top: 5px;\n}\n\n\n#getstarted-button {\n  width: 200px;\n  height: 40px;\n  color: #fff;\n  background: #2BE6A8;\n  box-shadow: 0 1px 30px 12px rgba(43,230,168,0.30);\n  border-radius: 10px;\n  margin-top: 80px;\n  text-align: center;\n  line-height: 40px;\n  display: block;\n  margin: 50px auto;\n  border: 0px;\n  text-transform: uppercase;\n  font-family: 'Archivo', sans-serif;\n}\n\n.hometxt {\n  margin: 0px auto;\n  font-family: 'Archivo', sans-serif;\n  text-align: center;\n\n  font-style: italic;\n  font-weight: 500;\n  font-size: 18px;\n  line-height: normal;\n  text-align: center;\n  letter-spacing: 0.05em;\n\n  color: #333333;\n}\n\n/*ECF0F1*/\n\n.footer {\n  background-color: #FFF;\n  padding: 20px 0px;\n}\n\n.highlight {\n  color: #D0021B;\n  font-weight: bold;\n}\n\n.signature {\n  font-size: 16px;\n  font-family: 'Archivo', sans-serif;\n}\n\nsection {\n  padding: 20px 0px;\n}\n\nhr {\n  width: 80%;\n}\n\nh2 {\n  text-align: center;\n  font-family: 'Karla', sans-serif;\n}\n\n.input-container {\n  display: table;\n  margin-top: 50px;\n  padding-top: 10px;\n  padding-bottom: 10px;\n  border: 5px solid #ECF0F1;\n  box-shadow: 0 5px 15px 1px rgba(0,0,0,0.14);\n}\n\n.input-container > div:nth-child(1) {\n  border-left: none; \n}\n\n.input-container > div {\n  border-left: 2px solid #ECF0F1;\n}\n\n.input-container select {\n  width: 100%;\n  margin-top: 10px;\n  margin-bottom: 10px;\n  border: 1px solid #000;\n}\n\n.input-container input {\n  width: 100%;\n\n  margin-bottom: 10px;\n  border: 0px;\n  border-bottom: 1px solid #333;\n}\n\n.input-label {\n  color: rgba(0,0,0,0.5);\n  font-family:  'Archivo', sans-serif;\n  font-size: 12px;\n}\n\n.areas-list li {\n  padding: 20px;\n  border-bottom: 2px solid #ECF0F1;\n  font-family:  'Archivo', sans-serif;\n  font-size: 18px;\n}\n\n.areas-list li:last-child {\n  border-bottom: none;\n}\n\n.price, .price-top {\n  font-weight: 800;\n  float: right;\n  color: #2BE6A8;\n  font-family:  'Archivo', sans-serif;\n}\n\n.price-top {\n  float: none;\n  text-align: center;\n  border: 0px !important;\n}\n\n.map {\n  width: 100%;\n  height: 300px;\n}\n\n@media only screen and (max-width: 999px) { \n  .header {\n    padding: 0px 0px;\n  }\n\n  .header h2 {\n    font-size: 26px;\n    letter-spacing: 2px;\n  }\n}\n\n@media only screen and (max-width: 799px) {\n  .areas-list li {\n    font-size: 14px;\n  }\n  \n  .footer-right {\n    justify-content: flex-start;\n    margin-top: 20px;\n  }\n\n  .inner-pane h5, .source { \n    text-align: left\n  }\n}\n\n@media only screen and (max-width: 380px) {\n  .price {\n    float: none;\n  }\n\n  .areas-list li {\n    font-size: 14px;\n  }\n\n  .footer-right {\n    justify-content: flex-start;\n    margin-top: 20px;\n  }\n\n  .inner-pane h5, .source { \n    text-align: left\n  }\n}", ""]);
 
 
 
@@ -3830,7 +3830,7 @@ exports.push([module.i, "* {\n  /* transition: all 2s; */\n  box-sizing: border-
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "/* .header {\n  width: 100%;\n  background-color: #ECF0F1;\n  padding: 80px 0px;\n  display: table;\n  position: relative;\n  overflow: hidden;\n  background-attachment: fixed;\n  background-image: url('./assets/img/unsplash.jpg');\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n.header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0px;\n  background-color: rgba(43,230,168, 0.8);\n}\n\n.header .container {\n  z-index: 5;\n  position: relative;\n}\n\n.header h2 {\n  font-family: 'Archivo', sans-serif;\n  color: #fff;\n  letter-spacing: 3.8px;\n  line-height: 50px;\n  font-size: 38px;\n  text-align: center;\n  text-shadow: 5px 2px 12px rgba(0,0,0,0.30);\n} */\n\nnav {\n    width: 100%;\n    height: 50px;\n    background-color: #fff;\n    z-index: 150;\n    position: fixed;\n    display: flex;\n    align-items: center;\n    font-family: 'Karla', sans-serif;\n    letter-spacing: 1px;\n    justify-content: center;\n    flex-direction: row;\n    border-bottom: 2px solid #2BE6A8;\n    box-shadow: 0 5px 30px 0 rgba(0,0,0,0.20);\n  }\n  \n  nav > ul > li {\n    display: inline;\n    margin: 0px 50px;\n  }\n  \n  nav > ul > li > a {\n    color: #000;\n  }\n  \n  nav > ul > li > a:active,\n  nav > ul > li > a.active {\n    font-weight: bold;\n    color: #2980b9 !important;\n    text-decoration-line: underline;\n  }\n  \n  nav > ul > li > a:visited {\n    color: #000;\n    text-decoration-line: underline;\n  }", ""]);
+exports.push([module.i, "/* .header {\n  width: 100%;\n  background-color: #ECF0F1;\n  padding: 80px 0px;\n  display: table;\n  position: relative;\n  overflow: hidden;\n  background-attachment: fixed;\n  background-image: url('./assets/img/unsplash.jpg');\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n.header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0px;\n  background-color: rgba(43,230,168, 0.8);\n}\n\n.header .container {\n  z-index: 5;\n  position: relative;\n}\n\n.header h2 {\n  font-family: 'Archivo', sans-serif;\n  color: #fff;\n  letter-spacing: 3.8px;\n  line-height: 50px;\n  font-size: 38px;\n  text-align: center;\n  text-shadow: 5px 2px 12px rgba(0,0,0,0.30);\n} */\n\nnav {\n    width: 100%;\n    height: 50px;\n    background-color: #fff;\n    z-index: 150;\n    position: fixed;\n    display: flex;\n    align-items: center;\n    font-family: 'Karla', sans-serif;\n    letter-spacing: 1px;\n    justify-content: center;\n    flex-direction: row;\n    border-bottom: 2px solid #2BE6A8;\n    box-shadow: 0 5px 30px 0 rgba(0,0,0,0.20);\n  }\n  \n  nav > ul > li {\n    display: inline;\n    margin: 0px 50px;\n  }\n  \n  nav > ul > li > a {\n    color: #000;\n  }\n  \n  nav > ul > li > a:active,\n  nav > ul > li > a.active {\n    font-weight: bold;\n    color: #2980b9 !important;\n    text-decoration-line: underline;\n  }\n  \n  nav > ul > li > a:visited {\n    color: #000;\n    text-decoration-line: underline;\n  }\n\n@media only screen and (max-width: 799px) {\n    nav > ul > li {\n        margin: 0px 20px;\n    }\n}\n\n@media only screen and (max-width: 380px) {\n    nav > ul > li {\n        margin: 0px 10px;\n    }\n}", ""]);
 
 
 
@@ -3845,7 +3845,7 @@ exports.push([module.i, "/* .header {\n  width: 100%;\n  background-color: #ECF0
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".lists {\nlist-style-type: none;\npadding: 0px;\nmargin: 0px;\nwidth: 100%;\n}\n\n.lists li {\nmargin-top: 20px;\npadding-bottom: 20px;\nborder-bottom: 1px solid rgba(0,0,0,0.2);\n}\n\n.lists li:last-child {\npadding-bottom: 0px;\nborder-bottom: 0px; \n}\n\n.list-header {\ndisplay: flex;\njustify-content: space-between;\nalign-items: center;\n}\n\n.list-price-tags {\nfont-family: 'Archivo', sans-serif;;\nfont-style: normal;\nfont-weight: bold;\nfont-size: 22px;\nline-height: normal;\nletter-spacing: 0.05em;\ncolor: #2BE6A8; \n}\n\n.list-source-tags {\nbackground: #34495E;\nborder-radius: 20px;\npadding: 2.2px 12px;\ntext-align: center;\ncolor: #fff;\nfont-size: 12px;\n}\n\n.list-pin-icon {\nwidth: 22px;\nheight: 22px;\n}\n\n.list-body-title {\ndisplay: flex;\njustify-content: flex-start;\nalign-items: flex-start;\nmargin: 10px 0px;\n}\n\n.list-body-content {\ndisplay: flex;\njustify-content: space-between;\nalign-items: center;\nmargin: 5px 0px;\n}\n\n.list-body-info {\ndisplay: flex;\nflex-direction: column;\njustify-content: flex-start;\nalign-items: flex-start;\n}\n\n.list-body-info {\nflex-grow: 1;\nborder-right: 1px dashed rgba(0,0,0,0.2);\npadding-left: 20px;   \n}\n\n.list-body-info:first-child {\npadding-left: 0px; \n}\n\n.list-body-info:last-child {\nborder-right: 0px; \n}\n", ""]);
+exports.push([module.i, ".lists {\n  list-style-type: none;\n  padding: 0px;\n  margin: 0px;\n  width: 100%;\n}\n\n.lists li {\n  margin-top: 10px;\n  padding-bottom: 10px;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.2);\n}\n\n.lists li:last-child {\n  padding-bottom: 0px;\n  border-bottom: 0px;\n}\n\n.list-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.list-price-tags {\n  font-family: \"Archivo\", sans-serif;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 22px;\n  line-height: normal;\n  letter-spacing: 0.05em;\n  color: #2be6a8;\n}\n\n.list-source-tags {\n  background: #34495e;\n  border-radius: 20px;\n  padding: 2.2px 12px;\n  text-align: center;\n  color: #fff;\n  font-size: 12px;\n}\n\n.list-pin-icon {\n  width: 22px;\n  height: 22px;\n}\n\n.list-body-title {\n    display: flex;\n    justify-content: flex-start;\n    align-items: flex-start;\n    margin: 10px 0px;\n    font-family: 'karla', sans-serif;\n    color: '#000';\n    font-size: 20px;\n    color: #0652DD;\n}\n\n.list-body-content {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 5px 0px;\n  border-top: 1px dashed rgba(0, 0, 0, 0.2);\n  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);\n}\n\n.list-body-info {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  align-items: flex-start;\n}\n\n.list-body-info {\n  flex-grow: 1;\n  border-right: 1px dashed rgba(0, 0, 0, 0.2);\n  padding-left: 20px;\n  display: flex;\n  flex-direction: row;\n}\n\n.list-body-info:first-child {\n  padding-left: 0px;\n}\n\n.list-body-info:last-child {\n  border-right: 0px;\n}\n\n.info {\n    height: 50px;\n    margin-top: 8px;\n}\n\n.info > p {\n    font-family: \"Archivo\", sans-serif;\n}\n\n.connect-roomie-button {\n    padding: 8px 20px;\n    color: #fff;\n    background-color: #27ae60;\n    text-transform: capitalize;\n    border: 0px;\n    border-radius: 2px;\n    margin-left: 20px;\n    font-family: \"Archivo\", sans-serif;\n}\n\n.view-property-button {\n    background-color: #34495e;\n    border: 0px;\n    border-radius: 2px;\n    padding: 8px 20px;\n    font-size: 16px;\n    text-transform: capitalize;\n    color: #fff;\n    text-align: center;\n    font-family: \"Archivo\", sans-serif;\n}\n\n.view-property-button:hover, \n.view-property-button:visited,\n.view-property-button:active {\n    color: #fff;\n}\n\n.list-actions {\n    padding: 15px 0px;\n    margin: 10px 0px;\n}\n\n.list-body-description {\n    font-size: 18px;\n    margin: 10px 0px;\n    padding-left: 0px;\n    padding-right: 0px;\n    padding-bottom: 10px; \n    color: #000;\n    font-family: \"Archivo\", sans-serif;\n}\n\n.info-icon {\n    width: 22px;\n    height: 22px;\n    margin-top: 15px;\n    margin-right: 20px;\n}\n\n.pin-icon {\n    width: 22px;\n    height: 22px;\n    margin: 5px;\n}\n\n@media only screen and (max-width: 799px) {\n    .info-icon {\n        display: none;\n    }\n\n    .list-actions {\n        display: flex;\n        flex-direction: column;\n    }\n    .connect-roomie-button {\n        margin-left: 0px;\n        margin-top: 10px;\n    }\n}", ""]);
 
 
 
@@ -51842,6 +51842,28 @@ var _default = Object(react_hot_loader__WEBPACK_IMPORTED_MODULE_6__["hot"])(modu
 
 /***/ }),
 
+/***/ "./src/assets/svg/bath.svg":
+/*!*********************************!*\
+  !*** ./src/assets/svg/bath.svg ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiPg0KCTxnPg0KCQk8Zz4NCgkJCTxwYXRoIGQ9Ik00ODUuNCwyNzIuMDY3aC04LjUzM3YtMTc5LjJjMC00Mi42NjctMzQuMTMzLTc2LjgtNzYuOC03Ni44Yy0zNy43NywwLTY0LjkzNSwyOC4wMDYtNjcuOTc0LDY5LjA0MQ0KCQkJCWMtMTkuODI5LDMuNzQ4LTM0LjQyNiwyMC44MjYtMzQuNDI2LDQxLjg5MmMwLDUuMTIsMy40MTMsOC41MzMsOC41MzMsOC41MzNoNjguMjY3YzUuMTIsMCw4LjUzMy0zLjQxMyw4LjUzMy04LjUzMw0KCQkJCWMwLTIwLjgzMy0xNC4yNzQtMzcuNzY5LTMzLjc2Ny00MS43NjdjMi41NS0yNy4xMTYsMTguODM2LTUyLjEsNTAuODM0LTUyLjFjMzMuMjgsMCw1OS43MzMsMjYuNDUzLDU5LjczMyw1OS43MzN2MTc5LjJIMjAyLjk3NQ0KCQkJCWMtMy44Ni0xOS42ODEtMjAuODc4LTM0LjEzMy00MS44NDEtMzQuMTMzYy04LjUzMy0xMC4yNC0yMC40OC0xNy4wNjctMzQuMTMzLTE3LjA2N2MtMTYuMjEzLDAtMzAuNzIsOS4zODctMzcuNTQ3LDIzLjA0DQoJCQkJYy02LjgyNy0zLjQxMy0xNC41MDctNS45NzMtMjIuMTg3LTUuOTczYy0yMC45NjMsMC0zNy45ODEsMTQuNDUyLTQxLjg0MSwzNC4xMzNIMjQuNmMtMTQuNTA3LDAtMjUuNiwxMS4wOTMtMjUuNiwyNS42DQoJCQkJYzAsMTQuNTA3LDExLjA5MywyNS42LDI1LjYsMjUuNmgxMC4yNTVsMjMuMDI1LDkxLjMwN2M2LjgyNywyNi40NTMsMzAuNzIsNDUuMjI3LDU4LjAyNyw0NS4yMjdoNi44MjdsLTExLjA5MywyMi4xODcNCgkJCQljLTIuNTYsNC4yNjctMC44NTMsOS4zODcsMy40MTMsMTEuMDkzYzAuODUzLDAuODUzLDIuNTYsMC44NTMsMy40MTMsMC44NTNjMy40MTMsMCw1Ljk3My0xLjcwNyw3LjY4LTQuMjY3TDE0MS4wOCw0NTkuOGgyMzYuOA0KCQkJCWwxNC41MDcsMjkuMDEzYzEuNzA3LDMuNDEzLDQuMjY3LDUuMTIsNy42OCw1LjEyYzEuNzA3LDAsMi41NiwwLDMuNDEzLTEuNzA3YzMuNDEzLTEuNzA3LDUuMTItNi44MjcsMy40MTMtMTEuMDkzDQoJCQkJbC0xMC42ODktMjEuMzc5YzI2LjQxOS0wLjkzOCw0OS4yNjYtMTkuMzksNTUuOTE2LTQ0LjMyOGwyMy4yNC05Mi4xNmgxMC4wNGMxNC41MDcsMCwyNS42LTExLjA5MywyNS42LTI1LjYNCgkJCQlDNTExLDI4My4xNiw0OTkuOTA3LDI3Mi4wNjcsNDg1LjQsMjcyLjA2N3ogTTM2NS4wOCwxMTguNDY3aC00OC42NGMzLjQxMy0xMC4yNCwxMy42NTMtMTcuMDY3LDI0Ljc0Ny0xNy4wNjcNCgkJCQlTMzYxLjY2NywxMDguMjI3LDM2NS4wOCwxMTguNDY3eiBNNjcuMjY3LDI1NWM3LjY4LDAsMTQuNTA3LDMuNDEzLDIwLjQ4LDkuMzg3YzEuNzA3LDIuNTYsNS4xMiwzLjQxMyw4LjUzMywyLjU2DQoJCQkJczUuMTItMy40MTMsNS45NzMtNi44MjdjMi41Ni0xMi44LDEyLjgtMjIuMTg3LDI1LjYtMjIuMTg3YzkuMzg3LDAsMTcuOTIsNC4yNjcsMjIuMTg3LDEyLjhjMS43MDcsMy40MTMsNS45NzMsNS4xMiw5LjM4Nyw0LjI2Nw0KCQkJCWMwLjg1MywwLDEuNzA3LDAsMi41NiwwYzExLjA5MywwLDIwLjQ4LDYuODI3LDIzLjg5MywxNy4wNjdINDMuMzczQzQ2Ljc4NywyNjEuODI3LDU2LjE3MywyNTUsNjcuMjY3LDI1NXogTTQzNi43Niw0MTAuMzA3DQoJCQkJYy01LjEyLDE4Ljc3My0yMi4xODcsMzIuNDI3LTQxLjgxMywzMi40MjdIMTE2Ljc2Yy0xOS42MjcsMC0zNi42OTMtMTMuNjUzLTQxLjgxMy0zMi40MjdsLTIyLjE4Ny04Ny4wNGg0MDQuNDhMNDM2Ljc2LDQxMC4zMDd6DQoJCQkJIE00ODUuNCwzMDYuMmgtMTcuMDY3SDQxLjY2N0gyNC42Yy01LjEyLDAtOC41MzMtMy40MTMtOC41MzMtOC41MzNzMy40MTMtOC41MzMsOC41MzMtOC41MzNoOC41MzNoMTYyLjEzM0g0ODUuNA0KCQkJCWM1LjEyLDAsOC41MzMsMy40MTMsOC41MzMsOC41MzNTNDkwLjUyLDMwNi4yLDQ4NS40LDMwNi4yeiIvPg0KCQkJPHBhdGggZD0iTTMwNi4yLDE3My45MzNjNS4xMiwwLDguNTMzLTMuNDEzLDguNTMzLTguNTMzdi00LjI2N2MwLTUuMTItMy40MTMtOC41MzMtOC41MzMtOC41MzNzLTguNTMzLDMuNDEzLTguNTMzLDguNTMzdjQuMjY3DQoJCQkJQzI5Ny42NjcsMTcwLjUyLDMwMS4wOCwxNzMuOTMzLDMwNi4yLDE3My45MzN6Ii8+DQoJCQk8cGF0aCBkPSJNMzA2LjIsMjEzLjE4N2M1LjEyLDAsOC41MzMtNC4yNjcsOC41MzMtOC41MzN2LTkuMzg3YzAtNS4xMi0zLjQxMy04LjUzMy04LjUzMy04LjUzM3MtOC41MzMsMy40MTMtOC41MzMsOC41MzN2OS4zODcNCgkJCQlDMjk3LjY2NywyMDkuNzczLDMwMS4wOCwyMTMuMTg3LDMwNi4yLDIxMy4xODd6Ii8+DQoJCQk8cGF0aCBkPSJNMzA2LjIsMjQ2LjQ2N2M1LjEyLDAsOC41MzMtMy40MTMsOC41MzMtOC41MzN2LTQuMjY3YzAtNS4xMi0zLjQxMy04LjUzMy04LjUzMy04LjUzM3MtOC41MzMsMy40MTMtOC41MzMsOC41MzN2NC4yNjcNCgkJCQlDMjk3LjY2NywyNDMuMDUzLDMwMS4wOCwyNDYuNDY3LDMwNi4yLDI0Ni40Njd6Ii8+DQoJCQk8cGF0aCBkPSJNMzQwLjMzMywxNzMuOTMzYzUuMTIsMCw4LjUzMy0zLjQxMyw4LjUzMy04LjUzM3YtNC4yNjdjMC01LjEyLTMuNDEzLTguNTMzLTguNTMzLTguNTMzDQoJCQkJYy01LjEyLDAtOC41MzMsMy40MTMtOC41MzMsOC41MzN2NC4yNjdDMzMxLjgsMTcwLjUyLDMzNS4yMTMsMTczLjkzMywzNDAuMzMzLDE3My45MzN6Ii8+DQoJCQk8cGF0aCBkPSJNMzMxLjgsMjA0LjY1M2MwLDUuMTIsMy40MTMsOC41MzMsOC41MzMsOC41MzNjNS4xMiwwLDguNTMzLTQuMjY3LDguNTMzLTguNTMzdi05LjM4N2MwLTUuMTItMy40MTMtOC41MzMtOC41MzMtOC41MzMNCgkJCQljLTUuMTIsMC04LjUzMywzLjQxMy04LjUzMyw4LjUzM1YyMDQuNjUzeiIvPg0KCQkJPHBhdGggZD0iTTMzMS44LDIzNy45MzNjMCw1LjEyLDMuNDEzLDguNTMzLDguNTMzLDguNTMzYzUuMTIsMCw4LjUzMy0zLjQxMyw4LjUzMy04LjUzM3YtNC4yNjdjMC01LjEyLTMuNDEzLTguNTMzLTguNTMzLTguNTMzDQoJCQkJYy01LjEyLDAtOC41MzMsMy40MTMtOC41MzMsOC41MzNWMjM3LjkzM3oiLz4NCgkJCTxwYXRoIGQ9Ik0zNzQuNDY3LDE3My45MzNjNS4xMiwwLDguNTMzLTMuNDEzLDguNTMzLTguNTMzdi00LjI2N2MwLTUuMTItMy40MTMtOC41MzMtOC41MzMtOC41MzNzLTguNTMzLDMuNDEzLTguNTMzLDguNTMzdjQuMjY3DQoJCQkJQzM2NS45MzMsMTcwLjUyLDM2OS4zNDcsMTczLjkzMywzNzQuNDY3LDE3My45MzN6Ii8+DQoJCQk8cGF0aCBkPSJNMzY1LjkzMywyMDQuNjUzYzAsNS4xMiwzLjQxMyw4LjUzMyw4LjUzMyw4LjUzM1MzODMsMjA4LjkyLDM4MywyMDQuNjUzdi05LjM4N2MwLTUuMTItMy40MTMtOC41MzMtOC41MzMtOC41MzMNCgkJCQlzLTguNTMzLDMuNDEzLTguNTMzLDguNTMzVjIwNC42NTN6Ii8+DQoJCQk8cGF0aCBkPSJNMzY1LjkzMywyMzcuOTMzYzAsNS4xMiwzLjQxMyw4LjUzMyw4LjUzMyw4LjUzM3M4LjUzMy0zLjQxMyw4LjUzMy04LjUzM3YtNC4yNjdjMC01LjEyLTMuNDEzLTguNTMzLTguNTMzLTguNTMzDQoJCQkJcy04LjUzMywzLjQxMy04LjUzMyw4LjUzM1YyMzcuOTMzeiIvPg0KCQk8L2c+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="
+
+/***/ }),
+
+/***/ "./src/assets/svg/bed.svg":
+/*!********************************!*\
+  !*** ./src/assets/svg/bed.svg ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDgwIDQ4MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDgwIDQ4MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00NzIsMjcyaC04di0yNGMtMC4wMjEtMTUuODg2LTkuNDQtMzAuMjU0LTI0LTM2LjYwOFY4OGMtMC4wMDItMy4xOC0xLjg4Ni02LjA1Ni00LjgtNy4zMjgNCgkJCWMzLjEyMS01LjAwMiw0Ljc4My0xMC43NzYsNC44LTE2LjY3MmMwLTE3LjY3My0xNC4zMjctMzItMzItMzJjLTE3LjY3MywwLTMyLDE0LjMyNy0zMiwzMmMwLjAzMyw1LjYzNCwxLjU2OSwxMS4xNTcsNC40NDgsMTYNCgkJCUg5OS41NTJjMi44NzktNC44NDMsNC40MTUtMTAuMzY2LDQuNDQ4LTE2YzAtMTcuNjczLTE0LjMyNy0zMi0zMi0zMlM0MCw0Ni4zMjcsNDAsNjRjMC4wMTcsNS44OTYsMS42NzksMTEuNjcsNC44LDE2LjY3Mg0KCQkJQzQxLjg4Niw4MS45NDQsNDAuMDAyLDg0LjgyLDQwLDg4djEyMy4zOTJDMjUuNDQsMjE3Ljc0NiwxNi4wMjEsMjMyLjExNCwxNiwyNDh2MjRIOGMtNC40MTgsMC04LDMuNTgyLTgsOHYxMTINCgkJCWMwLDQuNDE4LDMuNTgyLDgsOCw4aDh2NDBjMCw0LjQxOCwzLjU4Miw4LDgsOGgzMmM0LjQxOCwwLDgtMy41ODIsOC04di00MGgzNTJ2NDBjMCw0LjQxOCwzLjU4Miw4LDgsOGgzMmM0LjQxOCwwLDgtMy41ODIsOC04DQoJCQl2LTQwaDhjNC40MTgsMCw4LTMuNTgyLDgtOFYyODBDNDgwLDI3NS41ODIsNDc2LjQxOCwyNzIsNDcyLDI3MnogTTQwOCw0OGM4LjgzNywwLDE2LDcuMTYzLDE2LDE2cy03LjE2MywxNi0xNiwxNg0KCQkJcy0xNi03LjE2My0xNi0xNlMzOTkuMTYzLDQ4LDQwOCw0OHogTTcyLDQ4YzguODM3LDAsMTYsNy4xNjMsMTYsMTZzLTcuMTYzLDE2LTE2LDE2cy0xNi03LjE2My0xNi0xNlM2My4xNjMsNDgsNzIsNDh6IE01Niw5NmgzNjgNCgkJCXYxMTJoLTMyLjIwOGM1LjI5NC02Ljg4Myw4LjE3OS0xNS4zMTYsOC4yMDgtMjR2LTE2Yy0wLjAyNi0yMi4wOC0xNy45Mi0zOS45NzQtNDAtNDBoLTY0Yy0yMi4wOCwwLjAyNi0zOS45NzQsMTcuOTItNDAsNDB2MTYNCgkJCWMwLjAyOSw4LjY4NCwyLjkxNCwxNy4xMTcsOC4yMDgsMjRoLTQ4LjQxNmM1LjI5NC02Ljg4Myw4LjE3OS0xNS4zMTYsOC4yMDgtMjR2LTE2Yy0wLjAyNi0yMi4wOC0xNy45Mi0zOS45NzQtNDAtNDBoLTY0DQoJCQljLTIyLjA4LDAuMDI2LTM5Ljk3NCwxNy45Mi00MCw0MHYxNmMwLjAyOSw4LjY4NCwyLjkxNCwxNy4xMTcsOC4yMDgsMjRINTZWOTZ6IE0zODQsMTY4djE2YzAsMTMuMjU1LTEwLjc0NSwyNC0yNCwyNGgtNjQNCgkJCWMtMTMuMjU1LDAtMjQtMTAuNzQ1LTI0LTI0di0xNmMwLTEzLjI1NSwxMC43NDUtMjQsMjQtMjRoNjRDMzczLjI1NSwxNDQsMzg0LDE1NC43NDUsMzg0LDE2OHogTTIwOCwxNjh2MTYNCgkJCWMwLDEzLjI1NS0xMC43NDUsMjQtMjQsMjRoLTY0Yy0xMy4yNTUsMC0yNC0xMC43NDUtMjQtMjR2LTE2YzAtMTMuMjU1LDEwLjc0NS0yNCwyNC0yNGg2NEMxOTcuMjU1LDE0NCwyMDgsMTU0Ljc0NSwyMDgsMTY4eg0KCQkJIE0zMiwyNDhjMC0xMy4yNTUsMTAuNzQ1LTI0LDI0LTI0aDM2OGMxMy4yNTUsMCwyNCwxMC43NDUsMjQsMjR2MjRIMzJWMjQ4eiBNNDgsNDMySDMydi0zMmgxNlY0MzJ6IE00NDgsNDMyaC0xNnYtMzJoMTZWNDMyeg0KCQkJIE00NjQsMzg0SDE2di05Nmg0NDhWMzg0eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNzIsMzUySDQwYy00LjQxOCwwLTgsMy41ODItOCw4czMuNTgyLDgsOCw4aDMyYzQuNDE4LDAsOC0zLjU4Miw4LThTNzYuNDE4LDM1Miw3MiwzNTJ6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00NDAsMzUySDEwNGMtNC40MTgsMC04LDMuNTgyLTgsOHMzLjU4Miw4LDgsOGgzMzZjNC40MTgsMCw4LTMuNTgyLDgtOFM0NDQuNDE4LDM1Miw0NDAsMzUyeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K"
+
+/***/ }),
+
 /***/ "./src/assets/svg/heart.svg":
 /*!**********************************!*\
   !*** ./src/assets/svg/heart.svg ***!
@@ -51850,6 +51872,39 @@ var _default = Object(react_hot_loader__WEBPACK_IMPORTED_MODULE_6__["hot"])(modu
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNTcuOTQ3IDU3Ljk0NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTcuOTQ3IDU3Ljk0NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNFNjRDM0M7IiBkPSJNMjguOTQ3LDU2LjQ4NmMxNS42ODUtMTEuMjc3LDIzLjUzMi0yMS41OTIsMjcuMjIyLTI5LjQ2YzQuMzExLTkuMTkzLDAuNTYxLTIwLjU4OS04Ljg0NS0yNC40MTMKCQlDMzYuMjY4LTEuODgsMjguOTQ3LDguNDg2LDI4Ljk0Nyw4LjQ4NlMyMS42NzgtMS45MDcsMTAuNjIzLDIuNTg4QzEuMjE3LDYuNDEyLTIuNTMzLDE3LjgwOCwxLjc3OCwyNy4wMDEKCQlDNS40NjgsMzQuODY4LDEzLjI2Miw0NS4yMSwyOC45NDcsNTYuNDg2eiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+
+/***/ }),
+
+/***/ "./src/assets/svg/pin.svg":
+/*!********************************!*\
+  !*** ./src/assets/svg/pin.svg ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMjk0Ljg0MyAyOTQuODQzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyOTQuODQzIDI5NC44NDM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMwNjUyREQiIGQ9Ik0xNDcuNDIxLDBjLTUyLjYyLDAtOTUuNDMsNDIuODEtOTUuNDMsOTUuNDNjMCw0Ny4wNTcsMzIuNjQsMTA4LjczOCw2MC4wMjIsMTUyLjE5NWMxLjc2NiwyLjgwNCw1LjQ3LDMuNjQ1LDguMjc1LDEuODc4DQoJCWMyLjgwMy0xLjc2NiwzLjY0NC01LjQ3MSwxLjg3Ny04LjI3NEM3NC4wODQsMTY0LjkxNyw2My45OTIsMTE5LjgyMiw2My45OTIsOTUuNDNjMC00Ni4wMDMsMzcuNDI2LTgzLjQzLDgzLjQzLTgzLjQzDQoJCXM4My40MywzNy40MjYsODMuNDMsODMuNDNjMCw3NC43MDgtODcuMjk2LDE4OC42MDQtODguMTc4LDE4OS43NDVjLTIuMDI1LDIuNjIzLTEuNTQyLDYuMzkxLDEuMDgxLDguNDE2DQoJCWMxLjA5MiwwLjg0NCwyLjM4MywxLjI1MiwzLjY2NCwxLjI1MmMxLjc5NCwwLDMuNTctMC44MDIsNC43NTItMi4zMzJjMy43MDMtNC43OTIsOTAuNjgyLTExOC4yNzcsOTAuNjgyLTE5Ny4wODINCgkJQzI0Mi44NTEsNDIuODEsMjAwLjA0MiwwLDE0Ny40MjEsMHoiLz4NCgk8cGF0aCBmaWxsPSIjMDY1MkREIiBkPSJNMTQ3LjQyMSw2NWMzLjMxMywwLDYtMi42ODcsNi02cy0yLjY4Ny02LTYtNmMtMjMuMzk2LDAtNDIuNDMsMTkuMDM0LTQyLjQzLDQyLjQzczE5LjAzNCw0Mi40Myw0Mi40Myw0Mi40Mw0KCQlzNDIuNDMtMTkuMDM0LDQyLjQzLTQyLjQzYzAtOS4zNDQtMi45NzktMTguMjA4LTguNjE3LTI1LjYzNWMtMi4wMDMtMi42MzktNS43NjctMy4xNTQtOC40MDctMS4xNTENCgkJYy0yLjYzOSwyLjAwMy0zLjE1NSw1Ljc2Ny0xLjE1MSw4LjQwN2M0LjA0LDUuMzIxLDYuMTc1LDExLjY3Nyw2LjE3NSwxOC4zNzljMCwxNi43NzktMTMuNjUxLDMwLjQzLTMwLjQzLDMwLjQzDQoJCXMtMzAuNDMtMTMuNjUxLTMwLjQzLTMwLjQzUzEzMC42NDMsNjUsMTQ3LjQyMSw2NXoiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K"
+
+/***/ }),
+
+/***/ "./src/assets/svg/team.svg":
+/*!*********************************!*\
+  !*** ./src/assets/svg/team.svg ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDUxLjcyLDIzNy4yNmMtMTcuNDIyLTguNzEtNTAuMDg3LTguODExLTUxLjQ2OS04LjgxMWMtNC4xNDIsMC03LjUsMy4zNTgtNy41LDcuNWMwLDQuMTQyLDMuMzU4LDcuNSw3LjUsNy41DQoJCQljOC40MjksMC4wMDEsMzIuOTAyLDEuMjk5LDQ0Ljc2MSw3LjIyOGMxLjA3NywwLjUzOSwyLjIyMSwwLjc5MywzLjM0OCwwLjc5M2MyLjc1MSwwLDUuNC0xLjUyLDYuNzE0LTQuMTQ3DQoJCQlDNDU2LjkyNywyNDMuNjE4LDQ1NS40MjUsMjM5LjExMyw0NTEuNzIsMjM3LjI2eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDg5LjExMiwzNDQuMDQxbC0zMC45NzUtOC44NWMtMS4zMzctMC4zODItMi4yNzEtMS42Mi0yLjI3MS0zLjAxMXYtMTAuMzM5YzIuNTItMS43NDYsNC45MjQtMy43LDcuMTcxLTUuODgxDQoJCQljMTAuODktMTAuNTY4LDE2Ljg4Ny0yNC43NDMsMTYuODg3LTM5LjkxNXYtMTQuMjY3bDIuOTk1LTUuOTg5YzMuMjg3LTYuNTc1LDUuMDI0LTEzLjkzNiw1LjAyNC0yMS4yODZ2LTM4LjY1DQoJCQljMC00LjE0Mi0zLjM1OC03LjUtNy41LTcuNUg0MDguMjdjLTI2LjI0NCwwLTQ3LjU5NiwyMS4zNTItNDcuNTk2LDQ3LjU5NnYwLjQ0N2MwLDYuMTEyLDEuNDQ1LDEyLjIzMyw0LjE3OCwxNy42OTlsMy44NDEsNy42ODINCgkJCXYxMi4yNWMwLDE5LjQxNCw5LjU2NywzNi44MzMsMjQuMDU4LDQ3LjMxNWwwLjAwMiwxMC44MzZjMCwxLjY3MSwwLDIuMzYzLTYuMTkzLDQuMTMzbC0xNS4xMTQsNC4zMThsLTQzLjcyMS0xNS44OTgNCgkJCWMwLjE1Ny0yLjA2My0wLjUzOS00LjE2MS0yLjA0NC01Ljc0MmwtMTMuOTcxLTE0LjY3OHYtMjQuNjRjMS40NzctMS4yMTcsMi45MzMtMi40NjcsNC4zNDQtMy43ODkNCgkJCWMxNy42MjUtMTYuNTIsMjcuNzMzLTM5Ljg0NCwyNy43MzMtNjMuOTkxdi0xOS42NzhjNS4zMjItMTEuNTgxLDguMDE5LTIzLjgzNiw4LjAxOS0zNi40NTd2LTgwLjE5YzAtNC4xNDItMy4zNTgtNy41LTcuNS03LjUNCgkJCUgyMzIuMDM3Yy0zOS41MSwwLTcxLjY1MywzMi4xNDQtNzEuNjUzLDcxLjY1M3YxNi4wMzljMCwxMi42MjEsMi42OTcsMjQuODc2LDguMDE5LDM2LjQ1N3YxNi45MzENCgkJCWMwLDI4LjAzNiwxMi40NjYsNTMuMjk0LDMyLjA3Nyw2OS45NDZ2MjUuMjJsLTEzLjk3MSwxNC42NzhjLTEuNTA1LDEuNTgxLTIuMjAxLDMuNjc5LTIuMDQ0LDUuNzQybC00Ni4xNDUsMTYuNzc5DQoJCQljLTMuMzQ0LDEuMjE2LTYuNDUxLDIuODYzLTkuMjcyLDQuODU4bC03LjI0Ni0zLjYyM2MyMS41Ny05LjM4OSwyOC40MDMtMjIuNTk0LDI4LjczMS0yMy4yNWMxLjA1Ni0yLjExMSwxLjA1Ni00LjU5NywwLTYuNzA4DQoJCQljLTUuNDA3LTEwLjgxNC02LjA2Mi0zMC42MzUtNi41ODgtNDYuNTYxYy0wLjE3NS01LjMwMi0wLjM0MS0xMC4zMTEtMC42NTgtMTQuNzcxYy0yLjU1Ny0zNS45NzQtMjkuOTA1LTYzLjEwMy02My42MTUtNjMuMTAzDQoJCQlzLTYxLjA1OSwyNy4xMjgtNjMuNjE1LDYzLjEwM2MtMC4zMTcsNC40NjEtMC40ODMsOS40Ny0wLjY1OCwxNC43NzNjLTAuNTI2LDE1LjkyNS0xLjE4MiwzNS43NDQtNi41ODgsNDYuNTU4DQoJCQljLTEuMDU2LDIuMTExLTEuMDU2LDQuNTk3LDAsNi43MDhjMC4zMjgsMC42NTYsNy4xNDcsMTMuODM0LDI4Ljc2LDIzLjIzNGwtMjAuMTI3LDEwLjA2M0M2LjY4NCwzNTguMTc2LDAsMzY4Ljk5MSwwLDM4MS4wMg0KCQkJdjU1LjQwOWMwLDQuMTQyLDMuMzU4LDcuNSw3LjUsNy41czcuNS0zLjM1OCw3LjUtNy41VjM4MS4wMmMwLTYuMzEyLDMuNTA3LTExLjk4Nyw5LjE1Mi0xNC44MWwyNS4wNjMtMTIuNTMxbDguNzE4LDguMjg1DQoJCQljNi4wOTYsNS43OTMsMTMuOTE2LDguNjg4LDIxLjczOSw4LjY4OGM3LjgyMSwwLDE1LjY0NS0yLjg5NywyMS43MzktOC42ODhsOC43MTctOC4yODRsOC4xNzIsNC4wODYNCgkJCWMtMy44NDgsNi4xNTctNi4wMzIsMTMuMzc3LTYuMDMyLDIwLjk0djU3LjcyNWMwLDQuMTQyLDMuMzU4LDcuNSw3LjUsNy41YzQuMTQyLDAsNy41LTMuMzU4LDcuNS03LjV2LTU3LjcyNQ0KCQkJYzAtMTAuMjk2LDYuNTAxLTE5LjU3OCwxNi4xNzgtMjMuMDk3bDQ4LjY1Mi0xNy42OTFsMjAuMjUzLDMwLjM4MWMyLjU4OSwzLjg4NCw2LjczOCw2LjM3NSwxMS4zODMsNi44MzUNCgkJCWMwLjUxOCwwLjA1MSwxLjAzMywwLjA3NiwxLjU0NywwLjA3NmM0LjA5OCwwLDguMDIzLTEuNjEzLDEwLjk1Ny00LjU0NmwxMi4zNTYtMTIuMzU2djc4LjEyNGMwLDQuMTQyLDMuMzU4LDcuNSw3LjUsNy41DQoJCQljNC4xNDIsMCw3LjUtMy4zNTgsNy41LTcuNXYtNzguMTI0bDEyLjM1NiwxMi4zNTZjMi45MzMsMi45MzQsNi44NTgsNC41NDcsMTAuOTU3LDQuNTQ3YzAuNTEzLDAsMS4wMjktMC4wMjUsMS41NDYtMC4wNzYNCgkJCWM0LjY0Ni0wLjQ2LDguNzk1LTIuOTUxLDExLjM4NC02LjgzNWwyMC4yNTQtMzAuMzhsNDguNjUxLDE3LjY5MWM5LjY3NiwzLjUxOSwxNi4xNzgsMTIuODAxLDE2LjE3OCwyMy4wOTd2NTcuNzI1DQoJCQljMCw0LjE0MiwzLjM1OCw3LjUsNy41LDcuNWM0LjE0MiwwLDcuNS0zLjM1OCw3LjUtNy41di01Ny43MjVjMC0xMC40MjgtNC4xNDMtMjAuMjA4LTExLjA5My0yNy40NDFsMS44NTMtMC41MjkNCgkJCWMxLjg2OS0wLjUzNCw0LjQxOS0xLjI2NSw2Ljk3OS0yLjUybDE5LjE0OSwxOS4xNDl2NjkuMDY2YzAsNC4xNDIsMy4zNTgsNy41LDcuNSw3LjVjNC4xNDIsMCw3LjUtMy4zNTgsNy41LTcuNXYtNjkuMDY2DQoJCQlsMTkuMDE2LTE5LjAxNmMxLjAxMSwwLjUxNCwyLjA3MywwLjk0OCwzLjE5MSwxLjI2N2wzMC45NzYsOC44NWM3LjA3LDIuMDIsMTIuMDA5LDguNTY3LDEyLjAwOSwxNS45MjF2NjIuMDQ0DQoJCQljMCw0LjE0MiwzLjM1OCw3LjUsNy41LDcuNWM0LjE0MiwwLDcuNS0zLjM1OCw3LjUtNy41di02Mi4wNDRDNTEyLDM2MC4zNzEsNTAyLjU4OCwzNDcuODkyLDQ4OS4xMTIsMzQ0LjA0MXogTTQ4LjExNSwzMzAuNzk0DQoJCQljLTE0LjAyOS01LjA0OC0yMS4wNjYtMTEuNzc4LTI0LjA3LTE1LjQ1M2MyLjA0OC01LjM1NCwzLjM3Ni0xMS40ODYsNC4yNzUtMTcuOTU5YzQuMTM2LDkuOTE3LDExLjA2MywxOC4zODMsMTkuNzk1LDI0LjQyMw0KCQkJVjMzMC43OTR6IE05MS4wOCwzNTEuMDkyYy02LjM5Nyw2LjA3OC0xNi40MTgsNi4wNzctMjIuODEzLTAuMDAxbC02Ljk3NS02LjYyOGMxLjE3Ny0yLjIwNSwxLjgyNC00LjcwNSwxLjgyNC03LjMyNHYtNy45OTQNCgkJCWM1LjIzMiwxLjYzNSwxMC43OTQsMi41MTcsMTYuNTU4LDIuNTE3YzUuNzU3LDAsMTEuMzE2LTAuODg2LDE2LjU1Ny0yLjUxMmwtMC4wMDEsNy45ODhjMCwyLjYyLDAuNjQ2LDUuMTIxLDEuODI0LDcuMzI3DQoJCQlMOTEuMDgsMzUxLjA5MnogTTc5LjY3NiwzMTYuNjYyYy0yMi4zOTYsMC00MC42MTUtMTguMjItNDAuNjE1LTQwLjYxNWMwLTQuMTQyLTMuMzU4LTcuNS03LjUtNy41Yy0wLjQyLDAtMC44MywwLjA0My0xLjIzMSwwLjExDQoJCQljMC4wMjItMC42NDUsMC4wNDMtMS4yOTEsMC4wNjUtMS45M2MwLjE2Ny01LjE1NywwLjMyOC0xMC4wMjgsMC42MjUtMTQuMjA2YzAuOTU4LTEzLjQ3Niw2LjM0My0yNS44OTQsMTUuMTYzLTM0Ljk2OA0KCQkJYzguODk5LTkuMTU2LDIwLjc5My0xNC4xOTgsMzMuNDkxLTE0LjE5OHMyNC41OTEsNS4wNDIsMzMuNDkxLDE0LjE5OGM4LjgyLDkuMDc0LDE0LjIwNSwyMS40OTIsMTUuMTYzLDM0Ljk2OA0KCQkJYzAuMjk2LDQuMTc3LDAuNDU4LDkuMDQ3LDAuNjI4LDE0LjIwM2MwLjAxNSwwLjQ0MywwLjAzLDAuODkyLDAuMDQ1LDEuMzM4Yy04LjE2LTEyLjU3Mi0yMC43NjItMjEuODM3LTM3LjA0NS0yNy4wNjkNCgkJCWMtMTUuMDQzLTQuODMzLTI3Ljk4MS00LjUzNC0yOC41MjctNC41MmMtMS45NjQsMC4wNTUtMy44MjgsMC44NzctNS4xOTEsMi4yOTFsLTEzLjUzMiwxNC4wMzQNCgkJCWMtMi44NzUsMi45ODItMi43ODksNy43MywwLjE5MywxMC42MDVzNy43MywyLjc4OCwxMC42MDUtMC4xOTNsMTEuMjYtMTEuNjc3YzkuNjk3LDAuNDc0LDQwLjg5NCw0LjEwMiw1My4wMjcsMzAuODE5DQoJCQlDMTE2LjczOCwzMDIuMDQsOTkuODE2LDMxNi42NjIsNzkuNjc2LDMxNi42NjJ6IE0xMTEuMjI5LDMzMC44MTlsMC4wMDEtOC45NDVjOC43MjUtNi4wMDcsMTUuNjYyLTE0LjQ1NywxOS44MDEtMjQuNDQ5DQoJCQljMC44OTksNi40NTgsMi4yMjYsMTIuNTc2LDQuMjcsMTcuOTE4QzEzMi4zMTQsMzE4Ljk4MywxMjUuMjQ0LDMyNS43NzMsMTExLjIyOSwzMzAuODE5eiBNMTgzLjQwMywyMDkuMTQ1di0xOC42MDgNCgkJCWMwLTEuMTI5LTAuMjU1LTIuMjQ0LTAuNzQ2LTMuMjYxYy00LjgyNi05Ljk5NC03LjI3My0yMC41OTgtNy4yNzMtMzEuNTE4VjEzOS43MmMwLTMxLjIzOSwyNS40MTUtNTYuNjUzLDU2LjY1My01Ni42NTNoMTA0Ljc2OQ0KCQkJdjcyLjY5MmMwLDEwLjkyLTIuNDQ3LDIxLjUyNC03LjI3MywzMS41MThjLTAuNDkxLDEuMDE3LTAuNzQ2LDIuMTMyLTAuNzQ2LDMuMjYxdjIxLjM1NWMwLDIwLjMxMS04LjE2NSwzOS4xNS0yMi45OTEsNTMuMDQ3DQoJCQljLTEuODUxLDEuNzM0LTMuNzcyLDMuMzYtNS43NTgsNC44NzVjLTAuMDQ0LDAuMDMtMC4wODYsMC4wNjMtMC4xMjksMC4wOTRjLTEzLjg4OSwxMC41NDUtMzAuOTAxLDE1LjY3LTQ4LjY2NywxNC41MTkNCgkJCUMyMTMuMjAxLDI4MS45NjUsMTgzLjQwMywyNDguODk3LDE4My40MDMsMjA5LjE0NXogTTIyNS42MzIsMzYwLjA1NmMtMC4wNTIsMC4wNTItMC4xNzMsMC4xNzUtMC40MTgsMC4xNDkNCgkJCWMtMC4yNDQtMC4wMjQtMC4zNC0wLjE2Ny0wLjM4MS0wLjIyOWwtMjMuMzI1LTM0Ljk4OGw3LjUwNi03Ljg4N2wzNS4zODUsMjQuMTg3TDIyNS42MzIsMzYwLjA1NnogTTI1Ni4wOTUsMzMxLjExMw0KCQkJbC00MC42MTUtMjcuNzYydi0xNGMxMC41MDksNS42ODEsMjIuMjc2LDkuMjM0LDM0Ljc5MSwxMC4wNDRjMS45NzcsMC4xMjgsMy45NDIsMC4xOTEsNS45MDEsMC4xOTENCgkJCWMxNC4zNDEsMCwyOC4xNDMtMy40MjgsNDAuNTM4LTkuOTM1djEzLjdMMjU2LjA5NSwzMzEuMTEzeiBNMjg3LjM1NywzNTkuOTc4Yy0wLjA0MSwwLjA2Mi0wLjEzNywwLjIwNS0wLjM4MSwwLjIyOQ0KCQkJYy0wLjI0NSwwLjAzMS0wLjM2NS0wLjA5OC0wLjQxOC0wLjE0OWwtMTguNzY3LTE4Ljc2N2wzNS4zODUtMjQuMTg4bDcuNTA3LDcuODg3TDI4Ny4zNTcsMzU5Ljk3OHogTTQyNC4zMDgsMzUzLjY1bC0xNy4wMi0xNy4wMTkNCgkJCWMwLjI5Ny0xLjM0OSwwLjQ2NS0yLjgyNiwwLjQ2NC00LjQ1NWwtMC4wMDEtMy4xNjVjNC43MjMsMS41NSw5LjcwMSwyLjQ3LDE0Ljg1MiwyLjYyNGMwLjU3OCwwLjAxOCwxLjE1MSwwLjAyNiwxLjcyNywwLjAyNg0KCQkJYzUuNjkyLDAsMTEuMjQ4LTAuODYsMTYuNTM2LTIuNTAxdjMuMDJjMCwxLjQ5NiwwLjE4OCwyLjk2MiwwLjU0Miw0LjM3MUw0MjQuMzA4LDM1My42NXogTTQ1Mi41OTEsMzA1LjE5Ng0KCQkJYy03Ljk0OSw3LjcxNC0xOC40NSwxMS43ODgtMjkuNTM3LDExLjQ0NmMtMjEuNzA0LTAuNjUxLTM5LjM2MS0xOS43NjgtMzkuMzYxLTQyLjYxM3YtMTQuMDIxYzAtMS4xNjUtMC4yNzEtMi4zMTMtMC43OTItMy4zNTQNCgkJCWwtNC42MzMtOS4yNjZjLTEuNjk3LTMuMzk1LTIuNTk0LTcuMTk1LTIuNTk0LTEwLjk5MXYtMC40NDdjMC0xNy45NzQsMTQuNjIzLTMyLjU5NiwzMi41OTYtMzIuNTk2aDY0LjY3M3YzMS4xNQ0KCQkJYzAsNS4wMzQtMS4xOSwxMC4wNzUtMy40NDEsMTQuNTc4bC0zLjc4Niw3LjU3MmMtMC41MjEsMS4wNDItMC43OTIsMi4xODktMC43OTIsMy4zNTR2MTYuMDM4DQoJCQlDNDY0LjkyNCwyODcuMTI2LDQ2MC41NDQsMjk3LjQ3OCw0NTIuNTkxLDMwNS4xOTZ6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00NzIuNDIzLDM4MC44MTRjLTQuMTQyLDAtNy41LDMuMzU4LTcuNSw3LjV2NDguMTE1YzAsNC4xNDIsMy4zNTgsNy41LDcuNSw3LjVjNC4xNDIsMCw3LjUtMy4zNTgsNy41LTcuNXYtNDguMTE1DQoJCQlDNDc5LjkyMywzODQuMTczLDQ3Ni41NjUsMzgwLjgxNCw0NzIuNDIzLDM4MC44MTR6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zOS41NzcsMzkwLjcyOGMtNC4xNDIsMC03LjUsMy4zNTgtNy41LDcuNXYzOC4yMDFjMCw0LjE0MiwzLjM1OCw3LjUsNy41LDcuNWM0LjE0MiwwLDcuNS0zLjM1OCw3LjUtNy41di0zOC4yMDENCgkJCUM0Ny4wNzcsMzk0LjA4Nyw0My43MTksMzkwLjcyOCwzOS41NzcsMzkwLjcyOHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTMxNy41MzIsMTU4LjQ3NWMtMjguMzY2LTI4LjM2Ni04Ny43MTUtMjIuOTQzLTExMS45MTctMTkuMjk1Yy03LjYyMywxLjE0OS0xMy4xNTUsNy42LTEzLjE1NSwxNS4zMzl2MTcuMjc4DQoJCQljMCw0LjE0MiwzLjM1OCw3LjUsNy41LDcuNWM0LjE0MiwwLDcuNS0zLjM1OCw3LjUtNy41di0xNy4yNzljMC0wLjI1NSwwLjE2OC0wLjQ3MywwLjM5Mi0wLjUwNw0KCQkJYzkuNjY3LTEuNDU3LDI4Ljg1LTMuNzA1LDQ4LjcyNS0yLjM4YzIzLjM4OCwxLjU1Nyw0MC4zMjgsNy40MjgsNTAuMzQ5LDE3LjQ1YzIuOTI5LDIuOTI5LDcuNjc4LDIuOTI5LDEwLjYwNiwwDQoJCQlDMzIwLjQ2MSwxNjYuMTUyLDMyMC40NjEsMTYxLjQwMywzMTcuNTMyLDE1OC40NzV6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0xNjcuODg0LDM5Ni44NTNjLTQuMTQyLDAtNy41LDMuMzU4LTcuNSw3LjV2MzIuMDc3YzAsNC4xNDIsMy4zNTgsNy41LDcuNSw3LjVjNC4xNDIsMCw3LjUtMy4zNTgsNy41LTcuNXYtMzIuMDc3DQoJCQlDMTc1LjM4NCw0MDAuMjEyLDE3Mi4wMjYsMzk2Ljg1MywxNjcuODg0LDM5Ni44NTN6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zNDQuMzA2LDM5Ni44NTNjLTQuMTQyLDAtNy41LDMuMzU4LTcuNSw3LjV2MzIuMDc3YzAsNC4xNDIsMy4zNTgsNy41LDcuNSw3LjVjNC4xNDIsMCw3LjUtMy4zNTgsNy41LTcuNXYtMzIuMDc3DQoJCQlDMzUxLjgwNiw0MDAuMjEyLDM0OC40NDgsMzk2Ljg1MywzNDQuMzA2LDM5Ni44NTN6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="
+
+/***/ }),
+
+/***/ "./src/assets/svg/toilet.svg":
+/*!***********************************!*\
+  !*** ./src/assets/svg/toilet.svg ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjQ4MHB0IiB2aWV3Qm94PSItODggMCA0ODAgNDgwIiB3aWR0aD0iNDgwcHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEwNCAxOTJoMTZjMC03MC41NTg1OTQgNDYuMDg5ODQ0LTcyIDQ4LjA0Njg3NS03MmwtLjA0Njg3NS0xNmMtLjY0MDYyNSAwLTY0IDEuMDA3ODEyLTY0IDg4em0wIDAiLz48cGF0aCBkPSJtMTA0IDIwOGgxNnYxNmgtMTZ6bTAgMCIvPjxwYXRoIGQ9Im0yODAgMGgtMjI0Yy0xMy4yNTM5MDYgMC0yNCAxMC43NDYwOTQtMjQgMjR2NTZoLTMydjY0aDMydjExMmgyNHY4MGMuMDI3MzQ0IDI2LjUgMjEuNSA0Ny45NzI2NTYgNDggNDhoOHY4OGMwIDQuNDE3OTY5IDMuNTgyMDMxIDggOCA4aDk2YzQuNDE3OTY5IDAgOC0zLjU4MjAzMSA4LTh2LTg4aDhjMjYuNS0uMDI3MzQ0IDQ3Ljk3MjY1Ni0yMS41IDQ4LTQ4di04MGgyNHYtMjMyYzAtMTMuMjUzOTA2LTEwLjc0NjA5NC0yNC0yNC0yNHptLTI0OCAxMjhoLTE2di0zMmgxNnptMTc2IDMzNmgtODB2LTgwaDgwem01Ni0xMjhjMCAxNy42NzE4NzUtMTQuMzI4MTI1IDMyLTMyIDMyaC0xMjhjLTE3LjY3MTg3NSAwLTMyLTE0LjMyODEyNS0zMi0zMnYtNDhoMTkyem0wLTY0aC0xOTJ2LTE2aDE5MnptLTE3Ni0zMnYtNzJjMC00NC4xODM1OTQgMzUuODE2NDA2LTgwIDgwLTgwczgwIDM1LjgxNjQwNiA4MCA4MHY3MnptMjAwIDBoLTI0di03MmMwLTUzLjAxOTUzMS00Mi45ODA0NjktOTYtOTYtOTZzLTk2IDQyLjk4MDQ2OS05NiA5NnY3MmgtMjR2LTE3NmgyNDB6bTAtMTkyaC0yNDB2LTI0YzAtNC40MTc5NjkgMy41ODIwMzEtOCA4LThoMjI0YzQuNDE3OTY5IDAgOCAzLjU4MjAzMSA4IDh6bTAgMCIvPjwvc3ZnPg=="
 
 /***/ }),
 
@@ -51882,32 +51937,30 @@ var getOptions = function getOptions() {
 
 var Filter = function Filter(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: props.showSort ? "col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12" : ""
+    className: "input-container col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: props.showSort ? "input-container col-lg-12 col-md-12 col-sm-12 col-xs-12" : ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: props.showSort ? "col-lg-3 col-md-3 col-sm-6 col-xs-12" : ""
+    className: "col-lg-3 col-md-3 col-sm-3 col-xs-3"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "input-label"
-  }, "NO. Of Bedrooms"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+  }, "Beds"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
     onChange: props.updateOption,
     name: "no_bed"
   }, getOptions())), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: props.showSort ? "col-lg-3 col-md-3 col-sm-6 col-xs-12" : ""
+    className: "col-lg-3 col-md-3 col-sm-3 col-xs-3"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "input-label"
-  }, "NO. Of Bathrooms"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+  }, "Baths"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
     onChange: props.updateOption,
     name: "no_bath"
   }, getOptions())), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: props.showSort ? "col-lg-3 col-md-3 col-sm-6 col-xs-12" : ""
+    className: "col-lg-3 col-md-3 col-sm-3 col-xs-3"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "input-label"
-  }, "NO. Of Toilets"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+  }, "Toilets"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
     onChange: props.updateOption,
     name: "no_toilets"
-  }, getOptions())), props.showSort && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: props.showSort ? "col-lg-3 col-md-3 col-sm-6 col-xs-12" : "col-lg-12 col-md-12 col-sm-12 col-xs-12"
+  }, getOptions())), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-lg-3 col-md-3 col-sm-3 col-xs-3"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "input-label"
   }, "Sort"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
@@ -51917,7 +51970,7 @@ var Filter = function Filter(props) {
     value: "high"
   }, "High"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "low"
-  }, "Low")))));
+  }, "Low"))));
 };
 
 var _default = Filter;
@@ -52125,7 +52178,7 @@ function (_React$Component) {
         to: "/"
       }, "Average Costs")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Link"], {
         to: "/"
-      }, "Join Roomie Network")))));
+      }, "Roomie Network")))));
     }
   }, {
     key: "__reactstandin__regenerateByEval",
@@ -52232,6 +52285,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/components/list/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_svg_bath_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/svg/bath.svg */ "./src/assets/svg/bath.svg");
+/* harmony import */ var _assets_svg_bath_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_svg_bath_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_svg_toilet_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/svg/toilet.svg */ "./src/assets/svg/toilet.svg");
+/* harmony import */ var _assets_svg_toilet_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_svg_toilet_svg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_svg_bed_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/svg/bed.svg */ "./src/assets/svg/bed.svg");
+/* harmony import */ var _assets_svg_bed_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_svg_bed_svg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_svg_team_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/svg/team.svg */ "./src/assets/svg/team.svg");
+/* harmony import */ var _assets_svg_team_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_svg_team_svg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _assets_svg_pin_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/svg/pin.svg */ "./src/assets/svg/pin.svg");
+/* harmony import */ var _assets_svg_pin_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_svg_pin_svg__WEBPACK_IMPORTED_MODULE_6__);
 (function () {
   var enterModule = (typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal : __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js")).enterModule;
   enterModule && enterModule(module);
@@ -52240,11 +52303,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
 var List = function List() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "input-container col-lg-12 col-md-12 col-sm-12 col-xs-12"
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "input-container col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "lists"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -52257,31 +52323,56 @@ var List = function List() {
     className: "list-body"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "list-body-title"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "18 Agege Motor Road Lagos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Well lit and spacious 3 Bedroom Apartment in the heart of Old Ikoyi. NGN 8.5m including service charge."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_svg_pin_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
+    className: "pin-icon"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "18 Agege Motor Road Lagos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "list-body-description"
+  }, "Well lit and spacious 3 Bedroom Apartment in the heart of Old Ikoyi. NGN 8.5m including service charge."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "list-body-content"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "list-body-info"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_svg_bed_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
+    className: "info-icon"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "input-label"
-  }, "Bed"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Bed"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "1"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "list-body-info"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_svg_bath_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    className: "info-icon"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "input-label"
-  }, "Bath"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Bath"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "1"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "list-body-info"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_svg_toilet_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
+    className: "info-icon"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "input-label"
-  }, "Toilet"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Toilet"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "1"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "list-body-info"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_svg_team_svg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    className: "info-icon"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "input-label"
-  }, "Roomies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "1")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Roomies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "1"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "list-actions"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "view-property-button"
   }, "View Property"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "connect-roomie-button"
-  }, "Find A Roomie"))))));
+  }, "Match A Roomie")))));
 };
 
 var _default = List;
@@ -52338,7 +52429,7 @@ var _require = __webpack_require__(/*! react-google-maps/lib/components/places/S
 var Map = Object(recompose__WEBPACK_IMPORTED_MODULE_1__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_1__["withProps"])({
   googleMapURL: "https://maps.googleapis.com/maps/api/js?key=".concat("AIzaSyCp3UKASbZkqvCnW3l_RLgM5Ik15JBKpPc", "&v=3.exp&libraries=places"),
   containerElement: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "input-container",
+    className: "input-container hidden-xs",
     style: {
       height: "400px",
       width: '100%',
@@ -52579,7 +52670,7 @@ function (_React$PureComponent) {
         showSort: true,
         sort: this.sort,
         updateOption: this.updateOptions
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_9__["default"], null))));
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_9__["default"], null))));
     }
   }, {
     key: "__reactstandin__regenerateByEval",

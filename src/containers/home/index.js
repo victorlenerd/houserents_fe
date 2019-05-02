@@ -80,6 +80,7 @@ class Home extends React.PureComponent {
                             updateOption={this.updateOptions}
                         />
                         <List />
+                        <List />
                     </div>
                 </section>
             </>
