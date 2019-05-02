@@ -7,22 +7,25 @@ class header extends React.Component {
     render () {
         return (
             <header className="header">
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Find Apartments</Link>
-                        </li>
-                        <li>
-                            <Link to="/">How It Works</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Average Costs</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Roomie Network</Link>
-                        </li>
-                    </ul>
-                </nav>
+                <div className="container">
+                    <div className="logo">Houserents</div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <Link to="/">Find Apartments</Link>
+                            </li>
+                            <li>
+                                <Link to="/">How It Works</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Average Costs</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Roomie Network</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
         );
     }
