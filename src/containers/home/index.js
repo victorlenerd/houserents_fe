@@ -68,22 +68,20 @@ class Home extends React.PureComponent {
 
     render () {
         return (
-            <>
-                <section>
-                    <div className="container">
-                        <Map
-                            onCenterChange={this.centerChange}
-                        />
-                        <Filter
-                            showSort={true}
-                            sort={this.sort}
-                            updateOption={this.updateOptions}
-                        />
-                        <List />
-                        <List />
-                    </div>
-                </section>
-            </>
+            <section>
+                <div className="container">
+                    <Map
+                        onCenterChange={this.centerChange}
+                    />
+                    <Filter
+                        showSort={true}
+                        sort={this.sort}
+                        updateOption={this.updateOptions}
+                    />
+                    <List />
+                    <List />
+                </div>
+            </section>
         );
     }   
 }

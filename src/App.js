@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import Home from './containers/home';
+import Averages from './containers/averages';
 import Footer from './components/footer'
 import Header from './components/header';
 
@@ -16,6 +17,7 @@ class App extends Component {
             <div id="main">
               <Switch>
                 <Route exact path="/" component={Home} />
+                <Route path="/averages" component={Averages} />
               </Switch>
             </div>
             <Footer />
