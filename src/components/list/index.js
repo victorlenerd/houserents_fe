@@ -53,7 +53,6 @@ const List = () => (
                 </div>
                 <div className="list-actions">
                     <a className="view-property-button">View Property</a>
-                    <button className="connect-roomie-button">Match With A Roomie</button>
                 </div>
             </li>
         </ul>

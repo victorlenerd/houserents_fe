@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "8e702668fa05b6b78cd7";
+/******/ 	var hotCurrentHash = "c28405b363e2a6fd7177";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -53511,10 +53511,10 @@ function (_React$Component) {
       }, "Find Apartments")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Link"], {
         to: "/"
       }, "How It Works")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Link"], {
-        to: "/averages"
-      }, "Average Costs")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Link"], {
         to: "/"
-      }, "Roomie Network"))))));
+      }, "Roomie Network")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Link"], {
+        to: "/averages"
+      }, "Average Costs"))))));
     }
   }, {
     key: "__reactstandin__regenerateByEval",
@@ -53706,9 +53706,7 @@ var List = function List() {
     className: "list-actions"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "view-property-button"
-  }, "View Property"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "connect-roomie-button"
-  }, "Match With A Roomie")))));
+  }, "View Property")))));
 };
 
 var _default = List;

@@ -18,10 +18,10 @@ class header extends React.Component {
                                 <Link to="/">How It Works</Link>
                             </li>
                             <li>
-                                <Link to="/averages">Average Costs</Link>
+                                <Link to="/">Roomie Network</Link>
                             </li>
                             <li>
-                                <Link to="/">Roomie Network</Link>
+                                <Link to="/averages">Average Costs</Link>
                             </li>
                         </ul>
                     </nav>
