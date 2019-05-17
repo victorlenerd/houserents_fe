@@ -26,9 +26,7 @@ class Home extends React.PureComponent {
             mode: true,
             sort: 'high',
         }
-    }
 
-    componentDidMount () {    
         this.sort = this.sort.bind(this);
         this.centerChange = this.centerChange.bind(this);
         this.updateOption = this.updateOption.bind(this);

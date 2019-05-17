@@ -5,6 +5,7 @@ import './App.css';
 
 import Home from './containers/home';
 import Averages from './containers/averages';
+import Roomie from './containers/roomie';
 import Footer from './components/footer'
 import Header from './components/header';
 
@@ -17,6 +18,7 @@ class App extends Component {
             <div id="main">
               <Switch>
                 <Route exact path="/" component={Home} />
+                <Route path="/roomie" component={Roomie} />
                 <Route path="/averages" component={Averages} />
               </Switch>
             </div>

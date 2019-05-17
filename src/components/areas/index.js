@@ -25,6 +25,13 @@ class Areas extends React.Component {
             mode: true,
             sort: 'high',
         }
+
+        this.getAreasRange = this.getAreasRange.bind(this);
+        this.getAddressRange = this.getAddressRange.bind(this);
+        this.updateOption = this.updateOption.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.centerChange = this.centerChange.bind(this);
+        this.sort = this.sort.bind(this);
     }
     
     componentDidMount () {    
@@ -36,7 +43,7 @@ class Areas extends React.Component {
         });
     }
     
-    getAreasRange = async () => {
+    async getAreasRange() {
         const { no_bed, no_bath, no_toilets, mode } = this.state;
     
         const { prices } = await Predict({ 
@@ -49,7 +56,7 @@ class Areas extends React.Component {
         });
     }
     
-    getAddressRange = async () => {
+    async getAddressRange() {
         const { tno_bed: no_bed, tno_bath: no_bath, tno_toilets: no_toilets, currentArea: { lat, lng }, mode } = this.state;
     
         const { prices } = await Predict({ 
@@ -62,7 +69,7 @@ class Areas extends React.Component {
         });
     }
     
-    updateOption = (e, topFilter) => {
+    updateOption(e, topFilter) {
         let name = (!topFilter) ? e.target.name : `t${e.target.name}`;
         let value = e.target.value; 
     
@@ -75,7 +82,7 @@ class Areas extends React.Component {
         });
     }
     
-    handleChange = () => {
+    handleChange() {
         this.setState({
             mode: !this.state.mode
         }, () => {
@@ -84,7 +91,7 @@ class Areas extends React.Component {
         });
     }
     
-    centerChange = center => {
+    centerChange(center) {
         this.setState({ 
         currentArea: {
             lat: center.lat(),
@@ -93,7 +100,7 @@ class Areas extends React.Component {
         }, this.getAddressRange);
     }
     
-    sort = (e) => {
+    sort(e) {
         let type = e.target.value;
         let pairAreaPrice = this.state.areas.map((A, i)=> ({ a: A, p: this.state.prices[i]}))
         
@@ -107,7 +114,7 @@ class Areas extends React.Component {
         });
     }
 
-    render () {
+    render() {
         const { areas, prices } = this.state;
 
         return (

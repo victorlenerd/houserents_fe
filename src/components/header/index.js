@@ -15,10 +15,7 @@ class header extends React.Component {
                                 <Link to="/">Find Apartments</Link>
                             </li>
                             <li>
-                                <Link to="/">How It Works</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Roomie Network</Link>
+                                <Link to="/roomie">Roomie Network</Link>
                             </li>
                             <li>
                                 <Link to="/averages">Average Costs</Link>
