@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=\"development\" webpack --watch --progress --colors --config config.dev.js"
+    "dev": "NODE_ENV=\"development\" webpack --watch --progress --colors --config config.dev.js",
+    "build": "NODE_ENV=\"production\" webpack --watch --progress --colors --config config.dev.js",
+    "lint": "eslint --color \"src/**/*.js\"",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "@babel/runtime": "^7.3.1",
+    "axios": "^0.19.0",
     "downshift": "^2.0.10",
     "express": "^4.16.4",
     "jquery": "^3.3.1",
+    "prop-types": "^15.7.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-google-maps": "^9.4.5",
@@ -38,8 +43,10 @@
     "css-loader": "^2.1.0",
     "dotenv": "^6.2.0",
     "eslint": "4.10.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-loader": "1.9.0",
+    "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-flowtype": "^3.4.2",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jsx-a11y": "5.1.1",

@@ -5,7 +5,7 @@
     ],
     "parser": "babel-eslint",
     "parserOptions": {
-      "ecmaVersion": 2017,
+      "ecmaVersion": 7,
       "sourceType": "module",
       "impliedStrict": true,
       "ecmaFeatures": {
@@ -23,7 +23,8 @@
     },
     "plugins": [
       "import",
-      "react"
+      "react",
+      "babel"
     ],
     "rules": {
     }

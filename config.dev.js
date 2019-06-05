@@ -143,6 +143,6 @@ module.exports = [{
     output: {
         path: path.resolve(__dirname, "src/public/dist"),
         filename: "bundle.js",
-        publicPath: 'src/public/dist/'
+        publicPath: '/public/dist/'
     },
 }]

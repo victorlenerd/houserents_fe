@@ -1,10 +1,15 @@
-export default async (data) => {
-    console.log(process.env.API_SERVER);
-    return fetch(`${process.env.API_SERVER}/predict`, {
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        method: 'POST',
-        body: JSON.stringify(data)
-    }).then((res) => res.json())
+import axios from 'axios';
+
+export default async (body) => {
+    try {
+        const { data } = await axios.post(`${process.env.API_SERVER}/predict`, JSON.stringify(body), {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        return data;
+    } catch(err) {
+        console.error(err);
+    }
 }

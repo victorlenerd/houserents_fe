@@ -8,6 +8,9 @@ const reactDOMServer = require('react-dom/server');
 const collect = require('node-style-loader/collect');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 
+import predict from './utils/predict';
+import majorAreasData from './areas';
+
 const app = express();
 const config = require('../config.dev.js');
 const compiler = webpack(config[1]);
@@ -54,14 +57,27 @@ app.use(require("webpack-hot-middleware")(compiler));
 
 app.use('/public', express.static(path.join(__dirname, '/public')));
 
-app.get(/\/|\/averages|\/roomies/, (req, res) => {
+app.get(/\/|\/averages|\/roomies/, async (req, res) => {
     const context = {};
 
+    const multipleAreas = { 
+        locations: majorAreasData().map(({ lat, lng }) => ({ lat, lng })), 
+        specs: { no_bed: 1, no_bath: 1, no_toilets: 1 } 
+    };
+
+    const singleArea = { 
+        locations: [{ lat: 6.5005, lng: 3.3666 }],
+        specs: { no_bed: 1, no_bath: 1, no_toilets: 1 } 
+    };
+
+    const [{ prices: multipleAreasPrice }, { prices: singleAreaPrice }] = await Promise.all([predict(multipleAreas), predict(singleArea)]);
+
+    
     res.send(HTML(reactDOMServer.renderToString(
         <StaticRouter location={req.url} context={context}>
             <App />
         </StaticRouter>
-    ), []))
+    ), { multipleAreasPrice,  singleAreaPrice: singleAreaPrice[0] }))
 });
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));

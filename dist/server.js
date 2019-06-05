@@ -22,7 +22,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "015124eb5c1e626c5971";
+/******/ 	var hotCurrentHash = "f565994bc3cb9a353112";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -867,7 +867,7 @@ module.exports = [{
   output: {
     path: path.resolve(__dirname, "src/public/dist"),
     filename: "bundle.js",
-    publicPath: 'src/public/dist/'
+    publicPath: '/public/dist/'
   }
 }];
 ;
@@ -1662,29 +1662,28 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjQ4MHB0IiB2aWV3Qm94
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "@babel/runtime/helpers/defineProperty");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ "@babel/runtime/regenerator");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "@babel/runtime/helpers/asyncToGenerator");
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "@babel/runtime/helpers/classCallCheck");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "@babel/runtime/helpers/createClass");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "@babel/runtime/helpers/possibleConstructorReturn");
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "@babel/runtime/helpers/getPrototypeOf");
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "@babel/runtime/helpers/assertThisInitialized");
-/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "@babel/runtime/regenerator");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "@babel/runtime/helpers/asyncToGenerator");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "@babel/runtime/helpers/classCallCheck");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "@babel/runtime/helpers/createClass");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "@babel/runtime/helpers/possibleConstructorReturn");
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "@babel/runtime/helpers/getPrototypeOf");
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "@babel/runtime/helpers/assertThisInitialized");
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _areas__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../areas */ "./src/areas.js");
 /* harmony import */ var _utils_predict__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../utils/predict */ "./src/utils/predict.js");
-
 
 
 
@@ -1703,73 +1702,68 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var Areas =
 /*#__PURE__*/
 function (_React$Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_7___default()(Areas, _React$Component);
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6___default()(Areas, _React$Component);
 
   function Areas(props) {
     var _this;
 
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default()(this, Areas);
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Areas);
 
-    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6___default()(Areas).call(this, props));
+    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5___default()(Areas).call(this, props));
     _this.state = {
-      no_bed: 1,
-      no_bath: 1,
-      no_toilets: 1,
-      tno_bed: 1,
-      tno_bath: 1,
-      tno_toilets: 1,
-      currentArea: {
-        lat: 6.5005,
-        lng: 3.3666
-      },
-      prices: [],
-      areaPrice: 0,
-      mode: true,
-      sort: 'high'
+      areas: [],
+      prices: []
     };
-    _this.getAreasRange = _this.getAreasRange.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default()(_this)));
-    _this.getAddressRange = _this.getAddressRange.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default()(_this)));
-    _this.updateOption = _this.updateOption.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default()(_this)));
-    _this.handleChange = _this.handleChange.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default()(_this)));
-    _this.centerChange = _this.centerChange.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default()(_this)));
-    _this.sort = _this.sort.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8___default()(_this)));
+    _this.getAreasRange = _this.getAreasRange.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7___default()(_this)));
+    _this.sort = _this.sort.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7___default()(_this)));
     return _this;
   }
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default()(Areas, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Areas, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
       this.setState({
-        areas: Object(_areas__WEBPACK_IMPORTED_MODULE_10__["default"])()
-      }, function () {
-        _this2.getAddressRange();
-
-        _this2.getAreasRange();
+        areas: Object(_areas__WEBPACK_IMPORTED_MODULE_10__["default"])(),
+        prices: window.__DATA__.multipleAreasPrice
       });
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      if (this.props.sort !== prevProps.sort) {
+        this.sort(this.props.sort);
+      }
+
+      if (this.props.no_bath !== prevProps.no_bath || this.props.no_bed !== prevProps.no_bed || this.props.no_toilets !== prevProps.no_toilets) {
+        this.getAreasRange({
+          no_bed: this.props.no_bed,
+          no_bath: this.props.no_bath,
+          no_toilets: this.props.no_toilets
+        });
+      }
     }
   }, {
     key: "getAreasRange",
     value: function () {
-      var _getAreasRange = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()(
+      var _getAreasRange = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(
       /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
-        var _this$state, no_bed, no_bath, no_toilets, mode, _ref, prices;
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref) {
+        var no_bed, no_bath, no_toilets, _ref2, prices;
 
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                _this$state = this.state, no_bed = _this$state.no_bed, no_bath = _this$state.no_bath, no_toilets = _this$state.no_toilets, mode = _this$state.mode;
+                no_bed = _ref.no_bed, no_bath = _ref.no_bath, no_toilets = _ref.no_toilets;
                 _context.next = 3;
                 return Object(_utils_predict__WEBPACK_IMPORTED_MODULE_11__["default"])({
-                  locations: this.state.areas.map(function (_ref2) {
-                    var lat = _ref2.lat,
-                        lng = _ref2.lng;
+                  locations: this.state.areas.map(function (_ref3) {
+                    var lat = _ref3.lat,
+                        lng = _ref3.lng;
                     return {
                       lat: lat,
                       lng: lng
@@ -1780,11 +1774,11 @@ function (_React$Component) {
                     no_bath: no_bath,
                     no_toilets: no_toilets
                   }
-                }, mode);
+                });
 
               case 3:
-                _ref = _context.sent;
-                prices = _ref.prices;
+                _ref2 = _context.sent;
+                prices = _ref2.prices;
                 this.setState({
                   prices: prices.map(function (P) {
                     return Math.round(P);
@@ -1799,103 +1793,21 @@ function (_React$Component) {
         }, _callee, this);
       }));
 
-      function getAreasRange() {
+      function getAreasRange(_x) {
         return _getAreasRange.apply(this, arguments);
       }
 
       return getAreasRange;
     }()
   }, {
-    key: "getAddressRange",
-    value: function () {
-      var _getAddressRange = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee2() {
-        var _this$state2, no_bed, no_bath, no_toilets, _this$state2$currentA, lat, lng, mode, _ref3, prices;
-
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                _this$state2 = this.state, no_bed = _this$state2.tno_bed, no_bath = _this$state2.tno_bath, no_toilets = _this$state2.tno_toilets, _this$state2$currentA = _this$state2.currentArea, lat = _this$state2$currentA.lat, lng = _this$state2$currentA.lng, mode = _this$state2.mode;
-                _context2.next = 3;
-                return Object(_utils_predict__WEBPACK_IMPORTED_MODULE_11__["default"])({
-                  locations: [{
-                    lat: lat,
-                    lng: lng
-                  }],
-                  specs: {
-                    no_bed: no_bed,
-                    no_bath: no_bath,
-                    no_toilets: no_toilets
-                  }
-                }, mode);
-
-              case 3:
-                _ref3 = _context2.sent;
-                prices = _ref3.prices;
-                this.setState({
-                  areaPrice: Math.round(prices[0])
-                });
-
-              case 6:
-              case "end":
-                return _context2.stop();
-            }
-          }
-        }, _callee2, this);
-      }));
-
-      function getAddressRange() {
-        return _getAddressRange.apply(this, arguments);
-      }
-
-      return getAddressRange;
-    }()
-  }, {
-    key: "updateOption",
-    value: function updateOption(e, topFilter) {
-      var _this3 = this;
-
-      var name = !topFilter ? e.target.name : "t".concat(e.target.name);
-      var value = e.target.value;
-      this.setState(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, name, value), function () {
-        setTimeout(!topFilter ? _this3.getAreasRange : _this3.getAddressRange, 500);
-      });
-    }
-  }, {
-    key: "handleChange",
-    value: function handleChange() {
-      var _this4 = this;
-
-      this.setState({
-        mode: !this.state.mode
-      }, function () {
-        _this4.getAddressRange();
-
-        _this4.getAreasRange();
-      });
-    }
-  }, {
-    key: "centerChange",
-    value: function centerChange(center) {
-      this.setState({
-        currentArea: {
-          lat: center.lat(),
-          lng: center.lng()
-        }
-      }, this.getAddressRange);
-    }
-  }, {
     key: "sort",
-    value: function sort(e) {
-      var _this5 = this;
+    value: function sort(type) {
+      var _this2 = this;
 
-      var type = e.target.value;
       var pairAreaPrice = this.state.areas.map(function (A, i) {
         return {
           a: A,
-          p: _this5.state.prices[i]
+          p: _this2.state.prices[i]
         };
       });
       var sortedPairs = type !== 'high' ? pairAreaPrice.sort(function (a, b) {
@@ -1915,22 +1827,22 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this$state3 = this.state,
-          areas = _this$state3.areas,
-          prices = _this$state3.prices;
-      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+      var _this$state = this.state,
+          areas = _this$state.areas,
+          prices = _this$state.prices;
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "input-container col-lg-6 col-md-6 col-sm-6 col-xs-12"
-      }, prices.length > 1 && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", {
+      }, prices.length > 1 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         className: "areas-list",
         type: "none"
       }, areas.map(function (a, i) {
         var parsedPrice = parseFloat(prices[i]);
         if (parsedPrice < 1) return null;
-        return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
           key: i
-        }, a.name, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        }, a.name, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "price"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, "\u20A6", parsedPrice.toLocaleString('en'))));
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", null, "\u20A6", parsedPrice.toLocaleString('en'))));
       })));
     }
   }, {
@@ -1943,8 +1855,14 @@ function (_React$Component) {
   }]);
 
   return Areas;
-}(react__WEBPACK_IMPORTED_MODULE_9___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
+Areas.propTypes = {
+  no_bed: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.number,
+  no_bath: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.number,
+  no_toilets: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.number,
+  sort: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.string
+};
 var _default = Areas;
 /* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
@@ -1979,8 +1897,32 @@ var _default = Areas;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "@babel/runtime/helpers/defineProperty");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "@babel/runtime/helpers/classCallCheck");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "@babel/runtime/helpers/createClass");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "@babel/runtime/helpers/possibleConstructorReturn");
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "@babel/runtime/helpers/getPrototypeOf");
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "@babel/runtime/helpers/assertThisInitialized");
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+
+
+
+
 (function () {
   var enterModule = (typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal : __webpack_require__(/*! react-hot-loader */ "react-hot-loader")).enterModule;
   enterModule && enterModule(module);
@@ -1988,53 +1930,104 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var getOptions = function getOptions() {
   return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(function (o, i) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+    return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("option", {
       key: i,
       value: o
     }, o);
   });
 };
 
-var Filter = function Filter(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "input-container col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-md-3 col-sm-3 col-xs-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "input-label"
-  }, "Beds"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-    onChange: props.updateOption,
-    name: "no_bed"
-  }, getOptions())), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-md-3 col-sm-3 col-xs-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "input-label"
-  }, "Baths"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-    onChange: props.updateOption,
-    name: "no_bath"
-  }, getOptions())), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-md-3 col-sm-3 col-xs-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "input-label"
-  }, "Toilets"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-    onChange: props.updateOption,
-    name: "no_toilets"
-  }, getOptions())), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-md-3 col-sm-3 col-xs-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "input-label"
-  }, "Sort"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-    name: "sort",
-    onChange: props.sort
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-    value: "high"
-  }, "High"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-    value: "low"
-  }, "Low"))));
-};
+var Filter =
+/*#__PURE__*/
+function (_React$PureComponent) {
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5___default()(Filter, _React$PureComponent);
 
+  function Filter(props) {
+    var _this;
+
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1___default()(this, Filter);
+
+    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4___default()(Filter).call(this, props));
+
+    _this.Filter = function () {
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "input-container col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "col-lg-3 col-md-3 col-sm-3 col-xs-3"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "input-label"
+      }, "Beds"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("select", {
+        onChange: _this.updateOption,
+        name: "no_bed"
+      }, getOptions())), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "col-lg-3 col-md-3 col-sm-3 col-xs-3"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "input-label"
+      }, "Baths"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("select", {
+        onChange: _this.updateOption,
+        name: "no_bath"
+      }, getOptions())), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "col-lg-3 col-md-3 col-sm-3 col-xs-3"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "input-label"
+      }, "Toilets"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("select", {
+        onChange: _this.updateOption,
+        name: "no_toilets"
+      }, getOptions())), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "col-lg-3 col-md-3 col-sm-3 col-xs-3"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "input-label"
+      }, "Sort"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("select", {
+        name: "sort",
+        onChange: _this.updateOption
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("option", {
+        value: "high"
+      }, "High"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("option", {
+        value: "low"
+      }, "Low"))));
+    };
+
+    _this.state = {
+      no_bed: 1,
+      no_bath: 1,
+      no_toilets: 1,
+      sort: 'high'
+    };
+    _this.updateOption = _this.updateOption.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6___default()(_this)));
+    return _this;
+  }
+
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_2___default()(Filter, [{
+    key: "updateOption",
+    value: function updateOption(e) {
+      var name = e.target.name;
+      var value = e.target.value;
+      this.setState(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, name, name === 'sort' ? value : Number(value)));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (typeof this.props.children !== 'function') return null;
+      return this.props.children(this.state, this.Filter);
+    }
+  }, {
+    key: "__reactstandin__regenerateByEval",
+    // @ts-ignore
+    value: function __reactstandin__regenerateByEval(key, code) {
+      // @ts-ignore
+      this[key] = eval(code);
+    }
+  }]);
+
+  return Filter;
+}(react__WEBPACK_IMPORTED_MODULE_7___default.a.PureComponent);
+
+Filter.propTypes = {
+  children: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.func
+};
 var _default = Filter;
 /* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
@@ -2464,14 +2457,18 @@ var Map = Object(recompose__WEBPACK_IMPORTED_MODULE_1__["compose"])(Object(recom
       onSearchBoxMounted: function onSearchBoxMounted(ref) {
         refs.searchBox = ref;
       },
+      textInput: function textInput(ref) {
+        refs.textInput = ref;
+      },
       onPlacesChanged: function onPlacesChanged() {
         var places = refs.searchBox.getPlaces();
+        console.log(refs.textInput.value);
 
         if (places.length > 0) {
           var place = places[0].geometry.location;
           refs.map.panTo(place);
 
-          _this.props.onCenterChange(place);
+          _this.props.onCenterChange(place, refs.textInput.value);
 
           _this.setState({
             center: place
@@ -2491,8 +2488,10 @@ var Map = Object(recompose__WEBPACK_IMPORTED_MODULE_1__["compose"])(Object(recom
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SearchBox, {
     ref: props.onSearchBoxMounted,
     controlPosition: window.google.maps.ControlPosition.TOP_CENTER,
-    onPlacesChanged: props.onPlacesChanged
+    onPlacesChanged: props.onPlacesChanged,
+    defaultBounds: new window.google.maps.LatLngBounds(new window.google.maps.LatLng(6.6080, 3.6218))
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    ref: props.textInput,
     type: "text",
     placeholder: "Find apartments nearest to places like work.",
     style: {
@@ -2548,27 +2547,30 @@ var _default = Map;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "@babel/runtime/helpers/defineProperty");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ "@babel/runtime/regenerator");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "@babel/runtime/helpers/asyncToGenerator");
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "@babel/runtime/helpers/classCallCheck");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "@babel/runtime/helpers/createClass");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "@babel/runtime/helpers/possibleConstructorReturn");
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "@babel/runtime/helpers/getPrototypeOf");
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_7__);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "@babel/runtime/regenerator");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "@babel/runtime/helpers/asyncToGenerator");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "@babel/runtime/helpers/classCallCheck");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "@babel/runtime/helpers/createClass");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "@babel/runtime/helpers/possibleConstructorReturn");
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "@babel/runtime/helpers/getPrototypeOf");
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "@babel/runtime/helpers/assertThisInitialized");
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../map */ "./src/components/map/index.js");
-/* harmony import */ var _areas__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../areas */ "./src/areas.js");
-/* harmony import */ var _utils_predict__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../utils/predict */ "./src/utils/predict.js");
+/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-hot-loader */ "react-hot-loader");
+/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../map */ "./src/components/map/index.js");
+/* harmony import */ var _utils_predict__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../utils/predict */ "./src/utils/predict.js");
 
 
 
@@ -2588,203 +2590,137 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var Search =
 /*#__PURE__*/
 function (_React$Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_7___default()(Search, _React$Component);
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6___default()(Search, _React$Component);
 
   function Search(props) {
     var _this;
 
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default()(this, Search);
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Search);
 
-    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6___default()(Search).call(this, props));
-    _this.getAreasRange =
-    /*#__PURE__*/
-    _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()(
-    /*#__PURE__*/
-    _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
-      var _this$state, no_bed, no_bath, no_toilets, mode, _ref2, prices;
-
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _this$state = _this.state, no_bed = _this$state.no_bed, no_bath = _this$state.no_bath, no_toilets = _this$state.no_toilets, mode = _this$state.mode;
-              _context.next = 3;
-              return Object(_utils_predict__WEBPACK_IMPORTED_MODULE_11__["default"])({
-                locations: _this.state.areas.map(function (_ref3) {
-                  var lat = _ref3.lat,
-                      lng = _ref3.lng;
-                  return {
-                    lat: lat,
-                    lng: lng
-                  };
-                }),
-                specs: {
-                  no_bed: no_bed,
-                  no_bath: no_bath,
-                  no_toilets: no_toilets
-                }
-              }, mode);
-
-            case 3:
-              _ref2 = _context.sent;
-              prices = _ref2.prices;
-
-              _this.setState({
-                prices: prices.map(function (P) {
-                  return Math.round(P);
-                })
-              });
-
-            case 6:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, _callee, this);
-    }));
-    _this.getAddressRange =
-    /*#__PURE__*/
-    _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()(
-    /*#__PURE__*/
-    _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee2() {
-      var _this$state2, no_bed, no_bath, no_toilets, _this$state2$currentA, lat, lng, mode, _ref5, prices;
-
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee2$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              _this$state2 = _this.state, no_bed = _this$state2.tno_bed, no_bath = _this$state2.tno_bath, no_toilets = _this$state2.tno_toilets, _this$state2$currentA = _this$state2.currentArea, lat = _this$state2$currentA.lat, lng = _this$state2$currentA.lng, mode = _this$state2.mode;
-              _context2.next = 3;
-              return Object(_utils_predict__WEBPACK_IMPORTED_MODULE_11__["default"])({
-                locations: [{
-                  lat: lat,
-                  lng: lng
-                }],
-                specs: {
-                  no_bed: no_bed,
-                  no_bath: no_bath,
-                  no_toilets: no_toilets
-                }
-              }, mode);
-
-            case 3:
-              _ref5 = _context2.sent;
-              prices = _ref5.prices;
-
-              _this.setState({
-                areaPrice: Math.round(prices[0])
-              });
-
-            case 6:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      }, _callee2, this);
-    }));
-
-    _this.updateOption = function (e, topFilter) {
-      var name = !topFilter ? e.target.name : "t".concat(e.target.name);
-      var value = e.target.value;
-
-      _this.setState(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, name, value), function () {
-        setTimeout(!topFilter ? _this.getAreasRange : _this.getAddressRange, 500);
-      });
-    };
-
-    _this.handleChange = function () {
-      _this.setState({
-        mode: !_this.state.mode
-      }, function () {
-        _this.getAddressRange();
-
-        _this.getAreasRange();
-      });
-    };
-
-    _this.centerChange = function (center) {
-      _this.setState({
-        currentArea: {
-          lat: center.lat(),
-          lng: center.lng()
-        }
-      }, _this.getAddressRange);
-    };
-
-    _this.sort = function (e) {
-      var type = e.target.value;
-
-      var pairAreaPrice = _this.state.areas.map(function (A, i) {
-        return {
-          a: A,
-          p: _this.state.prices[i]
-        };
-      });
-
-      var sortedPairs = type !== 'high' ? pairAreaPrice.sort(function (a, b) {
-        return a.p - b.p;
-      }) : pairAreaPrice.sort(function (a, b) {
-        return b.p - a.p;
-      });
-
-      _this.setState({
-        prices: sortedPairs.map(function (sp) {
-          return sp.p;
-        }),
-        areas: sortedPairs.map(function (sp) {
-          return sp.a;
-        })
-      });
-    };
-
+    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5___default()(Search).call(this, props));
     _this.state = {
-      no_bed: 1,
-      no_bath: 1,
-      no_toilets: 1,
-      tno_bed: 1,
-      tno_bath: 1,
-      tno_toilets: 1,
       currentArea: {
         lat: 6.5005,
         lng: 3.3666
       },
-      prices: [],
-      areaPrice: 0,
-      mode: true,
-      sort: 'high'
+      searchText: 'Yaba, Lagos, Nigeria',
+      areaPrice: 0
     };
+    _this.getAddressRange = _this.getAddressRange.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7___default()(_this)));
+    _this.centerChange = _this.centerChange.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7___default()(_this)));
     return _this;
   }
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default()(Search, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Search, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
       this.setState({
-        areas: Object(_areas__WEBPACK_IMPORTED_MODULE_10__["default"])()
-      }, function () {
-        _this2.getAddressRange();
-
-        _this2.getAreasRange();
+        areaPrice: window.__DATA__.singleAreaPrice
       });
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      if (this.props.no_bath !== prevProps.no_bath || this.props.no_bed !== prevProps.no_bed || this.props.no_toilets !== prevProps.no_toilets) {
+        this.getAddressRange(this.props.no_bed, this.props.no_bath, this.props.no_toilets);
+      }
+    }
+  }, {
+    key: "getAddressRange",
+    value: function () {
+      var _getAddressRange = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var no_bed,
+            no_bath,
+            no_toilets,
+            _this$state$currentAr,
+            lat,
+            lng,
+            _ref,
+            prices,
+            _args = arguments;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                no_bed = _args.length > 0 && _args[0] !== undefined ? _args[0] : 1;
+                no_bath = _args.length > 1 && _args[1] !== undefined ? _args[1] : 1;
+                no_toilets = _args.length > 2 && _args[2] !== undefined ? _args[2] : 1;
+                _this$state$currentAr = this.state.currentArea, lat = _this$state$currentAr.lat, lng = _this$state$currentAr.lng;
+                _context.next = 6;
+                return Object(_utils_predict__WEBPACK_IMPORTED_MODULE_12__["default"])({
+                  locations: [{
+                    lat: lat,
+                    lng: lng
+                  }],
+                  specs: {
+                    no_bed: no_bed,
+                    no_bath: no_bath,
+                    no_toilets: no_toilets
+                  }
+                });
+
+              case 6:
+                _ref = _context.sent;
+                prices = _ref.prices;
+                this.setState({
+                  areaPrice: Math.round(prices[0])
+                });
+
+              case 9:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function getAddressRange() {
+        return _getAddressRange.apply(this, arguments);
+      }
+
+      return getAddressRange;
+    }()
+  }, {
+    key: "centerChange",
+    value: function centerChange(center, searchText) {
+      this.setState({
+        currentArea: {
+          lat: center.lat(),
+          lng: center.lng()
+        },
+        searchText: searchText
+      }, this.getAddressRange);
     }
   }, {
     key: "render",
     value: function render() {
-      var areaPrice = this.state.areaPrice;
+      var _this$state = this.state,
+          areaPrice = _this$state.areaPrice,
+          searchText = _this$state.searchText;
+      var _this$props = this.props,
+          no_bed = _this$props.no_bed,
+          no_bath = _this$props.no_bath,
+          no_toilets = _this$props.no_toilets;
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-lg-6 col-md-6 col-sm-6 hidden-xs"
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_map__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_map__WEBPACK_IMPORTED_MODULE_11__["default"], {
         onCenterChange: this.centerChange
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-lg-12 col-md-12 col-sm-12 col-xs-12 input-container"
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "price-top"
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", null, "Total Cost:"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", null, "\u20A6", parseFloat(areaPrice).toLocaleString('en')))));
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          color: '#000'
+        }
+      }, no_bed, " ", no_bed > 1 ? ' bed rooms' : ' bed room', ",", no_bath, " ", no_bath > 1 ? ' bath rooms' : ' bath room', ",", no_toilets, " ", no_toilets > 1 ? ' toilets' : ' toilet ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", null), "within ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("em", null, searchText)), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", null, "\u20A6", parseFloat(areaPrice).toLocaleString('en')))));
     }
   }, {
     key: "__reactstandin__regenerateByEval",
@@ -2798,7 +2734,14 @@ function (_React$Component) {
   return Search;
 }(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
-var _default = Search;
+Search.propTypes = {
+  no_bed: prop_types__WEBPACK_IMPORTED_MODULE_10___default.a.number,
+  no_bath: prop_types__WEBPACK_IMPORTED_MODULE_10___default.a.number,
+  no_toilets: prop_types__WEBPACK_IMPORTED_MODULE_10___default.a.number
+};
+
+var _default = Object(react_hot_loader__WEBPACK_IMPORTED_MODULE_9__["hot"])(module)(Search);
+
 /* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
 
@@ -2832,11 +2775,27 @@ var _default = Search;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_filter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/filter */ "./src/components/filter/index.js");
-/* harmony import */ var _components_search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/search */ "./src/components/search/index.js");
-/* harmony import */ var _components_areas__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/areas */ "./src/components/areas/index.js");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "@babel/runtime/helpers/classCallCheck");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "@babel/runtime/helpers/createClass");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "@babel/runtime/helpers/possibleConstructorReturn");
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "@babel/runtime/helpers/getPrototypeOf");
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/filter */ "./src/components/filter/index.js");
+/* harmony import */ var _components_search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/search */ "./src/components/search/index.js");
+/* harmony import */ var _components_areas__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/areas */ "./src/components/areas/index.js");
+
+
+
+
+
+
 (function () {
   var enterModule = (typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal : __webpack_require__(/*! react-hot-loader */ "react-hot-loader")).enterModule;
   enterModule && enterModule(module);
@@ -2847,11 +2806,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Averages = function Averages() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_filter__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_areas__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_search__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
-};
+var Averages =
+/*#__PURE__*/
+function (_React$PureComponent) {
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(Averages, _React$PureComponent);
+
+  function Averages() {
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, Averages);
+
+    return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(Averages).apply(this, arguments));
+  }
+
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Averages, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_filter__WEBPACK_IMPORTED_MODULE_6__["default"], null, function (data, FilterFields) {
+        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(FilterFields, null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_areas__WEBPACK_IMPORTED_MODULE_8__["default"], data), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_search__WEBPACK_IMPORTED_MODULE_7__["default"], data));
+      })));
+    }
+  }, {
+    key: "__reactstandin__regenerateByEval",
+    // @ts-ignore
+    value: function __reactstandin__regenerateByEval(key, code) {
+      // @ts-ignore
+      this[key] = eval(code);
+    }
+  }]);
+
+  return Averages;
+}(react__WEBPACK_IMPORTED_MODULE_5___default.a.PureComponent);
 
 var _default = Averages;
 /* harmony default export */ __webpack_exports__["default"] = (_default);
@@ -3145,10 +3130,24 @@ var _default = Roomie;
 /*!************************!*\
   !*** ./src/server.jsx ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, __dirname) {(function () {
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(module, __dirname) {/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "@babel/runtime/regenerator");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "@babel/runtime/helpers/slicedToArray");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "@babel/runtime/helpers/asyncToGenerator");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _utils_predict__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/predict */ "./src/utils/predict.js");
+/* harmony import */ var _areas__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./areas */ "./src/areas.js");
+
+
+
+
+(function () {
   var enterModule = (typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal : __webpack_require__(/*! react-hot-loader */ "react-hot-loader")).enterModule;
   enterModule && enterModule(module);
 })();
@@ -3171,6 +3170,8 @@ var collect = __webpack_require__(/*! node-style-loader/collect */ "node-style-l
 
 var webpackDevMiddleware = __webpack_require__(/*! webpack-dev-middleware */ "webpack-dev-middleware");
 
+
+
 var app = express();
 
 var config = __webpack_require__(/*! ../config.dev.js */ "./config.dev.js");
@@ -3192,13 +3193,73 @@ app.use(webpackDevMiddleware(compiler, {
 }));
 app.use(__webpack_require__(/*! webpack-hot-middleware */ "webpack-hot-middleware")(compiler));
 app.use('/public', express.static(path.join(__dirname, '/public')));
-app.get(/\/|\/averages|\/roomies/, function (req, res) {
-  var context = {};
-  res.send(HTML(reactDOMServer.renderToString(React.createElement(StaticRouter, {
-    location: req.url,
-    context: context
-  }, React.createElement(App, null))), []));
-});
+app.get(/\/|\/averages|\/roomies/,
+/*#__PURE__*/
+function () {
+  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()(
+  /*#__PURE__*/
+  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(req, res) {
+    var context, multipleAreas, singleArea, _ref3, _ref4, multipleAreasPrice, singleAreaPrice;
+
+    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            context = {};
+            multipleAreas = {
+              locations: Object(_areas__WEBPACK_IMPORTED_MODULE_4__["default"])().map(function (_ref2) {
+                var lat = _ref2.lat,
+                    lng = _ref2.lng;
+                return {
+                  lat: lat,
+                  lng: lng
+                };
+              }),
+              specs: {
+                no_bed: 1,
+                no_bath: 1,
+                no_toilets: 1
+              }
+            };
+            singleArea = {
+              locations: [{
+                lat: 6.5005,
+                lng: 3.3666
+              }],
+              specs: {
+                no_bed: 1,
+                no_bath: 1,
+                no_toilets: 1
+              }
+            };
+            _context.next = 5;
+            return Promise.all([Object(_utils_predict__WEBPACK_IMPORTED_MODULE_3__["default"])(multipleAreas), Object(_utils_predict__WEBPACK_IMPORTED_MODULE_3__["default"])(singleArea)]);
+
+          case 5:
+            _ref3 = _context.sent;
+            _ref4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_ref3, 2);
+            multipleAreasPrice = _ref4[0].prices;
+            singleAreaPrice = _ref4[1].prices;
+            res.send(HTML(reactDOMServer.renderToString(React.createElement(StaticRouter, {
+              location: req.url,
+              context: context
+            }, React.createElement(App, null))), {
+              multipleAreasPrice: multipleAreasPrice,
+              singleAreaPrice: singleAreaPrice[0]
+            }));
+
+          case 10:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee, this);
+  }));
+
+  return function (_x, _x2) {
+    return _ref.apply(this, arguments);
+  };
+}());
 app.listen(PORT, function () {
   return console.log("App listening on port ".concat(PORT));
 });
@@ -3226,7 +3287,7 @@ app.listen(PORT, function () {
   var leaveModule = (typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal : __webpack_require__(/*! react-hot-loader */ "react-hot-loader")).leaveModule;
   leaveModule && leaveModule(module);
 })();
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module), "src"))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module), "src"))
 
 /***/ }),
 
@@ -3243,6 +3304,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "@babel/runtime/helpers/asyncToGenerator");
 /* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
@@ -3251,33 +3314,44 @@ __webpack_require__.r(__webpack_exports__);
   enterModule && enterModule(module);
 })();
 
+
+
 var _default =
 /*#__PURE__*/
 function () {
   var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(
   /*#__PURE__*/
-  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(data) {
+  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(body) {
+    var _ref2, data;
+
     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            console.log("http://localhost:5000");
-            return _context.abrupt("return", fetch("".concat("http://localhost:5000", "/predict"), {
+            _context.prev = 0;
+            _context.next = 3;
+            return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat("http://localhost:5000", "/predict"), JSON.stringify(body), {
               headers: {
                 'Content-Type': 'application/json'
-              },
-              method: 'POST',
-              body: JSON.stringify(data)
-            }).then(function (res) {
-              return res.json();
-            }));
+              }
+            });
 
-          case 2:
+          case 3:
+            _ref2 = _context.sent;
+            data = _ref2.data;
+            return _context.abrupt("return", data);
+
+          case 8:
+            _context.prev = 8;
+            _context.t0 = _context["catch"](0);
+            console.error(_context.t0);
+
+          case 11:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, this);
+    }, _callee, this, [[0, 8]]);
   }));
 
   return function _default(_x) {
@@ -3408,6 +3482,17 @@ module.exports = require("@babel/runtime/helpers/possibleConstructorReturn");
 
 /***/ }),
 
+/***/ "@babel/runtime/helpers/slicedToArray":
+/*!*******************************************************!*\
+  !*** external "@babel/runtime/helpers/slicedToArray" ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/slicedToArray");
+
+/***/ }),
+
 /***/ "@babel/runtime/regenerator":
 /*!*********************************************!*\
   !*** external "@babel/runtime/regenerator" ***!
@@ -3416,6 +3501,17 @@ module.exports = require("@babel/runtime/helpers/possibleConstructorReturn");
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/regenerator");
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
 
 /***/ }),
 
@@ -3471,6 +3567,17 @@ module.exports = require("node-style-loader/collect");
 /***/ (function(module, exports) {
 
 module.exports = require("path");
+
+/***/ }),
+
+/***/ "prop-types":
+/*!*****************************!*\
+  !*** external "prop-types" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types");
 
 /***/ }),
 

@@ -26,13 +26,16 @@ const Map = compose(
             onSearchBoxMounted: ref => {
               refs.searchBox = ref;
             },
+            textInput: ref => {
+              refs.textInput = ref;
+            },
             onPlacesChanged: () => {
                 const places = refs.searchBox.getPlaces();
-
+                console.log(refs.textInput.value);
                 if (places.length > 0) {
                     const place = places[0].geometry.location;
                     refs.map.panTo(place);
-                    this.props.onCenterChange(place);
+                    this.props.onCenterChange(place, refs.textInput.value);
                     this.setState({
                       center: place
                     });
@@ -55,8 +58,10 @@ const Map = compose(
             ref={props.onSearchBoxMounted}
             controlPosition={window.google.maps.ControlPosition.TOP_CENTER}
             onPlacesChanged={props.onPlacesChanged}
+            defaultBounds={new window.google.maps.LatLngBounds(new window.google.maps.LatLng(6.6080, 3.6218))}
         >
         <input
+          ref={props.textInput}
           type="text"
           placeholder="Find apartments nearest to places like work."
           style={{

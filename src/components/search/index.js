@@ -1,7 +1,7 @@
 import React from 'react';
+import { hot } from "react-hot-loader";
+import PropTypes from 'prop-types';
 import Map from '../map';
-
-import majorAreasData from '../../areas';
 
 import Predict from '../../utils/predict';
 
@@ -10,115 +10,72 @@ class Search extends React.Component {
         super(props);
         
         this.state = {
-            no_bed: 1,
-            no_bath: 1,
-            no_toilets: 1,
-    
-            tno_bed: 1,
-            tno_bath: 1,
-            tno_toilets: 1,
-    
             currentArea: {
                 lat: 6.5005,
                 lng: 3.3666
             },
-            prices: [],
+            searchText: 'Yaba, Lagos, Nigeria',
             areaPrice: 0,
-            mode: true,
-            sort: 'high',
+        }
+    
+        this.getAddressRange = this.getAddressRange.bind(this);
+        this.centerChange = this.centerChange.bind(this);
+    }
+
+    componentDidMount () {    
+        this.setState({
+            areaPrice: window.__DATA__.singleAreaPrice,
+        });
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.no_bath !== prevProps.no_bath || 
+            this.props.no_bed !== prevProps.no_bed ||
+            this.props.no_toilets !== prevProps.no_toilets) {
+            this.getAddressRange(this.props.no_bed, this.props.no_bath, this.props.no_toilets);
         }
     }
     
-    componentDidMount () {
-        this.setState({
-            areas: majorAreasData()
-        }, () => {
-            this.getAddressRange();
-            this.getAreasRange();
-        });
-    }
+    async getAddressRange (no_bed = 1, no_bath = 1, no_toilets = 1) {
+        const { currentArea: { lat, lng }  } = this.state;
     
-    getAreasRange = async () => {
-        const { no_bed, no_bath, no_toilets, mode } = this.state;
-    
-        const { prices } = await Predict({ 
-            locations: this.state.areas.map(({ lat, lng }) => ({ lat, lng })), 
-            specs: { no_bed, no_bath, no_toilets }
-        }, mode);
-    
-        this.setState({
-            prices: prices.map((P) => Math.round(P))
-        });
-    }
-    
-    getAddressRange = async () => {
-        const { tno_bed: no_bed, tno_bath: no_bath, tno_toilets: no_toilets, currentArea: { lat, lng }, mode } = this.state;
-    
-        const { prices } = await Predict({ 
+        const { prices } = await Predict({
             locations: [{ lat, lng }], 
             specs: { no_bed, no_bath, no_toilets }
-        }, mode);
+        });
     
         this.setState({
             areaPrice:  Math.round(prices[0])
         });
     }
     
-    updateOption = (e, topFilter) => {
-        let name = (!topFilter) ? e.target.name : `t${e.target.name}`;
-        let value = e.target.value; 
     
-        this.setState({
-            [name]: value
-        }, () => {
-            setTimeout(
-                (!topFilter) ? this.getAreasRange : this.getAddressRange
-            , 500);
-        });
-    }
-    
-    handleChange = () => {
-        this.setState({
-            mode: !this.state.mode
-        }, () => {
-            this.getAddressRange();
-            this.getAreasRange();
-        });
-    }
-    
-    centerChange = center => {
+    centerChange(center, searchText) {
         this.setState({ 
             currentArea: {
                 lat: center.lat(),
                 lng: center.lng()
-            }
+            },
+            searchText
         }, this.getAddressRange);
-    }
-    
-    sort = (e) => {
-        let type = e.target.value;
-        let pairAreaPrice = this.state.areas.map((A, i)=> ({ a: A, p: this.state.prices[i]}))
-        
-        let sortedPairs = (type !== 'high') ? 
-            pairAreaPrice.sort((a, b) => a.p - b.p) : 
-            pairAreaPrice.sort((a, b) => b.p - a.p);
-    
-        this.setState({
-            prices: sortedPairs.map((sp) => sp.p),
-            areas: sortedPairs.map((sp) => sp.a)
-        });
     }
 
     render() {
-        const { areaPrice } = this.state;
-
+        const { areaPrice, searchText } = this.state;
+        const { no_bed, no_bath, no_toilets } = this.props;
         return (
             <div className="col-lg-6 col-md-6 col-sm-6 hidden-xs">
                 <Map onCenterChange={this.centerChange} />
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 input-container">
                     <div className="price-top">
-                        <span>Total Cost:</span>
-                        <h4>₦{parseFloat(areaPrice).toLocaleString('en')}</h4>
+                        <span style={{ color: '#000' }}>
+                            {no_bed} { no_bed > 1 ? ' bed rooms' : ' bed room'}, 
+                            {no_bath} { no_bath > 1 ? ' bath rooms' : ' bath room'}, 
+                            {no_toilets} { no_toilets > 1 ? ' toilets' : ' toilet '}
+                            <br />
+                            within <em>{searchText}</em>
+                        </span>
+                        <h2>₦{parseFloat(areaPrice).toLocaleString('en')}</h2>
                     </div>
                 </div>
             </div>
@@ -126,4 +83,10 @@ class Search extends React.Component {
     }
 }
 
-export default Search;
+Search.propTypes = {
+    no_bed: PropTypes.number, 
+    no_bath: PropTypes.number,
+    no_toilets: PropTypes.number,
+};
+
+export default hot(module)(Search);
