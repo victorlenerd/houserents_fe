@@ -14,6 +14,6 @@ COPY webpack.config.js /usr/src/hourserents/
 
 RUN npm run build
 
-EXPOSE 3000
+EXPOSE 4040
 
 CMD ["npm", "start"]
