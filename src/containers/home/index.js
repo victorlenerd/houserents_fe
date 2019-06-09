@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { hot } from "react-hot-loader";
 import Filter from '../../components/filter';
 import Map from '../../components/map';
 import List from '../../components/list';
@@ -9,50 +9,38 @@ class Home extends React.PureComponent {
         super(props);
         
         this.state = {
-            no_bed: 1,
-            no_bath: 1,
-            no_toilets: 1,
-    
-            tno_bed: 1,
-            tno_bath: 1,
-            tno_toilets: 1,
+            apartments: [],
     
             currentArea: {
                 lat: 6.5005,
                 lng: 3.3666
             },
-            prices: [],
-            areaPrice: 0,
-            mode: true,
-            sort: 'high',
+            
+            searchText: "Yaba, Lagos, Nigeria",
         }
 
-        this.sort = this.sort.bind(this);
         this.centerChange = this.centerChange.bind(this);
-        this.updateOption = this.updateOption.bind(this);
-    }
-    
-    updateOption(e)  {
-        let name =  e.target.name;
-        let value = e.target.value; 
-    
-        this.setState({
-            [name]: value
-        });
     }
 
-    centerChange(center) {
+    componentDidMount() {
+        this.setState({
+            apartments: window.__DATA__.apartments
+        });
+    }
+    
+
+    centerChange(center, searchText) {
         this.setState({ 
             currentArea: {
                 lat: center.lat(),
                 lng: center.lng()
-            }
+            },
+            searchText
         });
     }
 
-    sort(e) {
-        let type = e.target.value;
-        let pairAreaPrice = this.state.areas.map((A, i)=> ({ a: A, p: this.state.prices[i]}))
+    sort(type) {
+        let pairAreaPrice = this.state.apartments.map((A, i)=> ({ a: A, p: this.state.apartments[i]}))
         
         let sortedPairs = (type !== 'high') ? 
             pairAreaPrice.sort((a, b) => a.p - b.p) : 
@@ -60,28 +48,33 @@ class Home extends React.PureComponent {
 
         this.setState({
             prices: sortedPairs.map((sp) => sp.p),
-            areas: sortedPairs.map((sp) => sp.a)
+            apartments: sortedPairs.map((sp) => sp.a)
         });
     }
 
     render () {
+        const { apartments } = this.state;
+
         return (
             <section>
                 <div className="container">
-                    <Map
-                        onCenterChange={this.centerChange}
-                    />
-                    <Filter
-                        showSort={true}
-                        sort={this.sort}
-                        updateOption={this.updateOptions}
-                    />
-                    <List />
-                    <List />
+                    <Map onCenterChange={this.centerChange} />
+                    <Filter>
+                        {(data, FilterFields) => (
+                            <>
+                                <FilterFields />
+                                <div className="input-container col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
+                                    <ul className="lists">
+                                        {apartments.map((data, index) => (<List data={data} key={`list-${index}`} />))}
+                                    </ul>
+                                </div>
+                            </>
+                        )}
+                    </Filter>
                 </div>
             </section>
         );
     }   
 }
 
-export default Home;
+export default hot(module)(Home);

@@ -64,7 +64,7 @@ class Search extends React.Component {
         const { areaPrice, searchText } = this.state;
         const { no_bed, no_bath, no_toilets } = this.props;
         return (
-            <div className="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+            <div className="col-lg-6 col-md-6 col-sm-6">
                 <Map onCenterChange={this.centerChange} />
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 input-container">
                     <div className="price-top">

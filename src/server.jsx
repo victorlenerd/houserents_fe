@@ -8,6 +8,7 @@ const reactDOMServer = require('react-dom/server');
 const collect = require('node-style-loader/collect');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 
+import fetchApartments from './utils/apartments';
 import predict from './utils/predict';
 import majorAreasData from './areas';
 
@@ -26,6 +27,7 @@ const HTML = (body, data) => `
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="theme-color" content="#000000">
+            <meta name="description" content="Discover apartments avaialble for rent, learn average cost of renting apartmentes in major areas in Lagos, and find roomates.">
             <link href="https://fonts.googleapis.com/css?family=Archivo:200,400,500,700|Playfair+Display:400,900|Karla:400,700" rel="stylesheet">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
             <title>Houserents</title>
@@ -70,14 +72,27 @@ app.get(/\/|\/averages|\/roomies/, async (req, res) => {
         specs: { no_bed: 1, no_bath: 1, no_toilets: 1 } 
     };
 
-    const [{ prices: multipleAreasPrice }, { prices: singleAreaPrice }] = await Promise.all([predict(multipleAreas), predict(singleArea)]);
+    const apartmentRequestBody = { 
+        location: { lat: 6.5005, lng: 3.3666 },
+        specs: { no_bed: 1, no_bath: 1, no_toilets: 1 } 
+    };
+
+    const [
+        { prices: multipleAreasPrice },
+        { prices: singleAreaPrice },
+        apartments
+    ] = await Promise.all([
+            predict(multipleAreas),
+            predict(singleArea),
+            fetchApartments(apartmentRequestBody)
+        ]);
 
     
     res.send(HTML(reactDOMServer.renderToString(
         <StaticRouter location={req.url} context={context}>
             <App />
         </StaticRouter>
-    ), { multipleAreasPrice,  singleAreaPrice: singleAreaPrice[0] }))
+    ), { multipleAreasPrice,  singleAreaPrice: singleAreaPrice[0], apartments }))
 });
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));

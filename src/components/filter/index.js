@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { hot } from "react-hot-loader";
 
 const getOptions = () => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((o, i) => {
     return (<option key={i} value={o}>{o}</option>);
@@ -27,30 +28,32 @@ class Filter extends React.PureComponent {
     
         this.setState({
             [name]: name === 'sort' ? value : Number(value)
+        }, () => {
+            if (this.props.onUpdate) this.props.onUpdate(this.state)
         });
     }
 
     Filter = () => (
         <div className={"input-container col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12"}>
-            <div className={"col-lg-3 col-md-3 col-sm-3 col-xs-3"}>
+            <div className={"col-lg-3 col-md-3 col-sm-3 col-xs-12"}>
                 <div className="input-label">Beds</div>
                 <select onChange={this.updateOption} name="no_bed">
                 {getOptions()}
                 </select>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div className="input-label">Baths</div>
                 <select onChange={this.updateOption} name="no_bath">
                 {getOptions()}
                 </select>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div className="input-label">Toilets</div>
                 <select onChange={this.updateOption} name="no_toilets">
                 {getOptions()}
                 </select>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div className="input-label">Sort</div>
                 <select name="sort" onChange={this.updateOption}>
                     <option value="high">High</option>
@@ -67,8 +70,9 @@ class Filter extends React.PureComponent {
 }
 
 Filter.propTypes = {
+    onUpdate: PropTypes.func,
     children: PropTypes.func
 }
 
 
-export default Filter;
+export default hot(module)(Filter);

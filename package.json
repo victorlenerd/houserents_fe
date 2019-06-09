@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "NODE_ENV=\"development\" webpack --watch --progress --colors --config config.dev.js",
-    "build": "NODE_ENV=\"production\" webpack --watch --progress --colors --config config.dev.js",
+    "build": "NODE_ENV=\"production\" webpack --progress --colors --config config.dev.js",
     "lint": "eslint --color \"src/**/*.js\"",
     "start": "node dist/server.js"
   },

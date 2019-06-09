@@ -1,27 +1,14 @@
 import React from 'react';
-import Filter from '../../components/filter';
-import Search from '../../components/search';
-import Areas from '../../components/areas';
+import { hot } from "react-hot-loader";
 
+import DesktopView from './desktop';
+import MobileView from './mobile';
 
-class Averages extends React.PureComponent {
-    render() {
-        return (
-            <section>
-                <div className="container">
-                    <Filter>
-                        {(data, FilterFields) => (
-                            <>
-                                <FilterFields />
-                                <Areas {...data} />
-                                <Search {...data}/>
-                            </>
-                        )}
-                    </Filter>
-                </div>
-            </section>
-        )
-    }
-}
+const Averages = () => (
+    <section>
+        <DesktopView />
+        <MobileView />
+    </section>
+);
 
-export default Averages;
+export default hot(module)(Averages);

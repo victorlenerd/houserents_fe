@@ -1,0 +1,33 @@
+.mobile-nav-tab {
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    background-color: #ECF0F1;
+}
+
+.mobile-tab {
+    margin-top: 15px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+}
+
+.mobile-tab-active {
+    background: #2be6a8;
+}
+
+.tab-content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tab-content-inner {
+    width: 300%;
+    display: flex;
+}
+
+.tab-content-inner > div {
+    width: 100%;
+}

@@ -27,10 +27,12 @@ if (process.env.NODE_ENV === 'development') {
     serverPlugins.push(new StartServerPlugin("server.js"));
 }
 
+console.log(process.env.NODE_ENV);
+
 module.exports = [{
     entry: [path.resolve( __dirname, 'src/server.jsx')],
     watch: process.env.NODE_ENV === 'development',
-    mode: "development",
+    mode: process.env.NODE_ENV,
     devtool: "sourcemap",
     target: "node",
     node: {
@@ -87,7 +89,7 @@ module.exports = [{
         "./src/index.js",
     ] : ["./src/index.js"],
     watch: process.env.NODE_ENV === 'development',
-    mode: "development",
+    mode: process.env.NODE_ENV,
     devtool: "source-map",
     target: "web",
     module: {
