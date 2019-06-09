@@ -10,7 +10,7 @@ RUN npm install
 
 # Bundle app source
 COPY src /usr/src/hourserents/src
-COPY webpack.config.js /usr/src/hourserents/
+COPY config.dev.js /usr/src/hourserents/
 
 RUN npm run build
 
