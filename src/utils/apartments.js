@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-export default async (body, offset = 0, limit = 10) => {
+export default async (body, offset = 0, limit = 10, useServiceName) => {
     try {
-        const { data } = await axios.post(`${process.env.API_SERVER}/apartments?offset=${offset}&limit=${limit}`, JSON.stringify(body), {
+        const { data } = await axios.post(`${useServiceName ? 'http://api:5000' : process.env.API_SERVER}/apartments?offset=${offset}&limit=${limit}`, JSON.stringify(body), {
             headers: {
                 'Content-Type': 'application/json'
             }

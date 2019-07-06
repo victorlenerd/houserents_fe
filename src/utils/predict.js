@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-export default async (body) => {
+export default async (body, useServiceName) => {
     try {
-        const { data } = await axios.post(`${process.env.API_SERVER}/predict`, JSON.stringify(body), {
+        const { data } = await axios.post(`${useServiceName ? 'http://api:5000' : process.env.API_SERVER}/predict`, JSON.stringify(body), {
             headers: {
                 'Content-Type': 'application/json'
             }

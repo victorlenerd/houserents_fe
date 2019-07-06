@@ -20,14 +20,13 @@ const serverPlugins = [
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
         "process.env": envs
-    }),   
+    }),
 ];
 
 if (process.env.NODE_ENV === 'development') {
     serverPlugins.push(new StartServerPlugin("server.js"));
 }
 
-console.log(process.env.NODE_ENV);
 
 module.exports = [{
     entry: [path.resolve( __dirname, 'src/server.jsx')],

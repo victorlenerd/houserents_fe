@@ -82,11 +82,10 @@ app.get(/\/|\/averages|\/roomies/, async (req, res) => {
         { prices: singleAreaPrice },
         apartments
     ] = await Promise.all([
-            predict(multipleAreas),
-            predict(singleArea),
-            fetchApartments(apartmentRequestBody)
+            predict(multipleAreas, true),
+            predict(singleArea, true),
+            fetchApartments(apartmentRequestBody, 0, 10, true)
         ]);
-
     
     res.send(HTML(reactDOMServer.renderToString(
         <StaticRouter location={req.url} context={context}>
