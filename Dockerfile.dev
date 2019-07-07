@@ -12,8 +12,6 @@ RUN npm install
 COPY src /usr/src/hourserents/src
 COPY config.dev.js /usr/src/hourserents/
 
-RUN npm run build
-
 EXPOSE 4040
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]

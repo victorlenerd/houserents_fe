@@ -84,7 +84,7 @@ app.get(/\/|\/averages|\/roomies/, async (req, res) => {
     ] = await Promise.all([
             predict(multipleAreas, true),
             predict(singleArea, true),
-            fetchApartments(apartmentRequestBody, 0, 10, true)
+            fetchApartments(apartmentRequestBody, 0, 10,true)
         ]);
     
     res.send(HTML(reactDOMServer.renderToString(

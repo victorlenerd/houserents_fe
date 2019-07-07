@@ -52,6 +52,10 @@ class Home extends React.PureComponent {
         });
     }
 
+    onPageScroll() {
+        
+    }
+
     render () {
         const { apartments } = this.state;
 

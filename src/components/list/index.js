@@ -17,7 +17,7 @@ const List = ({ data: { price, address, description, no_bath, no_bed, no_toilets
                     </a>
                 </span>
             </div>
-            <span className="list-price-tags">₦ {price.toLocaleString('en')}</span>
+            <span className="list-price-tags">₦{price.toLocaleString('en')}</span>
         </div>
         <div className="list-body">
             <p className="list-body-description">{description}</p>
