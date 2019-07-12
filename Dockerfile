@@ -12,7 +12,10 @@ RUN npm install
 COPY src /usr/src/hourserents/src
 COPY config.dev.js /usr/src/hourserents/
 
-ENV PORT 4040
+ENV PORT ${PORT}
+ENV API_SERVER ${API_SERVER}
+ENV MAP_API_KEY ${MAP_API_KEY}
+
 RUN npm run build
 
 EXPOSE 4040
