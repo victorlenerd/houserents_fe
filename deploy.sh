@@ -1,5 +1,5 @@
 #!/bin/sh
-docker rm $(docker ps -qf name=houserents-fe)
+docker stop houserents-fe || true && docker rm houserents-fe || true
 $(aws ecr get-login --region us-east-2 --no-include-email)
 docker run -d -p 4040:4040  \
     --env PORT="4040" \
