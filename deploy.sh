@@ -1,6 +1,6 @@
 #!/bin/sh
-$(aws ecr get-login --region us-east-2 --no-include-email)
 docker rm $(docker ps -qf name=houserents-fe)
+$(aws ecr get-login --region us-east-2 --no-include-email)
 docker run -d -p 4040:4040  \
     --env PORT="4040" \
     --env API_SERVER="http://0.0.0.0:5000" \
