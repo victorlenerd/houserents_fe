@@ -12,6 +12,7 @@ RUN npm install
 COPY src /usr/src/hourserents/src
 COPY config.dev.js /usr/src/hourserents/
 
+ENV PORT 4040
 RUN npm run build
 
 EXPOSE 4040
