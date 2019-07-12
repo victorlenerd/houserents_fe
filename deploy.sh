@@ -1,5 +1,6 @@
 #!/bin/sh
 $(aws ecr get-login --region us-east-2 --no-include-email)
+docker pull 699011322781.dkr.ecr.us-east-2.amazonaws.com/houserents-fe-develop:latest
 docker run -d -p 4040:4040  \
     -e PORT="4040" \
     -e API_SERVER="http://0.0.0.0:5000" \
