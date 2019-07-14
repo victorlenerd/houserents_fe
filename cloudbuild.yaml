@@ -1,0 +1,18 @@
+steps:
+  # build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: [
+    'build', 
+    '-t', 
+    'gcr.io/$PROJECT_ID/houserents-dev-fe',
+    '.'
+  ]
+  # push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/$PROJECT_ID/houserents-dev-fe']
+  # Deploy container image to Cloud Run
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['beta', 'run', 'deploy', 'houserents-dev-fe', '--image', 'gcr.io/$PROJECT_ID/houserents-dev-fe', '--region', 'us-central1','--platform', 'managed']
+images:
+- gcr.io/$PROJECT_ID/houserents-dev-fe
+timeout: 1500s

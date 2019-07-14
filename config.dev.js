@@ -1,4 +1,4 @@
-require('dotenv').config()
+// require('dotenv').config()
 
 const CleanPlugin = require("clean-webpack-plugin");
 const StartServerPlugin = require('start-server-webpack-plugin');
@@ -8,7 +8,7 @@ const path = require('path');
 
 const envs = {
     NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-    PORT: JSON.stringify(process.env.PORT),
+    PORT: JSON.stringify(process.env.PORT) || '8080',
     API_SERVER: JSON.stringify(process.env.API_SERVER),
     MAP_API_KEY: JSON.stringify(process.env.MAP_API_KEY)
 };
@@ -134,8 +134,8 @@ module.exports = [{
         new webpack.NoEmitOnErrorsPlugin(),
         new webpack.DefinePlugin({
             "process.env": {
-                NODE_ENV: JSON.stringify("development"),
-                PORT: JSON.stringify(process.env.API_SERVER),
+                NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+                PORT: JSON.stringify(process.env.PORT)  || '8080',
                 API_SERVER: JSON.stringify(process.env.API_SERVER),
                 MAP_API_KEY: JSON.stringify(process.env.MAP_API_KEY),
             }

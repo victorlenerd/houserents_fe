@@ -12,8 +12,7 @@ RUN npm install
 COPY src /usr/src/hourserents/src
 COPY config.dev.js /usr/src/hourserents/
 
-ENV PORT 4040
-ENV API_SERVER http://0.0.0.0:5000
+ENV API_SERVER https://houserents-dev-api-mamhlwbwkq-uc.a.run.app
 ENV MAP_API_KEY AIzaSyCp3UKASbZkqvCnW3l_RLgM5Ik15JBKpPc
 
 RUN npm run build
