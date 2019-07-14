@@ -17,6 +17,7 @@ const config = require('../config.dev.js');
 const compiler = webpack(config[1]);
 
 const PORT = process.env.PORT;
+const isDevEnviroment = process.env.NODE_ENV === 'development';
 
 const initialStyleTag = collect.collectInitial();
 
@@ -82,9 +83,9 @@ app.get(/\/|\/averages|\/roomies/, async (req, res) => {
         { prices: singleAreaPrice },
         apartments
     ] = await Promise.all([
-            predict(multipleAreas, true),
-            predict(singleArea, true),
-            fetchApartments(apartmentRequestBody, 0, 10,true)
+            predict(multipleAreas),
+            predict(singleArea, isDevEnviroment),
+            fetchApartments(apartmentRequestBody, 0, 10, isDevEnviroment)
         ]);
     
     res.send(HTML(reactDOMServer.renderToString(
