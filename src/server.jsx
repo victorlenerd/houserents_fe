@@ -31,7 +31,7 @@ const HTML = (body, data) => `
             <meta name="description" content="Discover apartments avaialble for rent, learn average cost of renting apartmentes in major areas in Lagos, and find roomates.">
             <link href="https://fonts.googleapis.com/css?family=Archivo:200,400,500,700|Playfair+Display:400,900|Karla:400,700" rel="stylesheet">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-            <title>Houserents</title>
+            <title>Houserent</title>
             ${initialStyleTag}
         </head>
         <body>

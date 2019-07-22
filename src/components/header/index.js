@@ -8,7 +8,7 @@ const header = ({ location: { pathname } }) => {
     return (
         <header className="header">
             <div className="container">
-                <div className="logo">Houserents</div>
+                <div className="logo">Houserent</div>
                 <nav>
                     <ul>
                         <li>
