@@ -24,7 +24,7 @@ steps:
     '--platform',
     'managed',
     '--memory',
-    '350M'
+    '526M'
   ]
 images:
 - gcr.io/$PROJECT_ID/houserents-dev-fe

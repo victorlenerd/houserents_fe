@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "041ee75d4bb25cc94372";
+/******/ 	var hotCurrentHash = "f3ace1534c561ca79454";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -60427,7 +60427,7 @@ function () {
           case 0:
             _context.prev = 0;
             _context.next = 3;
-            return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(useServiceName ? 'http://api:5000' : "http://0.0.0.0:5000", "/predict"), JSON.stringify(body), {
+            return axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("".concat(useServiceName ? 'http://api:5000' : "http://api:5000", "/predict"), JSON.stringify(body), {
               headers: {
                 'Content-Type': 'application/json'
               }
