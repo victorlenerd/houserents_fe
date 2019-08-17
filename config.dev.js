@@ -1,4 +1,4 @@
-// require('dotenv').config()
+require('dotenv').config()
 
 const CleanPlugin = require("clean-webpack-plugin");
 const StartServerPlugin = require('start-server-webpack-plugin');
