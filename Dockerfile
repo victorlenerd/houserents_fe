@@ -14,6 +14,6 @@ COPY config.dev.js /usr/src/hourserents/
 
 RUN npm run build
 
-EXPOSE 4040
+EXPOSE 8080
 
 CMD ["npm", "start"]
