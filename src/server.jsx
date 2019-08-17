@@ -81,18 +81,18 @@ app.get(/\/|\/averages|\/roomies/, async (req, res) => {
     const [
         { prices: multipleAreasPrice },
         { prices: singleAreaPrice },
-        apartments
+        { data: apartments, total: apartmentsTotal },
     ] = await Promise.all([
             predict(multipleAreas),
             predict(singleArea, isDevEnviroment),
             fetchApartments(apartmentRequestBody, 0, 10, isDevEnviroment)
         ]);
-    
+
     res.send(HTML(reactDOMServer.renderToString(
         <StaticRouter location={req.url} context={context}>
             <App />
         </StaticRouter>
-    ), { multipleAreasPrice,  singleAreaPrice: singleAreaPrice[0], apartments }))
+    ), { multipleAreasPrice,  singleAreaPrice: singleAreaPrice[0], apartments, apartmentsTotal }))
 });
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));

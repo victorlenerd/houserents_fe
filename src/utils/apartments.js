@@ -7,7 +7,7 @@ export default async (body, offset = 0, limit = 10, useServiceName) => {
                 'Content-Type': 'application/json'
             }
         });
-
+        
         return data;
     } catch(err) {
         console.error(err);

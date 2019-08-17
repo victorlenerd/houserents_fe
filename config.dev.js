@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 
-module.exports = [{
+module.exports = [  {
     entry: [path.resolve( __dirname, 'src/server.jsx')],
     watch: process.env.NODE_ENV === 'development',
     mode: process.env.NODE_ENV,

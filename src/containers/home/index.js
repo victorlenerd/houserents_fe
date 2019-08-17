@@ -1,5 +1,4 @@
 import React from 'react';
-import { hot } from "react-hot-loader";
 import Filter from '../../components/filter';
 import Map from '../../components/map';
 import List from '../../components/list';
@@ -17,7 +16,7 @@ class Home extends React.PureComponent {
             },
             
             searchText: "Yaba, Lagos, Nigeria",
-        }
+        };
 
         this.centerChange = this.centerChange.bind(this);
     }
@@ -59,6 +58,8 @@ class Home extends React.PureComponent {
     render () {
         const { apartments } = this.state;
 
+        console.log({ apartments });
+
         return (
             <section>
                 <div className="container">
@@ -81,4 +82,4 @@ class Home extends React.PureComponent {
     }   
 }
 
-export default hot(module)(Home);
+export default Home;
