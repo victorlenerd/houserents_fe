@@ -12,6 +12,7 @@ RUN npm install
 COPY src /usr/src/hourserents/src
 COPY config.dev.js /usr/src/hourserents/
 
+ENV PORT  ${PORT}
 ENV NODE_ENV  ${NODE_ENV}
 ENV API_SERVER ${API_SERVER}
 ENV MAP_API_KEY ${MAP_API_KEY}

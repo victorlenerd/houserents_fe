@@ -13,6 +13,8 @@ const envs = {
     MAP_API_KEY: JSON.stringify(process.env.MAP_API_KEY)
 };
 
+console.log(envs);
+
 const serverPlugins = [
     new CleanPlugin(),
     new webpack.NamedModulesPlugin(),
