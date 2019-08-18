@@ -81,7 +81,7 @@ app.get(/\/|\/averages|\/roomies/, async (req, res) => {
     const [
         { prices: multipleAreasPrice },
         { prices: singleAreaPrice },
-        { data: apartments, total: apartmentsTotal },
+        { data: apartments = [], total: apartmentsTotal = 0},
     ] = await Promise.all([
             predict(multipleAreas),
             predict(singleArea, isDevEnviroment),
