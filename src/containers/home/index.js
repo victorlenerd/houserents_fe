@@ -39,7 +39,7 @@ class Home extends React.PureComponent {
     }
 
     sort(type) {
-        let pairAreaPrice = this.state.apartments.map((A, i)=> ({ a: A, p: this.state.apartments[i]}))
+        let pairAreaPrice = this.state.apartments.map((A, i)=> ({ a: A, p: this.state.apartments[i]}));
         
         let sortedPairs = (type !== 'high') ? 
             pairAreaPrice.sort((a, b) => a.p - b.p) : 
