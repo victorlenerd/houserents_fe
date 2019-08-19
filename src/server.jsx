@@ -88,8 +88,6 @@ app.get(/\/|\/averages|\/roomies/, async (req, res) => {
             fetchApartments(apartmentRequestBody, 0, 10, isDevEnviroment)
         ]);
 
-    console.log(apartments);
-
     res.send(HTML(reactDOMServer.renderToString(
         <StaticRouter location={req.url} context={context}>
             <App />
