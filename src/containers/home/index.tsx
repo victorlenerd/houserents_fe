@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Pagination from "../../components/pagination";
 import Filter from '../../components/filter';
 import Map from '../../components/map';
 import List from '../../components/list';
@@ -9,7 +11,9 @@ class Home extends React.PureComponent {
         
         this.state = {
             apartments: [],
-    
+
+            apartmentsTotal: 0,
+
             currentArea: {
                 lat: 6.5005,
                 lng: 3.3666
@@ -23,7 +27,8 @@ class Home extends React.PureComponent {
 
     componentDidMount() {
         this.setState({
-            apartments: window.__DATA__.apartments
+            apartments: window.__DATA__.apartments,
+            apartmentsTotal: window.__DATA__.apartmentsTotal
         });
     }
     
@@ -56,9 +61,7 @@ class Home extends React.PureComponent {
     }
 
     render () {
-        const { apartments } = this.state;
-
-        console.log({ apartments });
+        const { apartments, apartmentsTotal } = this.state;
 
         return (
             <section>
@@ -77,6 +80,11 @@ class Home extends React.PureComponent {
                         )}
                     </Filter>
                 </div>
+                <Pagination
+                    total={apartmentsTotal}
+                    itemsPerPage={10}
+                    onChange={this.onPageScroll}
+                />
             </section>
         );
     }   

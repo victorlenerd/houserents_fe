@@ -8,12 +8,10 @@ const path = require('path');
 
 const envs = {
     NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-    PORT: JSON.stringify(process.env.PORT) || '8080',
+    PORT: JSON.stringify(process.env.PORT) || '4040',
     API_SERVER: JSON.stringify(process.env.API_SERVER),
     MAP_API_KEY: JSON.stringify(process.env.MAP_API_KEY)
 };
-
-console.log(envs);
 
 const serverPlugins = [
     new CleanPlugin(),
@@ -31,7 +29,7 @@ if (process.env.NODE_ENV === 'development') {
 
 
 module.exports = [  {
-    entry: [path.resolve( __dirname, 'src/server.jsx')],
+    entry: [path.resolve( __dirname, 'src/server.tsx')],
     watch: process.env.NODE_ENV === 'development',
     mode: process.env.NODE_ENV,
     devtool: "sourcemap",
@@ -46,7 +44,7 @@ module.exports = [  {
     module: {
         rules: [
             {
-                test: /\.(js)x?$/,
+                test: /\.(js|ts)x?$/,
                 use: [
                     {
                         loader: "babel-loader",
@@ -54,7 +52,8 @@ module.exports = [  {
                             babelrc: false,
                             presets: [
                                 "@babel/preset-env",
-                                "@babel/preset-react"
+                                "@babel/preset-react",
+                                "@babel/preset-typescript",
                             ],
                             plugins: [
                                 "@babel/transform-regenerator",
@@ -80,6 +79,14 @@ module.exports = [  {
 
     plugins: serverPlugins,
 
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
+        modules: [
+            path.resolve( __dirname, 'src'),
+            'node_modules'
+        ]
+    },
+
     output: {
         filename: 'server.js',
         path: path.resolve( __dirname, 'dist')
@@ -87,8 +94,8 @@ module.exports = [  {
 }, {
     entry: process.env.NODE_ENV === 'development' ? [
         "webpack-hot-middleware/client?path=http://localhost:4040/__webpack_hmr",
-        "./src/index.js",
-    ] : ["./src/index.js"],
+        "./src/index.tsx",
+    ] : ["./src/index.tsx"],
     watch: process.env.NODE_ENV === 'development',
     mode: process.env.NODE_ENV,
     devtool: "source-map",
@@ -96,7 +103,7 @@ module.exports = [  {
     module: {
         rules: [
             {
-                test: /\.js?$/,
+                test: /\.(js|ts)x?$/,
                 use: [
                     "react-hot-loader/webpack",
                     {
@@ -106,6 +113,7 @@ module.exports = [  {
                             presets: [
                                 "@babel/preset-env",
                                 "@babel/preset-react",
+                                "@babel/preset-typescript"
                             ],
                             plugins: [
                                 "react-hot-loader/babel",
@@ -129,6 +137,7 @@ module.exports = [  {
             }
         ]
     },
+
     plugins: [
         new CleanPlugin(path.resolve(__dirname, "src/public/dist")),
         new webpack.optimize.OccurrenceOrderPlugin(),
@@ -143,9 +152,19 @@ module.exports = [  {
             }
         }),
     ],
+
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
+        modules: [
+            path.resolve( __dirname, 'src'),
+            'node_modules'
+        ]
+    },
+
+
     output: {
         path: path.resolve(__dirname, "src/public/dist"),
         filename: "bundle.js",
         publicPath: '/public/dist/'
     },
-}]
+}];

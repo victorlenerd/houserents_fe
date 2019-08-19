@@ -8,14 +8,16 @@ const header = ({ location: { pathname } }) => {
     return (
         <header className="header">
             <div className="container">
-                <div className="logo">Houserent</div>
+                <Link to="/" className="logo">
+                    House Rent
+                </Link>
                 <nav>
                     <ul>
                         <li>
                             <Link to="/" className={pathname === '/' ? 'active' : ''}>Find Apartments</Link>
                         </li>
                         <li>
-                            <Link to="/roomie" className={pathname === '/roomie' ? 'active' : ''}>Find Roomates</Link>
+                            <Link to="/roommates" className={pathname === '/roommates' ? 'active' : ''}>Find Room Mates</Link>
                         </li>
                         <li>
                             <Link to="/averages" className={pathname === '/averages' ? 'active' : ''}>Average Costs</Link>

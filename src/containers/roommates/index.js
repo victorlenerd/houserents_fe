@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Roomie extends React.PureComponent {
+class Roomates extends React.PureComponent {
     render() {
         return (
             <section>
@@ -14,4 +14,4 @@ class Roomie extends React.PureComponent {
     }
 }
 
-export default Roomie;
+export default Roomates;
