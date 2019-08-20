@@ -1,26 +1,38 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
 import majorAreasData from '../../areas';
 
 import Predict from '../../utils/predict';
 
-class Areas extends React.Component {
-    constructor(props) {
-        super(props);
-        
-        this.state = {
-            areas: [],
-            prices: [],
-        }
+interface IProps {
+    no_bed: number
+    no_bath: number
+    no_toilets: number
+    sort: string
+}
 
-        this.getAreasRange = this.getAreasRange.bind(this);
-        this.sort = this.sort.bind(this);
-    }
+interface IState {
+    areas: IArea[]
+    prices: []
+}
+
+interface IArea {
+    "name": string,
+    "lat": number,
+    "lng": number
+}
+
+class Areas extends React.Component<IProps> {
+
+    state: IState = {
+        areas: [],
+        prices: [],
+    };
     
-    componentDidMount () {    
+    componentDidMount() {
         this.setState({
             areas: majorAreasData(),
-            prices: window.__DATA__.multipleAreasPrice,
+            // @ts-ignore: __DATA__ should be set
+            prices: window.__DATA__.multipleAreasPrice
         });
     }
 
@@ -69,7 +81,7 @@ class Areas extends React.Component {
 
         return (
             <div className="input-container col-lg-6 col-md-6 col-sm-6 col-xs-12">        
-                {prices.length > 1 && <ul className="areas-list" type="none">
+                {prices.length > 1 && <ul className="areas-list">
                     {areas.map((a, i) => {
                         const parsedPrice = parseFloat(prices[i]);
                         
@@ -90,11 +102,5 @@ class Areas extends React.Component {
     }
 }
 
-Areas.propTypes = {
-    no_bed: PropTypes.number, 
-    no_bath: PropTypes.number,
-    no_toilets: PropTypes.number,
-    sort: PropTypes.string
-}
 
 export default Areas;

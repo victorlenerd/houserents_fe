@@ -21,7 +21,7 @@ ul {
 
 .hint {
   font-size: 16px;
-  text-align: 'center';
+  text-align: center;
   width: 260px;
   margin: 0px auto;
 }
@@ -133,6 +133,7 @@ h2 {
 }
 
 .areas-list li {
+  list-style-type: none;
   padding: 20px;
   border-bottom: 2px solid #ECF0F1;
   font-family:  'Archivo', sans-serif;

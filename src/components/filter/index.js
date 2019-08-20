@@ -16,7 +16,7 @@ class Filter extends React.PureComponent {
             no_bed: 1,
             no_bath: 1,
             no_toilets: 1,
-            sort: 'high',
+            sort: 'DESC',
         };
 
         this.updateOption = this.updateOption.bind(this);
@@ -56,8 +56,8 @@ class Filter extends React.PureComponent {
             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div className="input-label">Sort</div>
                 <select name="sort" onChange={this.updateOption}>
-                    <option value="high">High</option>
-                    <option value="low">Low</option>
+                    <option value="DESC">High</option>
+                    <option value="ASC">Low</option>
                 </select>
             </div>
         </div>
@@ -72,7 +72,7 @@ class Filter extends React.PureComponent {
 Filter.propTypes = {
     onUpdate: PropTypes.func,
     children: PropTypes.func
-}
+};
 
 
 export default hot(module)(Filter);

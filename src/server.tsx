@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
-const App = require('./App').default;
+import App from './App';
 const React = require('react');
 const StaticRouter = require('react-router-dom').StaticRouter;
 const reactDOMServer = require('react-dom/server');
@@ -27,11 +27,25 @@ const HTML = (body, data) => `
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <meta name="theme-color" content="#000000">
-            <meta name="description" content="Discover apartments avaialble for rent, learn average cost of renting apartmentes in major areas in Lagos, and find roomates.">
+            <meta name="description" content="Find apartments and roommates">
+           
             <link href="https://fonts.googleapis.com/css?family=Archivo:200,400,500,700|Playfair+Display:400,900|Karla:400,700" rel="stylesheet">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-            <title>Houserent</title>
+            <link rel="canonical" href="https://houserent.ng" />
+                
+            <meta name="twitter:title" content="HouseRent">
+            <meta name="twitter:description" content="Find apartments and roommates"> 
+            <meta name="twitter:site" content="https://houserent.ng">
+            <meta name="twitter:creator" content="@victorlenerd">
+
+            <meta property="og:type" content="article" />
+            <meta property="og:title" content="HouseRent" /> 
+            <meta property="og:description" content="Find apartments and roommates" />
+            <meta property="og:url" content="https://houserent.ng" />
+            <meta property="og:site_name" content="HouseRent" />
+
+                
+            <title>HouseRent</title>
             ${initialStyleTag}
         </head>
         <body>
@@ -60,7 +74,7 @@ app.use(require("webpack-hot-middleware")(compiler));
 
 app.use('/public', express.static(path.join(__dirname, '/public')));
 
-app.get(/\/|\/averages|\/roomies/, async (req, res) => {
+app.get(/\/|\/averages|\/roommates/, async (req, res) => {
     const context = {};
 
     const multipleAreas = { 
@@ -84,8 +98,8 @@ app.get(/\/|\/averages|\/roomies/, async (req, res) => {
         { data: apartments = [], total: apartmentsTotal = 0},
     ] = await Promise.all([
             predict(multipleAreas),
-            predict(singleArea, isDevEnviroment),
-            fetchApartments(apartmentRequestBody, 0, 10, isDevEnviroment)
+            predict(singleArea, false),
+            fetchApartments(apartmentRequestBody, 0, 10, false)
         ]);
 
     res.send(HTML(reactDOMServer.renderToString(

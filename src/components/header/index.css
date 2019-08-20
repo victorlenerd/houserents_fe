@@ -62,11 +62,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-transform: uppercase;
   font-family: "Playfair display", sans-serif;
-  font-weight: 500;
-  background-color: #2be6a8;
-  color: #000;
+  font-weight: 600;
+  background-color: #fff;
+  color: #2be6a8;
 }
 
 nav {

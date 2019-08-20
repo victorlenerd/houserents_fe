@@ -10,7 +10,6 @@ const List = ({ data: { price, address, description, no_bath, no_bed, no_toilets
     <li>
         <div className="list-header">
             <div className="list-body-title">
-                <img src={pin} className="pin-icon" />
                 <span>
                     <a href={source === "nigerian_property_center" ? `https://www.nigeriapropertycentre.com${url}` : `https://www.propertypro.ng${url}`} target='_blank'>
                         {address}
@@ -20,7 +19,7 @@ const List = ({ data: { price, address, description, no_bath, no_bed, no_toilets
             <span className="list-price-tags">₦{price.toLocaleString('en')}</span>
         </div>
         <div className="list-body">
-            <p className="list-body-description">{description}</p>
+            <p className="list-body-description">{description.substring(0, 200)}</p>
             <div className="list-body-content">
                 <div className="list-body-info">
                     <img src={bed} className="info-icon" />

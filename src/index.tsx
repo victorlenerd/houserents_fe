@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+
 import { BrowserRouter as Router } from 'react-router-dom';
 import serverStyleCleanup from 'node-style-loader/clientCleanup'
 
@@ -13,7 +14,7 @@ const render = Component => {
 };
 
 if (window) {
-	window.onload = render(App);
+	window.onload = () => render(App);
 	serverStyleCleanup();
 }
 

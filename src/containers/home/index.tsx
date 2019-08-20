@@ -5,25 +5,39 @@ import Filter from '../../components/filter';
 import Map from '../../components/map';
 import List from '../../components/list';
 
+import fetchApartments from '../../utils/apartments'
+
+interface IState {
+    apartments: any[],
+    apartmentsTotal: number,
+    currentArea: {
+        lat: number,
+        lng: number
+    },
+    no_bed: number,
+    no_bath: number,
+    no_toilets: number,
+    sort: string;
+    searchText: string,
+    page: number
+}
+
 class Home extends React.PureComponent {
-    constructor(props) {
-        super(props);
-        
-        this.state = {
-            apartments: [],
 
-            apartmentsTotal: 0,
-
-            currentArea: {
-                lat: 6.5005,
-                lng: 3.3666
-            },
-            
-            searchText: "Yaba, Lagos, Nigeria",
-        };
-
-        this.centerChange = this.centerChange.bind(this);
-    }
+    state: IState = {
+        apartments: [],
+        apartmentsTotal: 0,
+        currentArea: {
+            lat: 6.5005,
+            lng: 3.3666
+        },
+        no_bed: 1,
+        no_bath: 1,
+        no_toilets: 1,
+        sort: 'DESC',
+        searchText: "Yaba, Lagos, Nigeria",
+        page: 1
+    };
 
     componentDidMount() {
         this.setState({
@@ -31,20 +45,22 @@ class Home extends React.PureComponent {
             apartmentsTotal: window.__DATA__.apartmentsTotal
         });
     }
-    
 
-    centerChange(center, searchText) {
+    centerChange = (center, searchText) => {
         this.setState({ 
             currentArea: {
                 lat: center.lat(),
                 lng: center.lng()
             },
             searchText
-        });
-    }
+        }, this.updateApartments);
+    };
 
-    sort(type) {
-        let pairAreaPrice = this.state.apartments.map((A, i)=> ({ a: A, p: this.state.apartments[i]}));
+    sort = (type) => {
+        let pairAreaPrice = this.state.apartments.map((A, i)=> ({
+            a: A,
+            p: this.state.apartments[i]
+        }));
         
         let sortedPairs = (type !== 'high') ? 
             pairAreaPrice.sort((a, b) => a.p - b.p) : 
@@ -54,11 +70,36 @@ class Home extends React.PureComponent {
             prices: sortedPairs.map((sp) => sp.p),
             apartments: sortedPairs.map((sp) => sp.a)
         });
-    }
+    };
 
-    onPageScroll() {
-        
-    }
+    onPaginationChange = async (page) => {
+        this.setState({ page }, this.updateApartments);
+    };
+
+    handleFilterUpdate = ({ no_bed = 1, no_bath = 1, no_toilets = 1, sort }) => {
+        this.setState({
+            no_bed,
+            no_bath,
+            no_toilets,
+            sort
+        }, this.updateApartments);
+    };
+
+    updateApartments = async () => {
+        const { currentArea, no_bath, no_bed, no_toilets, sort, page } = this.state;
+
+        try {
+            const { data: apartments = [] } = await fetchApartments({
+                specs: { no_bath, no_bed, no_toilets },
+                sort: { price: sort },
+                location: { ...currentArea }
+            }, page, 10);
+
+            this.setState({ apartments });
+        } catch (e) {
+            console.error(e);
+        }
+    };
 
     render () {
         const { apartments, apartmentsTotal } = this.state;
@@ -67,7 +108,7 @@ class Home extends React.PureComponent {
             <section>
                 <div className="container">
                     <Map onCenterChange={this.centerChange} />
-                    <Filter>
+                    <Filter onUpdate={this.handleFilterUpdate}>
                         {(data, FilterFields) => (
                             <>
                                 <FilterFields />
@@ -83,7 +124,7 @@ class Home extends React.PureComponent {
                 <Pagination
                     total={apartmentsTotal}
                     itemsPerPage={10}
-                    onChange={this.onPageScroll}
+                    onChange={this.onPaginationChange}
                 />
             </section>
         );
