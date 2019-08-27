@@ -2,27 +2,33 @@ import React from 'react';
 
 import Pagination from "../../components/pagination";
 import Filter from '../../components/filter';
+import Sort, {ISort} from '../../components/sort';
 import Map from '../../components/map';
 import List from '../../components/list';
 
 import fetchApartments from '../../utils/apartments'
+import { connect, IWithStore } from "../../flux/store";
 
 interface IState {
-    apartments: any[],
-    apartmentsTotal: number,
+    apartments: any[]
+    apartmentsTotal: number
     currentArea: {
-        lat: number,
+        lat: number
         lng: number
     },
-    no_bed: number,
-    no_bath: number,
-    no_toilets: number,
-    sort: string;
-    searchText: string,
+    no_bed: number
+    no_bath: number
+    no_toilets: number
+    sort: string
+    resultsPerPage: number
+    state: string
+    searchText: string
     page: number
+    max_price: number | null
+    min_price: number | null
 }
 
-class Home extends React.PureComponent {
+class Home extends React.PureComponent<IWithStore> {
 
     state: IState = {
         apartments: [],
@@ -34,14 +40,20 @@ class Home extends React.PureComponent {
         no_bed: 1,
         no_bath: 1,
         no_toilets: 1,
-        sort: 'DESC',
+        sort: 'recent',
+        resultsPerPage: 10,
+        state: 'Lagos',
+        max_price: null,
+        min_price: null,
         searchText: "Yaba, Lagos, Nigeria",
         page: 1
     };
 
     componentDidMount() {
         this.setState({
+            // @ts-ignore: __DATA__ does exist
             apartments: window.__DATA__.apartments,
+            // @ts-ignore: __DATA__ does exist
             apartmentsTotal: window.__DATA__.apartmentsTotal
         });
     }
@@ -56,44 +68,58 @@ class Home extends React.PureComponent {
         }, this.updateApartments);
     };
 
-    sort = (type) => {
-        let pairAreaPrice = this.state.apartments.map((A, i)=> ({
-            a: A,
-            p: this.state.apartments[i]
-        }));
-        
-        let sortedPairs = (type !== 'high') ? 
-            pairAreaPrice.sort((a, b) => a.p - b.p) : 
-            pairAreaPrice.sort((a, b) => b.p - a.p);
-
+    onSortChange = ({ results: resultsPerPage, sort }: ISort) => {
         this.setState({
-            prices: sortedPairs.map((sp) => sp.p),
-            apartments: sortedPairs.map((sp) => sp.a)
-        });
+            sort,
+            resultsPerPage,
+            page: this.state.resultsPerPage !== resultsPerPage ? 0 : this.state.page
+        }, this.updateApartments);
     };
 
     onPaginationChange = async (page) => {
         this.setState({ page }, this.updateApartments);
     };
 
-    handleFilterUpdate = ({ no_bed = 1, no_bath = 1, no_toilets = 1, sort }) => {
+    handleFilterUpdate = ({ no_bed = 1, state, max_price, min_price }) => {
+        this.props.dispatch({
+           type: 'SET_FILTER',
+            payload: {
+                no_bed,
+                state,
+                max_price,
+                min_price
+            }
+        });
+
         this.setState({
             no_bed,
-            no_bath,
-            no_toilets,
-            sort
+            state,
+            max_price,
+            min_price
         }, this.updateApartments);
     };
 
     updateApartments = async () => {
-        const { currentArea, no_bath, no_bed, no_toilets, sort, page } = this.state;
+        const {
+            currentArea,
+            no_bed,
+            sort,
+            page,
+            resultsPerPage,
+            max_price,
+            min_price
+        } = this.state;
 
         try {
             const { data: apartments = [] } = await fetchApartments({
-                specs: { no_bath, no_bed, no_toilets },
-                sort: { price: sort },
+                specs: { no_bed  },
+                sort: sort,
+                filter: {
+                    max_price: typeof max_price === 'number' ? max_price: undefined,
+                    min_price: typeof min_price === 'number' ? min_price: undefined,
+                },
                 location: { ...currentArea }
-            }, page, 10);
+            }, page, resultsPerPage);
 
             this.setState({ apartments });
         } catch (e) {
@@ -105,30 +131,41 @@ class Home extends React.PureComponent {
         const { apartments, apartmentsTotal } = this.state;
 
         return (
-            <section>
-                <div className="container">
-                    <Map onCenterChange={this.centerChange} />
+            <section className="main-section">
+                <div className="listings-section">
                     <Filter onUpdate={this.handleFilterUpdate}>
                         {(data, FilterFields) => (
                             <>
                                 <FilterFields />
-                                <div className="input-container col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
+                                <Sort onUpdate={this.onSortChange} />
+                                <div>
                                     <ul className="lists">
                                         {apartments.map((data, index) => (<List data={data} key={`list-${index}`} />))}
                                     </ul>
                                 </div>
+                                <Pagination
+                                    total={apartmentsTotal}
+                                    itemsPerPage={10}
+                                    onChange={this.onPaginationChange}
+                                />
                             </>
                         )}
                     </Filter>
                 </div>
-                <Pagination
-                    total={apartmentsTotal}
-                    itemsPerPage={10}
-                    onChange={this.onPaginationChange}
-                />
+                <div className="map-section">
+                    <Map onCenterChange={this.centerChange} />
+                </div>
             </section>
         );
     }   
 }
 
-export default Home;
+const mapStateToProps = (state) => ({
+    filter: state.filter
+});
+
+const mapDispatchToProps = (dispatch) => ({
+    setFilter: () => dispatch()
+});
+
+export default connect(mapStateToProps)(Home);

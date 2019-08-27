@@ -7,27 +7,29 @@ import Home from './containers/home';
 import Averages from './containers/averages';
 import RoomMates from './containers/roommates';
 import About from './containers/about';
-
-import Footer from './components/footer'
 import Header from './components/header';
 
-class App extends Component {
-  render() {
+import { Store } from './flux/store';
+import {FilterReducer, useCombineReducers} from "./flux/reducer";
+
+
+const App = () => {
+    const [state, dispatch] = useCombineReducers({ filter: FilterReducer });
+
     return (
-        <div className="App">
-          <Header />
-          <div id="main">
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/roommates" component={RoomMates} />
-              <Route path="/averages" component={Averages} />
-              <Route path="/about" component={About} />
-            </Switch>
+        <Store.Provider value={{ state, dispatch }}>
+          <div className="App">
+            <Header />
+            <div id="main">
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/roommates" component={RoomMates} />
+                <Route path="/about" component={About} />
+              </Switch>
+            </div>
           </div>
-          <Footer />
-        </div>
+        </Store.Provider>
     );
-  }
-}
+};
 
 export default hot(module)(App)

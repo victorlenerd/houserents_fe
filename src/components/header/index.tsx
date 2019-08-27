@@ -19,9 +19,6 @@ const header = ({ location: { pathname } }: RouteComponentProps) => {
                             <Link to="/roommates" className={pathname === '/roommates' ? 'active' : ''}>Room Mates</Link>
                         </li>
                         <li>
-                            <Link to="/averages" className={pathname === '/averages' ? 'active' : ''}>Average Costs</Link>
-                        </li>
-                        <li>
                             <Link to="/about" className={pathname === '/about' ? 'active' : ''}>About</Link>
                         </li>
                     </ul>

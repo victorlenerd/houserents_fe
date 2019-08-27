@@ -1,64 +1,94 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { hot } from "react-hot-loader";
+import * as React from 'react';
 
-const getOptions = () => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((o, i) => {
-    return (<option key={i} value={o}>{o}</option>);
-});
+import './index.css';
 
+interface IProps {
+    onUpdate: (state: IState) => void,
+    children: (state: IState, filter: React.ElementType) => React.ReactNode
+}
 
-class Filter extends React.PureComponent {
-    
-    constructor(props) {
-        super(props);
+interface IState {
+    no_bed: number
+    no_bath: number
+    no_toilets: number
+    state: string
+    max_price: number | null
+    min_price: number | null
+}
 
-        this.state = {
-            no_bed: 1,
-            no_bath: 1,
-            no_toilets: 1,
-            sort: -1,
-        };
+const getOptions = () => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((o, i) => (<option key={i} value={o}>{o}</option>));
+const priceOptions = () => [
+    0,
+    100000,
+    250000,
+    500000,
+    750000,
+    1000000,
+    2000000,
+    5000000,
+    10000000,
+    20000000,
+    40000000,
+    60000000,
+    80000000,
+    100000000,
+    150000000,
+].map((o, i) => (o === 0 ? <option key={i} value={o}></option> : <option key={i} value={o}>₦ {o.toLocaleString()}</option>));
 
-        this.updateOption = this.updateOption.bind(this);
-    }
+class Filter extends React.PureComponent<IProps> {
 
-    updateOption(e)  {
+    state: IState = {
+        no_bed: 1,
+        no_bath: 1,
+        no_toilets: 1,
+        max_price: null,
+        min_price: null,
+        state: 'Lagos',
+    };
+
+    updateOption = (e) => {
         let name =  e.target.name;
         let value = e.target.value; 
-    
+
         this.setState({
-            [name]: name === 'sort' ? value : Number(value)
-        }, () => {
-            if (this.props.onUpdate) this.props.onUpdate(this.state)
+            [name]: value.trim().length > 0 ? Number(value): null
         });
-    }
+    };
+
+    applyOptions = () => {
+        if (this.props.onUpdate) this.props.onUpdate(this.state);
+    };
 
     Filter = () => (
-        <div className={"input-container col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12"}>
-            <div className={"col-lg-3 col-md-3 col-sm-3 col-xs-12"}>
-                <div className="input-label">Beds</div>
-                <select onChange={this.updateOption} name="no_bed">
-                {getOptions()}
-                </select>
-            </div>
-            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div className="input-label">Baths</div>
-                <select onChange={this.updateOption} name="no_bath">
-                {getOptions()}
-                </select>
-            </div>
-            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div className="input-label">Toilets</div>
-                <select onChange={this.updateOption} name="no_toilets">
-                {getOptions()}
-                </select>
-            </div>
-            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div className="input-label">Sort</div>
-                <select name="sort" onChange={this.updateOption}>
-                    <option value={1}>High</option>
-                    <option value={-1}>Low</option>
-                </select>
+        <div className={"input-container filter-main"}>
+            <div className={"filter-container"}>
+                <div className={"filter-column"}>
+                    <div className="input-label">Beds</div>
+                    <select onChange={this.updateOption} name="no_bed">
+                    {getOptions()}
+                    </select>
+                </div>
+                <div className="filter-column">
+                    <div className="input-label">State</div>
+                    <select name="state" onChange={this.updateOption}>
+                        <option value={"Lagos"}>Lagos</option>
+                    </select>
+                </div>
+                <div className="filter-column">
+                    <div className="input-label">Min Price</div>
+                    <select name="min_price" onChange={this.updateOption}>
+                        {priceOptions()}
+                    </select>
+                </div>
+                <div className="filter-column">
+                    <div className="input-label">Max Price</div>
+                    <select name="max_price" onChange={this.updateOption}>
+                        {priceOptions()}
+                    </select>
+                </div>
+                <div className="filter-column">
+                    <button className="apply-button" onClick={() => this.props.onUpdate(this.state)}>Search</button>
+                </div>
             </div>
         </div>
     );
@@ -69,10 +99,5 @@ class Filter extends React.PureComponent {
     }
 }
 
-Filter.propTypes = {
-    onUpdate: PropTypes.func,
-    children: PropTypes.func
-};
 
-
-export default hot(module)(Filter);
+export default Filter;

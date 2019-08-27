@@ -4,3 +4,5 @@ src/public/dist/
 .env
 dist/
 taskdefinition.json
+.DS_Store
+.idea/
