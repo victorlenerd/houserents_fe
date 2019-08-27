@@ -4,10 +4,9 @@ import './index.css'
 import bath from '../../assets/svg/bath.svg';
 import toilet from '../../assets/svg/toilet.svg';
 import bed from '../../assets/svg/bed.svg';
-import pin from '../../assets/svg/pin.svg';
 
 const List = ({ data: { price, address, description, no_bath, no_bed, no_toilets, url, source } }) => (
-    <li>
+    <li className="input-container">
         <div className="list-header">
             <div className="list-body-title">
                 <span>
