@@ -1,19 +1,11 @@
 import * as React from 'react';
+import {connect, shallowCompare} from '../../flux/store';
+import { SetFilter, Filter as FilterPayload } from '../../flux/actions/filter';
 
 import './index.css';
 
 interface IProps {
-    onUpdate: (state: IState) => void,
-    children: (state: IState, filter: React.ElementType) => React.ReactNode
-}
-
-interface IState {
-    no_bed: number
-    no_bath: number
-    no_toilets: number
-    state: string
-    max_price: number | null
-    min_price: number | null
+    onUpdate: (resetOffset: boolean) => void
 }
 
 const getOptions = () => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((o, i) => (<option key={i} value={o}>{o}</option>));
@@ -35,69 +27,80 @@ const priceOptions = () => [
     150000000,
 ].map((o, i) => (o === 0 ? <option key={i} value={o}></option> : <option key={i} value={o}>₦ {o.toLocaleString()}</option>));
 
-class Filter extends React.PureComponent<IProps> {
 
-    state: IState = {
-        no_bed: 1,
-        no_bath: 1,
-        no_toilets: 1,
-        max_price: null,
-        min_price: null,
-        state: 'Lagos',
+const mapStateToProps = (state) => ({
+    filter: state.filter
+});
+
+const mapDispatchToProps = (dispatch) => ({
+    setFilter: (filter) => dispatch(SetFilter(filter))
+});
+
+
+type Props = IProps & ReturnType<typeof mapDispatchToProps> & ReturnType<typeof mapStateToProps>
+
+class Filter extends React.PureComponent<Props> {
+
+    public state = {
+        no_bed: this.props.filter.no_bed,
+        state: this.props.filter.state,
+        min_price: this.props.filter.min_price,
+        max_price: this.props.filter.max_price,
     };
 
     updateOption = (e) => {
         let name =  e.target.name;
-        let value = e.target.value; 
+        let value = e.target.value;
 
         this.setState({
+            ...this.state,
             [name]: value.trim().length > 0 ? Number(value): null
         });
     };
 
     applyOptions = () => {
-        if (this.props.onUpdate) this.props.onUpdate(this.state);
+        if (shallowCompare<FilterPayload>(this.state, this.props.filter)) {
+            this.props.setFilter(this.state);
+        }
     };
 
-    Filter = () => (
-        <div className={"input-container filter-main"}>
-            <div className={"filter-container"}>
-                <div className={"filter-column"}>
-                    <div className="input-label">Beds</div>
-                    <select onChange={this.updateOption} name="no_bed">
-                    {getOptions()}
-                    </select>
-                </div>
-                <div className="filter-column">
-                    <div className="input-label">State</div>
-                    <select name="state" onChange={this.updateOption}>
-                        <option value={"Lagos"}>Lagos</option>
-                    </select>
-                </div>
-                <div className="filter-column">
-                    <div className="input-label">Min Price</div>
-                    <select name="min_price" onChange={this.updateOption}>
-                        {priceOptions()}
-                    </select>
-                </div>
-                <div className="filter-column">
-                    <div className="input-label">Max Price</div>
-                    <select name="max_price" onChange={this.updateOption}>
-                        {priceOptions()}
-                    </select>
-                </div>
-                <div className="filter-column">
-                    <button className="apply-button" onClick={() => this.props.onUpdate(this.state)}>Search</button>
+    render() {
+        const { no_bed, max_price, min_price, state } = this.state;
+
+        return (
+            <div className={"input-container filter-main"}>
+                <div className={"filter-container"}>
+                    <div className={"filter-column"}>
+                        <div className="input-label">Beds</div>
+                        <select value={no_bed} onChange={this.updateOption} name="no_bed">
+                            {getOptions()}
+                        </select>
+                    </div>
+                    <div className="filter-column">
+                        <div className="input-label">State</div>
+                        <select name="state" value={state} onChange={this.updateOption}>
+                            <option value={"Lagos"}>Lagos</option>
+                        </select>
+                    </div>
+                    <div className="filter-column">
+                        <div className="input-label">Min Price</div>
+                        <select value={min_price} name="min_price" onChange={this.updateOption}>
+                            {priceOptions()}
+                        </select>
+                    </div>
+                    <div className="filter-column">
+                        <div className="input-label">Max Price</div>
+                        <select value={max_price} name="max_price" onChange={this.updateOption}>
+                            {priceOptions()}
+                        </select>
+                    </div>
+                    <div className="filter-column">
+                        <button className="apply-button" onClick={this.applyOptions}>Search</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
-
-    render() {
-        if (typeof this.props.children !== 'function') return null;
-        return (this.props.children(this.state, this.Filter));
+        );
     }
 }
 
-
-export default Filter;
+export default connect(mapStateToProps, mapDispatchToProps)(Filter);

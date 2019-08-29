@@ -1,30 +1,33 @@
 import * as React from 'react'
 import './index.css';
+import {ApartmentsPayload, SetApartments} from "../../flux/actions/apartment";
+import {connect} from "../../flux/store";
 
 
-export interface ISort {
-    sort: string
-    results: number
-}
+type Props =  ReturnType<typeof mapDispatchToProps> & ReturnType<typeof mapStateToProps>
 
-interface IProps {
-    onUpdate?: (ISort) => void;
-}
+const Sort: React.FunctionComponent<Props> = ({ setApartments, apartments: { sort: defaultSort, itemsPerPage: defaultItemsPerPage } }) => {
 
-const Sort: React.FunctionComponent<IProps> = ({ onUpdate }) => {
-    const [sort, setSort] = React.useState({ sort: 'recent', results: 10 });
+    const [sort, setSort] = React.useState({ sort: defaultSort, itemsPerPage: defaultItemsPerPage });
 
     const handleChange = (value: string) => (e) => {
         const val = e.currentTarget.value;
 
         const newSort = {
             ...sort,
-            [value]: value === 'results' && val !== 'all' ? Number(val) : val
+            [value]: value === 'itemsPerPage' && val !== 'all' ? Number(val) : val
         };
 
         setSort(newSort);
-        onUpdate(newSort);
     };
+
+    React.useEffect(() => {
+        if (sort.sort !== defaultSort ||
+            sort.itemsPerPage !== defaultItemsPerPage
+        ) {
+            setApartments( { ...sort });
+        }
+    }, [sort.sort, sort.itemsPerPage]);
 
     return (
         <div className="sort-container">
@@ -32,7 +35,7 @@ const Sort: React.FunctionComponent<IProps> = ({ onUpdate }) => {
                 <div className="input-label">Sort</div>
                 <select
                     value={sort.sort}
-                    name="price"
+                    name="sort"
                     onChange={handleChange('sort')}>
                     <option value="recent">Most Recent</option>
                     <option value="price">Price</option>
@@ -41,9 +44,9 @@ const Sort: React.FunctionComponent<IProps> = ({ onUpdate }) => {
             <div className="sort-box">
                 <div className="input-label">Results</div>
                 <select
-                    value={sort.results}
-                    name="results"
-                    onChange={handleChange('results')}>
+                    value={sort.itemsPerPage}
+                    name="itemsPerPage"
+                    onChange={handleChange('itemsPerPage')}>
                     <option value="5">5</option>
                     <option value="10">10</option>
                     <option value="15">15</option>
@@ -55,4 +58,13 @@ const Sort: React.FunctionComponent<IProps> = ({ onUpdate }) => {
     );
 };
 
-export default Sort;
+
+const mapDispatchToProps = (dispatch) => ({
+    setApartments: (apartments: Partial<ApartmentsPayload>) => dispatch(SetApartments(apartments)),
+});
+
+const mapStateToProps = (state) => ({
+    apartments: state.apartment
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Sort);

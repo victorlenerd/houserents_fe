@@ -3,17 +3,25 @@ import './index.css';
 
 // @ts-ignore: File does exist
 import chevron from '../../assets/svg/right-thin-chevron.svg';
+import {ApartmentsPayload, SetApartments} from "../../flux/actions/apartment";
+import {connect} from "../../flux/store";
 
-interface IProps {
-    total: number
-    itemsPerPage: number
-    onChange: (page: number) => void
-}
 
-const Pagination: React.FunctionComponent<IProps> = ({ total, itemsPerPage, onChange }) => {
+type Props = ReturnType<typeof mapStateToProps> & ReturnType<typeof  mapDispatchToProps>
+
+const Pagination: React.FunctionComponent<Props> = ({ setApartments, apartments: { total, itemsPerPage, page: defaultPage } }) => {
     const pageCounts = Math.ceil(total / itemsPerPage);
     const pageNumbers = [];
-    const [currentPage, setCurrentPage] = React.useState(1);
+    const [currentPage, setCurrentPage] = React.useState(defaultPage);
+
+
+    React.useEffect(() => {
+        if (currentPage !== defaultPage) {
+            setApartments({
+                page: currentPage
+            });
+        }
+    }, [currentPage]);
 
     for (let i = 0; i < pageCounts; i ++) {
         pageNumbers.push(i + 1);
@@ -27,7 +35,6 @@ const Pagination: React.FunctionComponent<IProps> = ({ total, itemsPerPage, onCh
                     const prevPage = currentPage - 1;
                     if (prevPage > 0) {
                         setCurrentPage(prevPage);
-                        onChange(prevPage);
                     }
                 }}>
                 <img src={chevron} />
@@ -37,7 +44,6 @@ const Pagination: React.FunctionComponent<IProps> = ({ total, itemsPerPage, onCh
                 onChange={(e) => {
                     const page = Number(e.target.value);
                     setCurrentPage(page);
-                    onChange(page);
                 }}
                 value={currentPage}
             >
@@ -50,7 +56,6 @@ const Pagination: React.FunctionComponent<IProps> = ({ total, itemsPerPage, onCh
                     const nextPage = currentPage + 1;
                     if (nextPage < total) {
                         setCurrentPage(nextPage);
-                        onChange(nextPage);
                     }
                 }}>
                 <img src={chevron} />
@@ -59,4 +64,13 @@ const Pagination: React.FunctionComponent<IProps> = ({ total, itemsPerPage, onCh
     );
 };
 
-export default Pagination;
+
+const mapDispatchToProps = (dispatch) => ({
+    setApartments: (apartments: Partial<ApartmentsPayload>) => dispatch(SetApartments(apartments)),
+});
+
+const mapStateToProps = (state) => ({
+    apartments: state.apartment
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Pagination);

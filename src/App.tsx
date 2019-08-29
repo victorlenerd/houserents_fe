@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
+import * as React  from 'react';
 import { hot } from "react-hot-loader";
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import Home from './containers/home';
-import Averages from './containers/averages';
 import RoomMates from './containers/roommates';
-import About from './containers/about';
 import Header from './components/header';
 
 import { Store } from './flux/store';
-import {FilterReducer, useCombineReducers} from "./flux/reducer";
+import { reducers, useCombineReducers } from "./flux/reducers";
 
 
 const App = () => {
-    const [state, dispatch] = useCombineReducers({ filter: FilterReducer });
+    const [state, dispatch] = useCombineReducers(reducers);
 
     return (
         <Store.Provider value={{ state, dispatch }}>
@@ -24,7 +22,6 @@ const App = () => {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/roommates" component={RoomMates} />
-                <Route path="/about" component={About} />
               </Switch>
             </div>
           </div>

@@ -2,170 +2,107 @@ import React from 'react';
 
 import Pagination from "../../components/pagination";
 import Filter from '../../components/filter';
-import Sort, {ISort} from '../../components/sort';
+import Sort from '../../components/sort';
 import Map from '../../components/map';
 import List from '../../components/list';
 
 import fetchApartments from '../../utils/apartments'
-import { connect, IWithStore } from "../../flux/store";
+import { connect, shallowCompare } from "../../flux/store";
+import {ApartmentsPayload, SetApartments} from "../../flux/actions/apartment";
+import {Filter as FilterPayload} from "../../flux/actions/filter";
 
-interface IState {
-    apartments: any[]
-    apartmentsTotal: number
-    currentArea: {
-        lat: number
-        lng: number
-    },
-    no_bed: number
-    no_bath: number
-    no_toilets: number
-    sort: string
-    resultsPerPage: number
-    state: string
-    searchText: string
-    page: number
-    max_price: number | null
-    min_price: number | null
-}
 
-class Home extends React.PureComponent<IWithStore> {
+type Props = ReturnType<typeof mapStateToProps> & ReturnType<typeof  mapDispatchToProps>;
 
-    state: IState = {
-        apartments: [],
-        apartmentsTotal: 0,
-        currentArea: {
-            lat: 6.5005,
-            lng: 3.3666
-        },
-        no_bed: 1,
-        no_bath: 1,
-        no_toilets: 1,
-        sort: 'recent',
-        resultsPerPage: 10,
-        state: 'Lagos',
-        max_price: null,
-        min_price: null,
-        searchText: "Yaba, Lagos, Nigeria",
-        page: 1
-    };
+class Home extends React.PureComponent<Props> {
 
     componentDidMount() {
-        this.setState({
-            // @ts-ignore: __DATA__ does exist
+        this.props.setApartments({
+            // @ts-ignore: __DATA__
             apartments: window.__DATA__.apartments,
-            // @ts-ignore: __DATA__ does exist
-            apartmentsTotal: window.__DATA__.apartmentsTotal
+            // @ts-ignore: __DATA__
+            total: window.__DATA__.apartmentsTotal
         });
     }
 
-    centerChange = (center, searchText) => {
-        this.setState({ 
-            currentArea: {
-                lat: center.lat(),
-                lng: center.lng()
-            },
-            searchText
-        }, this.updateApartments);
-    };
+    async componentDidUpdate(prevProps) {
+        const apartmentsUpdate = shallowCompare<ApartmentsPayload>({ ...this.props.apartments, total: undefined }, { ...prevProps.apartments, total: undefined  });
+        const filterUpdate = shallowCompare<FilterPayload>(prevProps.filter, this.props.filter);
+        if (apartmentsUpdate || filterUpdate) {
+            await this.updateApartments(filterUpdate);
+        }
+    }
 
-    onSortChange = ({ results: resultsPerPage, sort }: ISort) => {
-        this.setState({
-            sort,
-            resultsPerPage,
-            page: this.state.resultsPerPage !== resultsPerPage ? 0 : this.state.page
-        }, this.updateApartments);
-    };
-
-    onPaginationChange = async (page) => {
-        this.setState({ page }, this.updateApartments);
-    };
-
-    handleFilterUpdate = ({ no_bed = 1, state, max_price, min_price }) => {
-        this.props.dispatch({
-           type: 'SET_FILTER',
-            payload: {
+    updateApartments = async (resetOffset: boolean = false) => {
+        const {
+            filter: {
                 no_bed,
-                state,
                 max_price,
                 min_price
+            },
+            apartments: {
+                sort,
+                page,
+                currentArea,
+                itemsPerPage
             }
-        });
-
-        this.setState({
-            no_bed,
-            state,
-            max_price,
-            min_price
-        }, this.updateApartments);
-    };
-
-    updateApartments = async () => {
-        const {
-            currentArea,
-            no_bed,
-            sort,
-            page,
-            resultsPerPage,
-            max_price,
-            min_price
-        } = this.state;
+        } = this.props;
 
         try {
-            const { data: apartments = [] } = await fetchApartments({
-                specs: { no_bed  },
+            const { data: apartments = [], total } = await fetchApartments({
+                specs: { no_bed },
                 sort: sort,
                 filter: {
                     max_price: typeof max_price === 'number' ? max_price: undefined,
                     min_price: typeof min_price === 'number' ? min_price: undefined,
                 },
                 location: { ...currentArea }
-            }, page, resultsPerPage);
+            }, resetOffset ? 0 : page, itemsPerPage);
 
-            this.setState({ apartments });
+            this.props.setApartments({
+                apartments,
+                total,
+                page: resetOffset ? 0 : page
+            });
         } catch (e) {
             console.error(e);
         }
     };
 
     render () {
-        const { apartments, apartmentsTotal } = this.state;
+        const { apartments: { total, apartments, itemsPerPage } } = this.props;
 
         return (
             <section className="main-section">
                 <div className="listings-section">
-                    <Filter onUpdate={this.handleFilterUpdate}>
-                        {(data, FilterFields) => (
-                            <>
-                                <FilterFields />
-                                <Sort onUpdate={this.onSortChange} />
-                                <div>
-                                    <ul className="lists">
-                                        {apartments.map((data, index) => (<List data={data} key={`list-${index}`} />))}
-                                    </ul>
-                                </div>
-                                <Pagination
-                                    total={apartmentsTotal}
-                                    itemsPerPage={10}
-                                    onChange={this.onPaginationChange}
-                                />
-                            </>
-                        )}
-                    </Filter>
+                    <Filter onUpdate={this.updateApartments} />
+                    <Sort />
+                    <div>
+                        <ul className="lists">
+                            {apartments.map((data, index) => (<List data={data} key={`list-${index}`} />))}
+                        </ul>
+                    </div>
+                    <Pagination
+                        total={total}
+                        itemsPerPage={itemsPerPage}
+                        onChange={this.updateApartments}
+                    />
                 </div>
                 <div className="map-section">
-                    <Map onCenterChange={this.centerChange} />
+                    <Map />
                 </div>
             </section>
         );
     }   
 }
 
-const mapStateToProps = (state) => ({
-    filter: state.filter
-});
-
 const mapDispatchToProps = (dispatch) => ({
-    setFilter: () => dispatch()
+    setApartments: (apartments: Partial<ApartmentsPayload>) => dispatch(SetApartments(apartments)),
 });
 
-export default connect(mapStateToProps)(Home);
+const mapStateToProps = (state) => ({
+    filter: state.filter,
+    apartments: state.apartment
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

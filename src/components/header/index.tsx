@@ -6,7 +6,7 @@ import { Link, withRouter, RouteComponentProps } from 'react-router-dom';
 const header = ({ location: { pathname } }: RouteComponentProps) => {
     return (
         <header className="header">
-            <div className="container">
+            <>
                 <Link to="/" className="logo">
                     HouseRent
                 </Link>
@@ -16,14 +16,11 @@ const header = ({ location: { pathname } }: RouteComponentProps) => {
                             <Link to="/" className={pathname === '/' ? 'active' : ''}>Apartments</Link>
                         </li>
                         <li>
-                            <Link to="/roommates" className={pathname === '/roommates' ? 'active' : ''}>Room Mates</Link>
-                        </li>
-                        <li>
-                            <Link to="/about" className={pathname === '/about' ? 'active' : ''}>About</Link>
+                            <Link to="/roommates" className={pathname === '/roommates' ? 'active' : ''}>Roommates</Link>
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </>
         </header>
     );
 };

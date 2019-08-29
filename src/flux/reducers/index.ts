@@ -1,29 +1,17 @@
-import * as React from 'react';
+import * as React from "react";
 
-export enum FilterActionType {
-    SET_FILTER = "SET_FILTER"
-}
+import { FilterReducer  } from './filter';
+import { ApartmentReducer } from "./apartment";
 
-export interface FilterAction {
-    type: FilterActionType
-    payload: any
-}
-
-export const FilterReducer = (state, action: FilterAction) => {
-    switch (action.type) {
-        case FilterActionType.SET_FILTER:
-            return {
-                filter: action.payload
-            };
-        default:
-            return state;
-    }
+export const reducers = {
+    filter: FilterReducer,
+    apartment: ApartmentReducer
 };
 
 const getInitialState = (reducers) => Object.entries(reducers)
     .reduce((acc, [ name, reducer ]) => {
         if (typeof reducer === 'function') {
-            const reducerDefaultState = reducer({}, { type: null });
+            const reducerDefaultState = reducer();
 
             if (reducerDefaultState) {
                 return { ...acc, [name]: reducerDefaultState };
