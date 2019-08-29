@@ -13,11 +13,17 @@ class Tab extends React.PureComponent {
 
         this.state = {
             currentTab: 0,
+            heights: []
         };
 
         this.changeTab = this.changeTab.bind(this);
     }
-    
+
+    componentDidMount() {
+       const heights = React.Children.map(this.props.children, (child) => child.ref.current.children[0].clientHeight);
+       this.setState({ heights });
+    }
+
     changeTab (tabIndex) {
         return () => this.setState({ currentTab: tabIndex });
     } 
@@ -37,7 +43,7 @@ class Tab extends React.PureComponent {
 
         return (
             <>
-                <div className="mobile-nav-tab" >
+                <div className="mobile-nav-tab">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className={`col-lg-4 col-md-4 col-sm-4 col-xs-4 mobile-tab ${currentTab === 0 ? 'mobile-tab-active' : ''}`} onClick={this.changeTab(0)}>
                             <img src={list} width={22} height={22} />
@@ -53,8 +59,8 @@ class Tab extends React.PureComponent {
                         </div>
                     </div>
                 </div>
-                <div className="tab-content"> 
-                    <div className="tab-content-inner" style={{ transform: `translateX(${tx}%)` }}>
+                <div className="tab-content">
+                    <div className="tab-content-inner" style={{ transform: `translateX(${tx}%)`, height: currentTab !== 0 ? this.state.heights[currentTab] : 'auto' }}>
                         {this.props.children}
                     </div>
                 </div>
@@ -65,6 +71,6 @@ class Tab extends React.PureComponent {
 
 Tab.propTypes = {
     children: PropTypes.array
-}
+};
 
 export default Tab;

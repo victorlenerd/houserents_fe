@@ -5,6 +5,7 @@ import Filter from '../../components/filter';
 import Sort from '../../components/sort';
 import Map from '../../components/map';
 import List from '../../components/list';
+import MobileTab from '../../components/tab';
 
 import fetchApartments from '../../utils/apartments'
 import { connect, shallowCompare } from "../../flux/store";
@@ -15,6 +16,13 @@ import {Filter as FilterPayload} from "../../flux/actions/filter";
 type Props = ReturnType<typeof mapStateToProps> & ReturnType<typeof  mapDispatchToProps>;
 
 class Home extends React.PureComponent<Props> {
+
+    public  listRef = React.createRef<HTMLDivElement>();
+
+    public  mapRef = React.createRef<HTMLDivElement>();
+
+    public  filterRef = React.createRef<HTMLDivElement>();
+
 
     componentDidMount() {
         this.props.setApartments({
@@ -73,25 +81,52 @@ class Home extends React.PureComponent<Props> {
         const { apartments: { total, apartments, itemsPerPage } } = this.props;
 
         return (
-            <section className="main-section">
-                <div className="listings-section">
-                    <Filter onUpdate={this.updateApartments} />
-                    <Sort />
-                    <div>
-                        <ul className="lists">
-                            {apartments.map((data, index) => (<List data={data} key={`list-${index}`} />))}
-                        </ul>
+            <>
+                <section className="main-section hidden-xs hidden-sm">
+                    <div className="listings-section">
+                        <Filter onUpdate={this.updateApartments} />
+                        <Sort />
+                        <div>
+                            <ul className="lists">
+                                {apartments.map((data, index) => (<List data={data} key={`list-${index}`} />))}
+                            </ul>
+                        </div>
+                        <Pagination
+                            total={total}
+                            itemsPerPage={itemsPerPage}
+                            onChange={this.updateApartments}
+                        />
                     </div>
-                    <Pagination
-                        total={total}
-                        itemsPerPage={itemsPerPage}
-                        onChange={this.updateApartments}
-                    />
-                </div>
-                <div className="map-section">
-                    <Map />
-                </div>
-            </section>
+                    <div className="map-section">
+                        <Map />
+                    </div>
+                </section>
+                <section className="hidden-lg hidden-md">
+                    <MobileTab>
+                        <div ref={this.listRef}>
+                            <Sort />
+                            <div>
+                                <ul className="lists">
+                                    {apartments.map((data, index) => (<List data={data} key={`list-${index}`} />))}
+                                </ul>
+                            </div>
+                            <Pagination
+                                total={total}
+                                itemsPerPage={itemsPerPage}
+                                onChange={this.updateApartments}
+                            />
+                        </div>
+                        <div ref={this.mapRef}>
+                            <Map />
+                        </div>
+                        <div ref={this.filterRef}>
+                            <div className="container">
+                                <Filter onUpdate={this.updateApartments} />
+                            </div>
+                        </div>
+                    </MobileTab>
+                </section>
+            </>
         );
     }   
 }

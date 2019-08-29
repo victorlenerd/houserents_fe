@@ -55,13 +55,11 @@ class Filter extends React.PureComponent<Props> {
         this.setState({
             ...this.state,
             [name]: value.trim().length > 0 ? Number(value): null
+        }, () => {
+            if (shallowCompare<FilterPayload>(this.state, this.props.filter)) {
+                this.props.setFilter(this.state);
+            }
         });
-    };
-
-    applyOptions = () => {
-        if (shallowCompare<FilterPayload>(this.state, this.props.filter)) {
-            this.props.setFilter(this.state);
-        }
     };
 
     render() {
@@ -93,9 +91,6 @@ class Filter extends React.PureComponent<Props> {
                         <select value={max_price} name="max_price" onChange={this.updateOption}>
                             {priceOptions()}
                         </select>
-                    </div>
-                    <div className="filter-column">
-                        <button className="apply-button" onClick={this.applyOptions}>Search</button>
                     </div>
                 </div>
             </div>

@@ -10,9 +10,9 @@ const API_KEY = process.env.MAP_API_KEY || "AIzaSyD5nu1Pr0a26gdkbGmwPJr76fDMVe1E
 const Map = compose(
     withProps({
       googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&v=3.exp&libraries=places`,
-      containerElement: <div className="input-container" style={{ height: `calc(100vh  - 80px)`, width: '100%', paddingTop: 0, paddingBottom: 0 }} />,
+      containerElement: <div className="input-container map-container" />,
       loadingElement: <div style={{ height: `calc(100vh  - 80px)` }} />,
-      mapElement: <div style={{ height: `calc(100vh - 80px)` }} />,
+      mapElement: <div className="map-element" />,
       center: { lat: 25.03, lng: 121.6 },
     }),
     withMap,

@@ -194,6 +194,17 @@ h2 {
   height: 300px;
 }
 
+.map-element {
+  height: calc(100vh - 80px);
+}
+
+.map-container {
+  height: calc(100vh  - 80px);
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 @media only screen and (max-width: 999px) { 
   .header {
     padding: 0px 0px;
@@ -207,6 +218,16 @@ h2 {
   .remove-mobile-padding {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .input-container {
+    margin-top: 0px;
+    margin-top: 0px;
+  }
+
+  .map-container,
+  .map-element {
+    height: calc(100vh - 141px);;
   }
 }
 
