@@ -84,7 +84,7 @@ app.get(/\/|\/averages|\/roommates/, async (req, res) => {
 
     const singleArea = {
         locations: [{ lat: 6.5005, lng: 3.3666 }],
-        specs: { no_bed: 1, no_bath: 1, no_toilets: 1 }
+        no_bed: 1
     };
 
     const apartmentRequestBody = {
