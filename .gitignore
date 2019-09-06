@@ -1,2 +1,8 @@
+.idea
 node_modules
+src/public/dist/
 .env
+dist/
+taskdefinition.json
+.DS_Store
+.idea/

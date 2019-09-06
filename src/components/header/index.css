@@ -62,11 +62,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-transform: uppercase;
   font-family: "Playfair display", sans-serif;
-  font-weight: 500;
-  background-color: #2be6a8;
-  color: #000;
+  font-weight: 600;
+  background-color: #fff;
+  color: #2be6a8;
+}
+
+.logo:hover,
+.logo:active,
+.logo:visited {
+  color: #2BE6A8 !important;
 }
 
 nav {
@@ -96,13 +101,21 @@ nav > ul > li > a {
 nav > ul > li > a:active,
 nav > ul > li > a.active {
   font-weight: bold;
-  color: #2980b9 !important;
-  text-decoration-line: underline;
+  color: #000 !important;
+  border-bottom: 1px solid #2be6a8;
+}
+
+
+nav > ul > li > a:hover,
+nav > ul > li > a:hover {
+  font-weight: bold;
+  color: #000 !important;
+  border-bottom: 1px solid #2be6a8;
+  text-decoration: none !important;
 }
 
 nav > ul > li > a:visited {
   color: #000;
-  text-decoration-line: underline;
 }
 
 @media only screen and (max-width: 799px) {

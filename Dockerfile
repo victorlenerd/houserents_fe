@@ -12,8 +12,13 @@ RUN npm install
 COPY src /usr/src/hourserents/src
 COPY config.dev.js /usr/src/hourserents/
 
+ARG PORT
+ARG NODE_ENV
+ARG API_SERVER
+ARG MAP_API_KEY
+
 RUN npm run build
 
-EXPOSE 4040
+EXPOSE 8080
 
 CMD ["npm", "start"]
