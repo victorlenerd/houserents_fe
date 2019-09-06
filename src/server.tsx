@@ -92,15 +92,24 @@ app.get(/\/|\/averages|\/roommates/, async (req, res) => {
         specs: { no_bed: 1, no_bath: 1, no_toilets: 1 }
     };
 
-    const [
-        { prices: multipleAreasPrice },
-        { prices: singleAreaPrice },
-        { data: apartments = [], total: apartmentsTotal = 0},
-    ] = await Promise.all([
+    let multipleAreasPrice = [];
+    let singleAreaPrice = [];
+    let apartments = [];
+    let apartmentsTotal = 0;
+
+    try {
+        [
+            { prices: multipleAreasPrice },
+            { prices: singleAreaPrice },
+            { data: apartments = [], total: apartmentsTotal = 0},
+        ] = await Promise.all([
             predict(multipleAreas),
             predict(singleArea, false),
             fetchApartments(apartmentRequestBody, 0, 10, false)
         ]);
+    } catch (e) {
+        console.error(e);
+    }
 
     res.send(HTML(reactDOMServer.renderToString(
         <StaticRouter location={req.url} context={context}>
