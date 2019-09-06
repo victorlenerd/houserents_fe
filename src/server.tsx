@@ -77,19 +77,19 @@ app.use('/public', express.static(path.join(__dirname, '/public')));
 app.get(/\/|\/averages|\/roommates/, async (req, res) => {
     const context = {};
 
-    const multipleAreas = { 
-        locations: majorAreasData().map(({ lat, lng }) => ({ lat, lng })), 
-        specs: { no_bed: 1, no_bath: 1, no_toilets: 1 } 
+    const multipleAreas = {
+        locations: majorAreasData().map(({ lat, lng }) => ({ lat, lng })),
+        no_bed: 1
     };
 
-    const singleArea = { 
+    const singleArea = {
         locations: [{ lat: 6.5005, lng: 3.3666 }],
-        specs: { no_bed: 1, no_bath: 1, no_toilets: 1 } 
+        specs: { no_bed: 1, no_bath: 1, no_toilets: 1 }
     };
 
-    const apartmentRequestBody = { 
+    const apartmentRequestBody = {
         location: { lat: 6.5005, lng: 3.3666 },
-        specs: { no_bed: 1, no_bath: 1, no_toilets: 1 } 
+        specs: { no_bed: 1, no_bath: 1, no_toilets: 1 }
     };
 
     const [

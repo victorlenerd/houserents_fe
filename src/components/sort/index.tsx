@@ -38,7 +38,8 @@ const Sort: React.FunctionComponent<Props> = ({ setApartments, apartments: { sor
                     name="sort"
                     onChange={handleChange('sort')}>
                     <option value="recent">Most Recent</option>
-                    <option value="price">Price</option>
+                    <option value="price_high">High Price</option>
+                    <option value="price_low">Low Price</option>
                 </select>
             </div>
             <div className="sort-box">
