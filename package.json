@@ -13,7 +13,7 @@
   "dependencies": {
     "@babel/runtime": "^7.3.1",
     "@types/googlemaps": "^3.37.4",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "date-fns": "^2.0.1",
     "downshift": "^2.0.10",
     "express": "^4.16.4",
